@@ -1,2 +1,4 @@
 git config --global user.email "isaia.spinelli@heig-vd.ch"
 git config --global user.name "isaiaSpinelli"
+
+git push -u origin master

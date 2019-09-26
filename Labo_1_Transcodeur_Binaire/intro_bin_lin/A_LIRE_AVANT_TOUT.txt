@@ -1,0 +1,81 @@
+------------------------------------------------------------------------------------------
+-- HEIG-VD, Haute Ecole d'Ingenerie et de Gestion du Canton de Vaud
+-- REDS Institute, Reconfigurable Embedded Digital Systems
+------------------------------------------------------------------------------------------
+-- File        : A_LIRE_AVANT_TOUT.txt
+-- Author      : Etienne Messerli
+-- Date        : 17.02.2015
+--
+-- Context     : projet Intro Bin-Lin
+--               Introduction flow VHDL et outils EDA
+--
+------------------------------------------------------------------------------------------
+-- Description :
+--   Quelques explications pour le projet
+------------------------------------------------------------------------------------------
+-- Modifications :
+-- Ver   Date        Engineer     Comments
+-- 1.0  16.09.2015   EMI          Adaptation pour utiliser console_sim.vhd
+--                                simulation avec la console REDS
+-- 1.1  24.02.2016   EMI          Adaptation noms repertoires
+--
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+--| A. Liste des fichiers/dossiers |------------------------------------------------------
+.
+|- A_LIRE_AVANT_TOUT.txt                 Ce fichier: A lire avant l'utilisation du projet
+|                                        intro_bin_lin. Il decrit l'utilisation des
+|                                        differents fichiers script (*.tcl)
+|
+|
+|  // Fichiers script TCL pour QuestaSim /////////////////////////////////////////////////
+|  ---------------------------------------------------------------------------------------
+|- run_comp_bin_lin_tb.tcl               Script de compilation pour la simulation 
+|                                        de bin_lin.vhd avec un banc de test (-tb)
+|- run_comp_bin_lin_sim.tcl              Script de compilation pour la simulation 
+|                                        manuelle de bin_lin.vhd avec la console REDS
+|- wave_bin_lin_2to4_tb.tcl              Ajoute les signaux pour la simulation avec tb 
+|
+|  // Description des repertoires du projet //////////////////////////////////////////////
+|  ---------------------------------------------------------------------------------------
+|-- comp                                 Dossier de travail pour la simulation
+|                                        Repertoire de travail pour Questasim
+|-- pr                                   Repertoire pour realiser des syntheses de test 
+|                                          du design bin_lin pour divers architectures
+|-- pr_cpld                              Repertoire pour la synthese et le p+r pour 
+|                                          l'integration dans le circuit MAX-V
+|-- src                                  Fichiers sources des descriptions du Bin-Lin
+|-- src_cpld                             Fichier top pour l'integration dans carte MaxV
+|                                          soit: maxv_top.vhd
+|                                          repertoire contient aussi fichiers a copier dans
+|                                          ./pr_cpld/ pour l'assignation pin et timing clock 
+|-- src_tb
+   |- console_sim.vhd                    console_sim pour la simulation manuelle, a utiliser
+   |                                      avec la Console_REDS.tcl
+   \- bin_lin_2to4_tb                    Banc de test automatique pour la simulation
+                                         automatique
+
+
+------------------------------------------------------------------------------------------
+--| B. Simulations manuelles avec la console REDS_Console |-------------------------------
+La marche a suivre pour la simulation manuelle avec console REDS_Console.tcl est
+la suivante:
+  1.  Ouvrir QuestaSim
+  2.  Se placer dans le dossier .../comp (File -> Change Directory)
+  3.  Lancer le script de compilation et de chargement
+        do ../run_comp_bin_lin_sim.tcl
+  4. Utiliser la console REDS pour generer les signaux.
+
+------------------------------------------------------------------------------------------
+--| C. Simulations automatique avec le banc de test |-------------------------------------
+La marche a suivre pour la simulation manuelle avec console REDS_Console.tcl est
+la suivante:
+  1.  Ouvrir QuestaSim
+  2.  Se placer dans le dossier ../comp (File -> Change Directory)
+  3.  Lancer le script de compilation et de chargement
+        do ../run_comp_bin_lin_tb.tcl
+  4. Lancer la simulation: run all
+
+
