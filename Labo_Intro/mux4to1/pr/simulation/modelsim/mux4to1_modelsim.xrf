@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, /cours_REDS/CSN/SpinelliIsaia/Labo_Intro/mux4to1/src/mux4to1.vhd
+source_file = 1, /cours_REDS/intelFPGA/17.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /cours_REDS/intelFPGA/17.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /cours_REDS/intelFPGA/17.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /cours_REDS/intelFPGA/17.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, /cours_REDS/CSN/SpinelliIsaia/Labo_Intro/mux4to1/pr/db/mux4to1.cbx.xml
+design_name = mux4to1
+instance = comp, \d_i~I\, d_i, mux4to1, 1
+instance = comp, \sel_i[1]~I\, sel_i[1], mux4to1, 1
+instance = comp, \c_i~I\, c_i, mux4to1, 1
+instance = comp, \a_i~I\, a_i, mux4to1, 1
+instance = comp, \b_i~I\, b_i, mux4to1, 1
+instance = comp, \sel_i[0]~I\, sel_i[0], mux4to1, 1
+instance = comp, \Mux0~0\, Mux0~0, mux4to1, 1
+instance = comp, \Mux0~1\, Mux0~1, mux4to1, 1
+instance = comp, \y_o~I\, y_o, mux4to1, 1

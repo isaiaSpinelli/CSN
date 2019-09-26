@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Sep 19 17:14:50 2019
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Revision Name : mux4to1
+Top-level Entity Name : mux4to1
+Family : MAX V
+Device : 5M570ZF256C5
+Timing Models : Final
+Total logic elements : 2 / 570 ( < 1 % )
+Total pins : 7 / 159 ( 4 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

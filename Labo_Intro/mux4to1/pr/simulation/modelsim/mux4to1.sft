@@ -1,0 +1,4 @@
+set tool_name "QuestaSim (VHDL)"
+set corner_file_list {
+    {{"Slow Model"} {mux4to1.vho mux4to1_vhd.sdo}}
+}

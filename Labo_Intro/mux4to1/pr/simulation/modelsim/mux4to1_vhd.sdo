@@ -1,0 +1,131 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+
+// 
+// Device: Altera 5M570ZF256C5 Package FBGA256
+// 
+
+// 
+// This SDF file should be used for QuestaSim (VHDL) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "mux4to1")
+  (DATE "09/19/2019 17:14:52")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus Prime")
+  (VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\d_i\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (986:986:986) (986:986:986))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\sel_i\[1\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (986:986:986) (986:986:986))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\c_i\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (986:986:986) (986:986:986))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\a_i\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (986:986:986) (986:986:986))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\b_i\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (986:986:986) (986:986:986))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\sel_i\[0\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (986:986:986) (986:986:986))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\Mux0\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (6016:6016:6016) (6016:6016:6016))
+        (PORT datab (5745:5745:5745) (5745:5745:5745))
+        (PORT datac (5922:5922:5922) (5922:5922:5922))
+        (PORT datad (11302:11302:11302) (11302:11302:11302))
+        (IOPATH dataa combout (2247:2247:2247) (2247:2247:2247))
+        (IOPATH datab combout (1931:1931:1931) (1931:1931:1931))
+        (IOPATH datac combout (968:968:968) (968:968:968))
+        (IOPATH datad combout (438:438:438) (438:438:438))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\Mux0\~1\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (5949:5949:5949) (5949:5949:5949))
+        (PORT datab (5795:5795:5795) (5795:5795:5795))
+        (PORT datac (5491:5491:5491) (5491:5491:5491))
+        (PORT datad (1920:1920:1920) (1920:1920:1920))
+        (IOPATH dataa combout (2247:2247:2247) (2247:2247:2247))
+        (IOPATH datab combout (1931:1931:1931) (1931:1931:1931))
+        (IOPATH datac combout (968:968:968) (968:968:968))
+        (IOPATH datad combout (438:438:438) (438:438:438))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\y_o\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (4282:4282:4282) (4282:4282:4282))
+        (IOPATH datain padio (2008:2008:2008) (2008:2008:2008))
+      )
+    )
+  )
+)
