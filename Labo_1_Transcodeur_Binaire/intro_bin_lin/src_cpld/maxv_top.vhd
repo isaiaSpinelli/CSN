@@ -86,8 +86,8 @@ architecture struct of maxv_top is
                   -- valeur lineaire en sortie
     );
   end component;
-  for all : bin_lin_2to4 use entity work.bin_lin_2to4(eq_logic);
-  --for all : bin_lin_2to4 use entity work.bin_lin_2to4(tdv);
+  --for all : bin_lin_2to4 use entity work.bin_lin_2to4(eq_logic);
+  for all : bin_lin_2to4 use entity work.bin_lin_2to4(tdv);
   
 
   

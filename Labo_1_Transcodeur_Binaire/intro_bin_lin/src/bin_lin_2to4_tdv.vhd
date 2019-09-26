@@ -37,7 +37,7 @@ begin
     lin_o <= "0001" when "00",
              "0011" when "01",
              "0111" when "10",
-             "1110" when "11",
+             "1111" when "11",
              "XXXX" when others; --simulation
 
 end tdv;
