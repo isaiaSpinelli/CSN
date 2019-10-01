@@ -29,12 +29,26 @@ entity bin_lin_3to8 is
        );
 end bin_lin_3to8 ;
 
-architecture ....  of bin_lin_3to8 is
+architecture flot_don of bin_lin_3to8 is
 
 begin
 
 
-  a completer ......
+  lin_o(0) <= '1' ;
+  lin_o(1) <= '1' when bin_i >= "001"  else
+              '0';
+  lin_o(2) <= '1' when bin_i >= "010"  else
+              '0';
+  lin_o(3) <= '1' when bin_i >= "011"  else
+              '0';
+  lin_o(4) <= '1' when bin_i >= "100"  else
+              '0';
+  lin_o(5) <= '1' when bin_i >= "101"  else
+              '0';
+  lin_o(6) <= '1' when (bin_i >= "110")  else
+              '0';
+  lin_o(7) <= '1' when (bin_i >= "111")  else
+			  '0';
 
  
-end ....   ;
+end flot_don;

@@ -12,9 +12,12 @@ comp      -> QuestaSim (cd comp -> vsim -> new lib -> compile src -> compile src
 cd comp
 vsim
 do ../run....
+run -all
 test
 
 corriger src -> compile->compile...(src ET src_tb->comsole_sim.vhd)
+
+SIMULATION MANUELLE -> voir feuille labo0
 
 
 ## Projet (Quartus)

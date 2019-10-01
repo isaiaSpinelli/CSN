@@ -79,16 +79,15 @@ architecture struct of maxv_top is
 
   --| Components declaration |------------------------------------------------------------
 
-  component bin_lin_3to8 is
-	port( bin_i  : in std_logic_vector(2 downto 0);
-                -- valeur binaire en entree
-			lin_o  : out std_logic_vector(7 downto 0)
-                -- valeur lineaire en sortie
-		);
+  component bin_lin_2to4 is
+    port( bin_i  : in std_logic_vector(1 downto 0);
+                 -- valeur binaire en entree
+          lin_o  : out std_logic_vector(3 downto 0)
+                  -- valeur lineaire en sortie
+    );
   end component;
   --for all : bin_lin_2to4 use entity work.bin_lin_2to4(eq_logic);
-  --for all : bin_lin_2to4 use entity work.bin_lin_2to4(tdv);
-  for all : bin_lin_3to8 use entity work.bin_lin_3to8;
+  for all : bin_lin_2to4 use entity work.bin_lin_2to4(tdv);
   
 
   
@@ -113,19 +112,15 @@ begin
   
   ----------------------------------------------------------------------------------------
   --| Components intanciation |-----------------------------------------------------------
-  U1: bin_lin_3to8 port map (bin_i(0) => Button_s(1),
+  U1: bin_lin_2to4 port map (bin_i(0) => Button_s(1),
                              bin_i(1) => Button_s(2),
-                             bin_i(2) => Button_s(3),
                              lin_o(0) => Led_s(0),
                              lin_o(1) => Led_s(1),
                              lin_o(2) => Led_s(2),
-                             lin_o(3) => Led_s(3),
-                             lin_o(4) => Led_s(4),
-                             lin_o(5) => Led_s(5),
-                             lin_o(6) => Led_s(6),
-                             lin_o(7) => Led_s(7)
+                             lin_o(3) => Led_s(3)
                              );
-  
+  Led_s(7 downto 4) <= (others => '0'); --unused leds turned off 
+
   ----------------------------------------------------------------------------------------
   --| Signal blink at 1Hz |------------------------------------------------------------------
   process (Clk_Main_i, Reset_s)

@@ -34,9 +34,9 @@ architecture test_bench of bin_lin_2to4_tb is
          );
    end component;
  --Decommenter la ligne de la description souhaitee pour la simulation auto
-   for all : bin_lin_2to4 use entity work.bin_lin_2to4(eq_logic);
+   --for all : bin_lin_2to4 use entity work.bin_lin_2to4(eq_logic);
    --for all : bin_lin_2to4 use entity work.bin_lin_2to4(tdv);
-   --for all : bin_lin_2to4 use entity work.bin_lin_2to4(flot_don);
+   for all : bin_lin_2to4 use entity work.bin_lin_2to4(flot_don);
 
   --simulation apres routage
   --for IC_test : Bin_Lin_2to4 use entity work.Bin_Lin_2to4(\epm7064slc44-10\);

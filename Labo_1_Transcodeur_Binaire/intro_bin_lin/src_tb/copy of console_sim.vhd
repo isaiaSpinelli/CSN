@@ -81,35 +81,30 @@ end console_sim ;
 
 architecture struct of console_sim is
 
-  component bin_lin_3to8 is
-	port( bin_i  : in std_logic_vector(2 downto 0);
-                -- valeur binaire en entree
-			lin_o  : out std_logic_vector(7 downto 0)
-                -- valeur lineaire en sortie
-		);
+  component bin_lin_2to4
+    port( bin_i  : in std_logic_vector(1 downto 0);
+                  -- valeur binaire en entree
+          lin_o  : out std_logic_vector(3 downto 0)
+                 -- valeur lineaire en sortie
+         );
   end component;
-  for all : bin_lin_3to8 use entity work.bin_lin_3to8;
+  for all : bin_lin_2to4 use entity work.bin_lin_2to4;
 
-  signal bin_s : std_logic_vector(2 downto 0);
-  signal lin_s : std_logic_vector(7 downto 0);
+  signal bin_s : std_logic_vector(1 downto 0);
+  signal lin_s : std_logic_vector(3 downto 0);
   
 begin
 
 -- Affectation signaux
   bin_s(0) <= S0_sti;
   bin_s(1) <= S1_sti;
-  bin_s(2) <= S2_sti;
   L0_obs <= lin_s(0);
   L1_obs <= lin_s(1);
   L2_obs <= lin_s(2);
   L3_obs <= lin_s(3);
-  L4_obs <= lin_s(4);
-  L5_obs <= lin_s(5);
-  L6_obs <= lin_s(6);
-  L7_obs <= lin_s(7);
 
 -- Instanciation du composant a simuler
-   UUT : bin_lin_3to8
+   UUT : bin_lin_2to4
       port map (bin_i   => bin_s,
                 lin_o   => lin_s
       );   
