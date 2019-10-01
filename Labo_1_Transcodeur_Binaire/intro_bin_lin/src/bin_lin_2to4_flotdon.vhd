@@ -34,13 +34,12 @@ architecture flot_don of bin_lin_2to4 is
 
 begin
 
-  lin_o(0) <= '1' when bin_i .....   else
+  lin_o(0) <= '1' ;
+  lin_o(1) <= '1' when bin_i >= "01"  else
               '0';
-  lin_o(1) <= '1' when .....   else
+  lin_o(2) <= '1' when bin_i >= "10"  else
               '0';
-  lin_o(2) <= '1' when  ....
-  
-  lin_o(3) <= '1' when  ....
-  
+  lin_o(3) <= '1' when (bin_i >= "11")  else
+              '0';
  
 end flot_don;

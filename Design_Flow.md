@@ -16,8 +16,10 @@ test
 
 corriger src -> compile->compile...(src ET src_tb->comsole_sim.vhd)
 
+
 ## Projet (Quartus)
-max V : 5M570ZF256C5
+max V : 		5M570ZF256C5
+racine projet : /pr
 
 ## A donner
 src et scripts
