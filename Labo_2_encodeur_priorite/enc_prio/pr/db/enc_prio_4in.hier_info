@@ -1,0 +1,18 @@
+|enc_prio_4in
+en_i => en_s.IN1
+en_i => detect_s.IN1
+in0_i => inAll0_s.IN1
+in1_i => num_s.DATAA
+in1_i => inAll0_s.IN1
+in2_i => num_s.OUTPUTSELECT
+in2_i => num_s.DATAA
+in2_i => inAll0_s.IN0
+in3_i => num_s.OUTPUTSELECT
+in3_i => num_s.OUTPUTSELECT
+in3_i => inAll0_s.IN1
+detect_o <= detect_s.DB_MAX_OUTPUT_PORT_TYPE
+en_o <= en_s.DB_MAX_OUTPUT_PORT_TYPE
+num0_o <= num_s.DB_MAX_OUTPUT_PORT_TYPE
+num1_o <= num_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
