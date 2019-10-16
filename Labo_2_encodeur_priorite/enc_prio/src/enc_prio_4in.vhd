@@ -47,7 +47,7 @@ begin
              "10" when in2_i = '1' else
              "01" when in1_i = '1' else
              "00" when in0_i = '1' else
-             "--"; -- cas indifférent selon la donnée
+             "00"; -- Utilisé pour la logique de l'encodeur prio 16
 
   inAll0_s <= '1' when (in3_i = '0' and in2_i = '0' and in1_i = '0' and in0_i = '0') else
               '0';
@@ -59,8 +59,10 @@ begin
           '0';
 
   -- affectation valeurs de sortie
-  num0_o <= num_s(0);
-  num1_o <= num_s(1);
+  num0_o <= num_s(0) when en_i = '1' else
+            '0';
+  num1_o <= num_s(1) when en_i = '1' else
+            '0';
   detect_o <= detect_s;
   en_o     <= en_s;
 
