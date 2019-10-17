@@ -1,0 +1,1089 @@
+# //  Questa Sim-64
+# //  Version 10.5c_2 linux_x86_64 Oct 17 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+do ../run_comp_add4_full_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:57:22 on Oct 17,2019
+# vcom -reportprogress 300 -work work ../src/add4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity add4
+# -- Compiling architecture flot_don of add4
+# End time: 17:57:22 on Oct 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:57:22 on Oct 17,2019
+# vcom -reportprogress 300 -work work ../src_tb/add4_full_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity add4_tb
+# -- Compiling architecture test_bench_full of add4_tb
+# -- Loading entity add4
+# ** Warning: ../src_tb/add4_full_tb.vhd(59): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:57:22 on Oct 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -novopt work.add4_tb 
+# Start time: 17:57:22 on Oct 17,2019
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/comp/work.add4_tb(test_bench_full)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.add4_tb(test_bench_full)
+# Refreshing /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/comp/work.add4(flot_don)
+# Loading work.add4(flot_don)
+# ** Warning: (vsim-8683) Uninitialized out port /add4_tb/uut/ovr_o has no driver.
+# This port will contribute value (U) to the signal network.
+run -all
+# ** Note: Début de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 0, Cin = 0
+#    Time: 50 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 0, Cin = 1
+#    Time: 150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 1, Cin = 0
+#    Time: 250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 1, Cin = 1
+#    Time: 350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 2, Cin = 0
+#    Time: 450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 2, Cin = 1
+#    Time: 550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 3, Cin = 0
+#    Time: 650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 3, Cin = 1
+#    Time: 750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 4, Cin = 0
+#    Time: 850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 4, Cin = 1
+#    Time: 950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 5, Cin = 0
+#    Time: 1050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 5, Cin = 1
+#    Time: 1150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 6, Cin = 0
+#    Time: 1250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 6, Cin = 1
+#    Time: 1350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 7, Cin = 0
+#    Time: 1450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 7, Cin = 1
+#    Time: 1550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 8, Cin = 0
+#    Time: 1650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 8, Cin = 1
+#    Time: 1750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 9, Cin = 0
+#    Time: 1850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 9, Cin = 1
+#    Time: 1950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 10, Cin = 0
+#    Time: 2050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 10, Cin = 1
+#    Time: 2150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 11, Cin = 0
+#    Time: 2250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 11, Cin = 1
+#    Time: 2350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 12, Cin = 0
+#    Time: 2450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 12, Cin = 1
+#    Time: 2550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 13, Cin = 0
+#    Time: 2650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 13, Cin = 1
+#    Time: 2750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 14, Cin = 0
+#    Time: 2850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 14, Cin = 1
+#    Time: 2950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 15, Cin = 0
+#    Time: 3050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 0, ValB = 15, Cin = 1
+#    Time: 3150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 0, Cin = 0
+#    Time: 3250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 0, Cin = 1
+#    Time: 3350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 1, Cin = 0
+#    Time: 3450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 1, Cin = 1
+#    Time: 3550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 2, Cin = 0
+#    Time: 3650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 2, Cin = 1
+#    Time: 3750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 3, Cin = 0
+#    Time: 3850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 3, Cin = 1
+#    Time: 3950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 4, Cin = 0
+#    Time: 4050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 4, Cin = 1
+#    Time: 4150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 5, Cin = 0
+#    Time: 4250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 5, Cin = 1
+#    Time: 4350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 6, Cin = 0
+#    Time: 4450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 6, Cin = 1
+#    Time: 4550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 7, Cin = 0
+#    Time: 4650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 7, Cin = 1
+#    Time: 4750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 8, Cin = 0
+#    Time: 4850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 8, Cin = 1
+#    Time: 4950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 9, Cin = 0
+#    Time: 5050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 9, Cin = 1
+#    Time: 5150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 10, Cin = 0
+#    Time: 5250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 10, Cin = 1
+#    Time: 5350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 11, Cin = 0
+#    Time: 5450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 11, Cin = 1
+#    Time: 5550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 12, Cin = 0
+#    Time: 5650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 12, Cin = 1
+#    Time: 5750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 13, Cin = 0
+#    Time: 5850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 13, Cin = 1
+#    Time: 5950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 14, Cin = 0
+#    Time: 6050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 14, Cin = 1
+#    Time: 6150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 15, Cin = 0
+#    Time: 6250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 1, ValB = 15, Cin = 1
+#    Time: 6350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 0, Cin = 0
+#    Time: 6450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 0, Cin = 1
+#    Time: 6550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 1, Cin = 0
+#    Time: 6650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 1, Cin = 1
+#    Time: 6750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 2, Cin = 0
+#    Time: 6850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 2, Cin = 1
+#    Time: 6950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 3, Cin = 0
+#    Time: 7050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 3, Cin = 1
+#    Time: 7150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 4, Cin = 0
+#    Time: 7250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 4, Cin = 1
+#    Time: 7350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 5, Cin = 0
+#    Time: 7450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 5, Cin = 1
+#    Time: 7550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 6, Cin = 0
+#    Time: 7650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 6, Cin = 1
+#    Time: 7750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 7, Cin = 0
+#    Time: 7850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 7, Cin = 1
+#    Time: 7950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 8, Cin = 0
+#    Time: 8050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 8, Cin = 1
+#    Time: 8150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 9, Cin = 0
+#    Time: 8250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 9, Cin = 1
+#    Time: 8350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 10, Cin = 0
+#    Time: 8450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 10, Cin = 1
+#    Time: 8550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 11, Cin = 0
+#    Time: 8650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 11, Cin = 1
+#    Time: 8750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 12, Cin = 0
+#    Time: 8850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 12, Cin = 1
+#    Time: 8950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 13, Cin = 0
+#    Time: 9050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 13, Cin = 1
+#    Time: 9150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 14, Cin = 0
+#    Time: 9250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 14, Cin = 1
+#    Time: 9350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 15, Cin = 0
+#    Time: 9450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 2, ValB = 15, Cin = 1
+#    Time: 9550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 0, Cin = 0
+#    Time: 9650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 0, Cin = 1
+#    Time: 9750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 1, Cin = 0
+#    Time: 9850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 1, Cin = 1
+#    Time: 9950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 2, Cin = 0
+#    Time: 10050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 2, Cin = 1
+#    Time: 10150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 3, Cin = 0
+#    Time: 10250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 3, Cin = 1
+#    Time: 10350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 4, Cin = 0
+#    Time: 10450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 4, Cin = 1
+#    Time: 10550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 5, Cin = 0
+#    Time: 10650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 5, Cin = 1
+#    Time: 10750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 6, Cin = 0
+#    Time: 10850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 6, Cin = 1
+#    Time: 10950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 7, Cin = 0
+#    Time: 11050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 7, Cin = 1
+#    Time: 11150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 8, Cin = 0
+#    Time: 11250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 8, Cin = 1
+#    Time: 11350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 9, Cin = 0
+#    Time: 11450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 9, Cin = 1
+#    Time: 11550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 10, Cin = 0
+#    Time: 11650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 10, Cin = 1
+#    Time: 11750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 11, Cin = 0
+#    Time: 11850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 11, Cin = 1
+#    Time: 11950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 12, Cin = 0
+#    Time: 12050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 12, Cin = 1
+#    Time: 12150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 13, Cin = 0
+#    Time: 12250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 13, Cin = 1
+#    Time: 12350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 14, Cin = 0
+#    Time: 12450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 14, Cin = 1
+#    Time: 12550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 15, Cin = 0
+#    Time: 12650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 3, ValB = 15, Cin = 1
+#    Time: 12750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 0, Cin = 0
+#    Time: 12850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 0, Cin = 1
+#    Time: 12950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 1, Cin = 0
+#    Time: 13050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 1, Cin = 1
+#    Time: 13150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 2, Cin = 0
+#    Time: 13250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 2, Cin = 1
+#    Time: 13350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 3, Cin = 0
+#    Time: 13450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 3, Cin = 1
+#    Time: 13550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 4, Cin = 0
+#    Time: 13650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 4, Cin = 1
+#    Time: 13750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 5, Cin = 0
+#    Time: 13850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 5, Cin = 1
+#    Time: 13950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 6, Cin = 0
+#    Time: 14050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 6, Cin = 1
+#    Time: 14150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 7, Cin = 0
+#    Time: 14250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 7, Cin = 1
+#    Time: 14350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 8, Cin = 0
+#    Time: 14450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 8, Cin = 1
+#    Time: 14550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 9, Cin = 0
+#    Time: 14650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 9, Cin = 1
+#    Time: 14750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 10, Cin = 0
+#    Time: 14850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 10, Cin = 1
+#    Time: 14950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 11, Cin = 0
+#    Time: 15050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 11, Cin = 1
+#    Time: 15150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 12, Cin = 0
+#    Time: 15250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 12, Cin = 1
+#    Time: 15350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 13, Cin = 0
+#    Time: 15450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 13, Cin = 1
+#    Time: 15550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 14, Cin = 0
+#    Time: 15650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 14, Cin = 1
+#    Time: 15750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 15, Cin = 0
+#    Time: 15850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 4, ValB = 15, Cin = 1
+#    Time: 15950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 0, Cin = 0
+#    Time: 16050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 0, Cin = 1
+#    Time: 16150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 1, Cin = 0
+#    Time: 16250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 1, Cin = 1
+#    Time: 16350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 2, Cin = 0
+#    Time: 16450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 2, Cin = 1
+#    Time: 16550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 3, Cin = 0
+#    Time: 16650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 3, Cin = 1
+#    Time: 16750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 4, Cin = 0
+#    Time: 16850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 4, Cin = 1
+#    Time: 16950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 5, Cin = 0
+#    Time: 17050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 5, Cin = 1
+#    Time: 17150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 6, Cin = 0
+#    Time: 17250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 6, Cin = 1
+#    Time: 17350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 7, Cin = 0
+#    Time: 17450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 7, Cin = 1
+#    Time: 17550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 8, Cin = 0
+#    Time: 17650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 8, Cin = 1
+#    Time: 17750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 9, Cin = 0
+#    Time: 17850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 9, Cin = 1
+#    Time: 17950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 10, Cin = 0
+#    Time: 18050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 10, Cin = 1
+#    Time: 18150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 11, Cin = 0
+#    Time: 18250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 11, Cin = 1
+#    Time: 18350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 12, Cin = 0
+#    Time: 18450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 12, Cin = 1
+#    Time: 18550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 13, Cin = 0
+#    Time: 18650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 13, Cin = 1
+#    Time: 18750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 14, Cin = 0
+#    Time: 18850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 14, Cin = 1
+#    Time: 18950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 15, Cin = 0
+#    Time: 19050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 5, ValB = 15, Cin = 1
+#    Time: 19150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 0, Cin = 0
+#    Time: 19250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 0, Cin = 1
+#    Time: 19350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 1, Cin = 0
+#    Time: 19450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 1, Cin = 1
+#    Time: 19550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 2, Cin = 0
+#    Time: 19650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 2, Cin = 1
+#    Time: 19750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 3, Cin = 0
+#    Time: 19850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 3, Cin = 1
+#    Time: 19950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 4, Cin = 0
+#    Time: 20050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 4, Cin = 1
+#    Time: 20150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 5, Cin = 0
+#    Time: 20250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 5, Cin = 1
+#    Time: 20350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 6, Cin = 0
+#    Time: 20450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 6, Cin = 1
+#    Time: 20550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 7, Cin = 0
+#    Time: 20650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 7, Cin = 1
+#    Time: 20750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 8, Cin = 0
+#    Time: 20850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 8, Cin = 1
+#    Time: 20950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 9, Cin = 0
+#    Time: 21050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 9, Cin = 1
+#    Time: 21150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 10, Cin = 0
+#    Time: 21250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 10, Cin = 1
+#    Time: 21350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 11, Cin = 0
+#    Time: 21450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 11, Cin = 1
+#    Time: 21550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 12, Cin = 0
+#    Time: 21650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 12, Cin = 1
+#    Time: 21750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 13, Cin = 0
+#    Time: 21850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 13, Cin = 1
+#    Time: 21950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 14, Cin = 0
+#    Time: 22050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 14, Cin = 1
+#    Time: 22150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 15, Cin = 0
+#    Time: 22250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 6, ValB = 15, Cin = 1
+#    Time: 22350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 0, Cin = 0
+#    Time: 22450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 0, Cin = 1
+#    Time: 22550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 1, Cin = 0
+#    Time: 22650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 1, Cin = 1
+#    Time: 22750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 2, Cin = 0
+#    Time: 22850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 2, Cin = 1
+#    Time: 22950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 3, Cin = 0
+#    Time: 23050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 3, Cin = 1
+#    Time: 23150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 4, Cin = 0
+#    Time: 23250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 4, Cin = 1
+#    Time: 23350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 5, Cin = 0
+#    Time: 23450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 5, Cin = 1
+#    Time: 23550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 6, Cin = 0
+#    Time: 23650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 6, Cin = 1
+#    Time: 23750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 7, Cin = 0
+#    Time: 23850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 7, Cin = 1
+#    Time: 23950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 8, Cin = 0
+#    Time: 24050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 8, Cin = 1
+#    Time: 24150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 9, Cin = 0
+#    Time: 24250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 9, Cin = 1
+#    Time: 24350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 10, Cin = 0
+#    Time: 24450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 10, Cin = 1
+#    Time: 24550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 11, Cin = 0
+#    Time: 24650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 11, Cin = 1
+#    Time: 24750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 12, Cin = 0
+#    Time: 24850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 12, Cin = 1
+#    Time: 24950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 13, Cin = 0
+#    Time: 25050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 13, Cin = 1
+#    Time: 25150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 14, Cin = 0
+#    Time: 25250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 14, Cin = 1
+#    Time: 25350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 15, Cin = 0
+#    Time: 25450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 7, ValB = 15, Cin = 1
+#    Time: 25550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 0, Cin = 0
+#    Time: 25650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 0, Cin = 1
+#    Time: 25750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 1, Cin = 0
+#    Time: 25850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 1, Cin = 1
+#    Time: 25950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 2, Cin = 0
+#    Time: 26050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 2, Cin = 1
+#    Time: 26150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 3, Cin = 0
+#    Time: 26250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 3, Cin = 1
+#    Time: 26350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 4, Cin = 0
+#    Time: 26450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 4, Cin = 1
+#    Time: 26550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 5, Cin = 0
+#    Time: 26650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 5, Cin = 1
+#    Time: 26750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 6, Cin = 0
+#    Time: 26850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 6, Cin = 1
+#    Time: 26950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 7, Cin = 0
+#    Time: 27050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 7, Cin = 1
+#    Time: 27150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 8, Cin = 0
+#    Time: 27250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 8, Cin = 1
+#    Time: 27350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 9, Cin = 0
+#    Time: 27450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 9, Cin = 1
+#    Time: 27550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 10, Cin = 0
+#    Time: 27650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 10, Cin = 1
+#    Time: 27750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 11, Cin = 0
+#    Time: 27850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 11, Cin = 1
+#    Time: 27950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 12, Cin = 0
+#    Time: 28050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 12, Cin = 1
+#    Time: 28150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 13, Cin = 0
+#    Time: 28250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 13, Cin = 1
+#    Time: 28350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 14, Cin = 0
+#    Time: 28450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 14, Cin = 1
+#    Time: 28550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 15, Cin = 0
+#    Time: 28650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 8, ValB = 15, Cin = 1
+#    Time: 28750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 0, Cin = 0
+#    Time: 28850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 0, Cin = 1
+#    Time: 28950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 1, Cin = 0
+#    Time: 29050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 1, Cin = 1
+#    Time: 29150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 2, Cin = 0
+#    Time: 29250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 2, Cin = 1
+#    Time: 29350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 3, Cin = 0
+#    Time: 29450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 3, Cin = 1
+#    Time: 29550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 4, Cin = 0
+#    Time: 29650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 4, Cin = 1
+#    Time: 29750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 5, Cin = 0
+#    Time: 29850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 5, Cin = 1
+#    Time: 29950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 6, Cin = 0
+#    Time: 30050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 6, Cin = 1
+#    Time: 30150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 7, Cin = 0
+#    Time: 30250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 7, Cin = 1
+#    Time: 30350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 8, Cin = 0
+#    Time: 30450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 8, Cin = 1
+#    Time: 30550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 9, Cin = 0
+#    Time: 30650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 9, Cin = 1
+#    Time: 30750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 10, Cin = 0
+#    Time: 30850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 10, Cin = 1
+#    Time: 30950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 11, Cin = 0
+#    Time: 31050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 11, Cin = 1
+#    Time: 31150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 12, Cin = 0
+#    Time: 31250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 12, Cin = 1
+#    Time: 31350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 13, Cin = 0
+#    Time: 31450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 13, Cin = 1
+#    Time: 31550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 14, Cin = 0
+#    Time: 31650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 14, Cin = 1
+#    Time: 31750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 15, Cin = 0
+#    Time: 31850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 9, ValB = 15, Cin = 1
+#    Time: 31950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 0, Cin = 0
+#    Time: 32050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 0, Cin = 1
+#    Time: 32150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 1, Cin = 0
+#    Time: 32250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 1, Cin = 1
+#    Time: 32350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 2, Cin = 0
+#    Time: 32450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 2, Cin = 1
+#    Time: 32550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 3, Cin = 0
+#    Time: 32650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 3, Cin = 1
+#    Time: 32750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 4, Cin = 0
+#    Time: 32850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 4, Cin = 1
+#    Time: 32950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 5, Cin = 0
+#    Time: 33050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 5, Cin = 1
+#    Time: 33150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 6, Cin = 0
+#    Time: 33250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 6, Cin = 1
+#    Time: 33350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 7, Cin = 0
+#    Time: 33450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 7, Cin = 1
+#    Time: 33550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 8, Cin = 0
+#    Time: 33650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 8, Cin = 1
+#    Time: 33750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 9, Cin = 0
+#    Time: 33850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 9, Cin = 1
+#    Time: 33950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 10, Cin = 0
+#    Time: 34050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 10, Cin = 1
+#    Time: 34150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 11, Cin = 0
+#    Time: 34250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 11, Cin = 1
+#    Time: 34350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 12, Cin = 0
+#    Time: 34450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 12, Cin = 1
+#    Time: 34550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 13, Cin = 0
+#    Time: 34650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 13, Cin = 1
+#    Time: 34750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 14, Cin = 0
+#    Time: 34850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 14, Cin = 1
+#    Time: 34950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 15, Cin = 0
+#    Time: 35050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 10, ValB = 15, Cin = 1
+#    Time: 35150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 0, Cin = 0
+#    Time: 35250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 0, Cin = 1
+#    Time: 35350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 1, Cin = 0
+#    Time: 35450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 1, Cin = 1
+#    Time: 35550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 2, Cin = 0
+#    Time: 35650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 2, Cin = 1
+#    Time: 35750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 3, Cin = 0
+#    Time: 35850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 3, Cin = 1
+#    Time: 35950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 4, Cin = 0
+#    Time: 36050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 4, Cin = 1
+#    Time: 36150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 5, Cin = 0
+#    Time: 36250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 5, Cin = 1
+#    Time: 36350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 6, Cin = 0
+#    Time: 36450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 6, Cin = 1
+#    Time: 36550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 7, Cin = 0
+#    Time: 36650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 7, Cin = 1
+#    Time: 36750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 8, Cin = 0
+#    Time: 36850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 8, Cin = 1
+#    Time: 36950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 9, Cin = 0
+#    Time: 37050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 9, Cin = 1
+#    Time: 37150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 10, Cin = 0
+#    Time: 37250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 10, Cin = 1
+#    Time: 37350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 11, Cin = 0
+#    Time: 37450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 11, Cin = 1
+#    Time: 37550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 12, Cin = 0
+#    Time: 37650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 12, Cin = 1
+#    Time: 37750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 13, Cin = 0
+#    Time: 37850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 13, Cin = 1
+#    Time: 37950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 14, Cin = 0
+#    Time: 38050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 14, Cin = 1
+#    Time: 38150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 15, Cin = 0
+#    Time: 38250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 11, ValB = 15, Cin = 1
+#    Time: 38350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 0, Cin = 0
+#    Time: 38450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 0, Cin = 1
+#    Time: 38550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 1, Cin = 0
+#    Time: 38650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 1, Cin = 1
+#    Time: 38750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 2, Cin = 0
+#    Time: 38850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 2, Cin = 1
+#    Time: 38950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 3, Cin = 0
+#    Time: 39050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 3, Cin = 1
+#    Time: 39150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 4, Cin = 0
+#    Time: 39250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 4, Cin = 1
+#    Time: 39350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 5, Cin = 0
+#    Time: 39450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 5, Cin = 1
+#    Time: 39550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 6, Cin = 0
+#    Time: 39650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 6, Cin = 1
+#    Time: 39750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 7, Cin = 0
+#    Time: 39850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 7, Cin = 1
+#    Time: 39950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 8, Cin = 0
+#    Time: 40050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 8, Cin = 1
+#    Time: 40150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 9, Cin = 0
+#    Time: 40250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 9, Cin = 1
+#    Time: 40350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 10, Cin = 0
+#    Time: 40450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 10, Cin = 1
+#    Time: 40550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 11, Cin = 0
+#    Time: 40650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 11, Cin = 1
+#    Time: 40750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 12, Cin = 0
+#    Time: 40850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 12, Cin = 1
+#    Time: 40950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 13, Cin = 0
+#    Time: 41050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 13, Cin = 1
+#    Time: 41150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 14, Cin = 0
+#    Time: 41250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 14, Cin = 1
+#    Time: 41350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 15, Cin = 0
+#    Time: 41450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 12, ValB = 15, Cin = 1
+#    Time: 41550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 0, Cin = 0
+#    Time: 41650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 0, Cin = 1
+#    Time: 41750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 1, Cin = 0
+#    Time: 41850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 1, Cin = 1
+#    Time: 41950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 2, Cin = 0
+#    Time: 42050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 2, Cin = 1
+#    Time: 42150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 3, Cin = 0
+#    Time: 42250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 3, Cin = 1
+#    Time: 42350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 4, Cin = 0
+#    Time: 42450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 4, Cin = 1
+#    Time: 42550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 5, Cin = 0
+#    Time: 42650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 5, Cin = 1
+#    Time: 42750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 6, Cin = 0
+#    Time: 42850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 6, Cin = 1
+#    Time: 42950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 7, Cin = 0
+#    Time: 43050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 7, Cin = 1
+#    Time: 43150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 8, Cin = 0
+#    Time: 43250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 8, Cin = 1
+#    Time: 43350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 9, Cin = 0
+#    Time: 43450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 9, Cin = 1
+#    Time: 43550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 10, Cin = 0
+#    Time: 43650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 10, Cin = 1
+#    Time: 43750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 11, Cin = 0
+#    Time: 43850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 11, Cin = 1
+#    Time: 43950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 12, Cin = 0
+#    Time: 44050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 12, Cin = 1
+#    Time: 44150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 13, Cin = 0
+#    Time: 44250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 13, Cin = 1
+#    Time: 44350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 14, Cin = 0
+#    Time: 44450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 14, Cin = 1
+#    Time: 44550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 15, Cin = 0
+#    Time: 44650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 13, ValB = 15, Cin = 1
+#    Time: 44750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 0, Cin = 0
+#    Time: 44850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 0, Cin = 1
+#    Time: 44950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 1, Cin = 0
+#    Time: 45050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 1, Cin = 1
+#    Time: 45150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 2, Cin = 0
+#    Time: 45250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 2, Cin = 1
+#    Time: 45350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 3, Cin = 0
+#    Time: 45450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 3, Cin = 1
+#    Time: 45550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 4, Cin = 0
+#    Time: 45650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 4, Cin = 1
+#    Time: 45750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 5, Cin = 0
+#    Time: 45850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 5, Cin = 1
+#    Time: 45950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 6, Cin = 0
+#    Time: 46050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 6, Cin = 1
+#    Time: 46150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 7, Cin = 0
+#    Time: 46250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 7, Cin = 1
+#    Time: 46350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 8, Cin = 0
+#    Time: 46450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 8, Cin = 1
+#    Time: 46550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 9, Cin = 0
+#    Time: 46650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 9, Cin = 1
+#    Time: 46750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 10, Cin = 0
+#    Time: 46850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 10, Cin = 1
+#    Time: 46950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 11, Cin = 0
+#    Time: 47050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 11, Cin = 1
+#    Time: 47150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 12, Cin = 0
+#    Time: 47250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 12, Cin = 1
+#    Time: 47350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 13, Cin = 0
+#    Time: 47450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 13, Cin = 1
+#    Time: 47550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 14, Cin = 0
+#    Time: 47650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 14, Cin = 1
+#    Time: 47750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 15, Cin = 0
+#    Time: 47850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 14, ValB = 15, Cin = 1
+#    Time: 47950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 0, Cin = 0
+#    Time: 48050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 0, Cin = 1
+#    Time: 48150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 1, Cin = 0
+#    Time: 48250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 1, Cin = 1
+#    Time: 48350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 2, Cin = 0
+#    Time: 48450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 2, Cin = 1
+#    Time: 48550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 3, Cin = 0
+#    Time: 48650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 3, Cin = 1
+#    Time: 48750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 4, Cin = 0
+#    Time: 48850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 4, Cin = 1
+#    Time: 48950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 5, Cin = 0
+#    Time: 49050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 5, Cin = 1
+#    Time: 49150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 6, Cin = 0
+#    Time: 49250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 6, Cin = 1
+#    Time: 49350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 7, Cin = 0
+#    Time: 49450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 7, Cin = 1
+#    Time: 49550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 8, Cin = 0
+#    Time: 49650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 8, Cin = 1
+#    Time: 49750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 9, Cin = 0
+#    Time: 49850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 9, Cin = 1
+#    Time: 49950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 10, Cin = 0
+#    Time: 50050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 10, Cin = 1
+#    Time: 50150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 11, Cin = 0
+#    Time: 50250 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 11, Cin = 1
+#    Time: 50350 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 12, Cin = 0
+#    Time: 50450 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 12, Cin = 1
+#    Time: 50550 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 13, Cin = 0
+#    Time: 50650 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 13, Cin = 1
+#    Time: 50750 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 14, Cin = 0
+#    Time: 50850 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 14, Cin = 1
+#    Time: 50950 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 15, Cin = 0
+#    Time: 51050 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: lors verification de Ovr, ValA = 15, ValB = 15, Cin = 1
+#    Time: 51150 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: Nombre d'erreurs détectées = 512
+#    Time: 51200 ns  Iteration: 0  Instance: /add4_tb
+# ** Note: Fin de la simulation
+#    Time: 51200 ns  Iteration: 0  Instance: /add4_tb
+# End time: 18:01:16 on Oct 17,2019, Elapsed time: 0:03:54
+# Errors: 0, Warnings: 2

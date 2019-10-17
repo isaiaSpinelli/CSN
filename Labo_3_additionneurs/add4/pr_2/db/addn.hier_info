@@ -1,0 +1,36 @@
+|addn
+nbr_a_i[0] => Add0.IN12
+nbr_a_i[1] => Add0.IN11
+nbr_a_i[2] => Add0.IN10
+nbr_a_i[3] => Add0.IN9
+nbr_a_i[4] => Add0.IN8
+nbr_a_i[5] => Add0.IN7
+nbr_a_i[6] => Add0.IN6
+nbr_a_i[7] => Add0.IN5
+nbr_a_i[8] => Add0.IN4
+nbr_a_i[9] => Add0.IN3
+nbr_b_i[0] => Add0.IN22
+nbr_b_i[1] => Add0.IN21
+nbr_b_i[2] => Add0.IN20
+nbr_b_i[3] => Add0.IN19
+nbr_b_i[4] => Add0.IN18
+nbr_b_i[5] => Add0.IN17
+nbr_b_i[6] => Add0.IN16
+nbr_b_i[7] => Add0.IN15
+nbr_b_i[8] => Add0.IN14
+nbr_b_i[9] => Add0.IN13
+cin_i => Add1.IN22
+somme_o[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+somme_o[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+somme_o[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+somme_o[3] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+somme_o[4] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+somme_o[5] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+somme_o[6] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+somme_o[7] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+somme_o[8] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+somme_o[9] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout_o <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+ovr_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

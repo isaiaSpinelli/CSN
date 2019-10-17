@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "somme_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "somme_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "somme_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "somme_o[3]",
+					"strict" : false
+				},
+				{
+					"name" : "somme_o[4]",
+					"strict" : false
+				},
+				{
+					"name" : "somme_o[5]",
+					"strict" : false
+				},
+				{
+					"name" : "somme_o[6]",
+					"strict" : false
+				},
+				{
+					"name" : "somme_o[7]",
+					"strict" : false
+				},
+				{
+					"name" : "somme_o[8]",
+					"strict" : false
+				},
+				{
+					"name" : "somme_o[9]",
+					"strict" : false
+				},
+				{
+					"name" : "cout_o",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_b_i[0]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_a_i[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cin_i",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_b_i[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_a_i[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_b_i[2]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_a_i[2]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_b_i[3]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_a_i[3]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_b_i[4]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_a_i[4]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_b_i[5]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_a_i[5]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_b_i[6]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_a_i[6]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_b_i[7]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_a_i[7]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_b_i[8]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_a_i[8]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_b_i[9]",
+					"strict" : false
+				},
+				{
+					"name" : "nbr_a_i[9]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
