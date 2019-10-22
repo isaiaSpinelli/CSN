@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "detect_o",
+					"strict" : false
+				},
+				{
+					"name" : "en_o",
+					"strict" : false
+				},
+				{
+					"name" : "num0_o",
+					"strict" : false
+				},
+				{
+					"name" : "num1_o",
+					"strict" : false
+				},
+				{
+					"name" : "in2_i",
+					"strict" : false
+				},
+				{
+					"name" : "in3_i",
+					"strict" : false
+				},
+				{
+					"name" : "in0_i",
+					"strict" : false
+				},
+				{
+					"name" : "in1_i",
+					"strict" : false
+				},
+				{
+					"name" : "en_i",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
