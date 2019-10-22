@@ -1,5 +1,5 @@
 Analysis & Synthesis report for add4_full
-Thu Oct 17 17:56:21 2019
+Tue Oct 22 10:02:37 2019
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 
 
@@ -14,9 +14,13 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: addn:ADD3
+ 10. Parameter Settings for User Entity Instance: addn:ADD1
+ 11. Port Connectivity Checks: "addn:ADD1"
+ 12. Port Connectivity Checks: "addn:ADD3"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -43,13 +47,13 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 17 17:56:21 2019           ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 22 10:02:37 2019           ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; add4_full                                       ;
 ; Top-level Entity Name              ; add4                                            ;
 ; Family                             ; MAX 10                                          ;
-; Total logic elements               ; 7                                               ;
-;     Total combinational functions  ; 7                                               ;
+; Total logic elements               ; 8                                               ;
+;     Total combinational functions  ; 8                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 15                                              ;
@@ -169,40 +173,41 @@ agreement for further details.
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                              ; Library ;
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
+; ../src/addn.vhd                  ; yes             ; User VHDL File  ; /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/src/addn.vhd      ;         ;
 ; ../src/add4_full.vhd             ; yes             ; User VHDL File  ; /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/src/add4_full.vhd ;         ;
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 7      ;
-;                                             ;        ;
-; Total combinational functions               ; 7      ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 0      ;
-;     -- 3 input functions                    ; 4      ;
-;     -- <=2 input functions                  ; 3      ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 2      ;
-;     -- arithmetic mode                      ; 5      ;
-;                                             ;        ;
-; Total registers                             ; 0      ;
-;     -- Dedicated logic registers            ; 0      ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 15     ;
-;                                             ;        ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-;                                             ;        ;
-; Maximum fan-out node                        ; Add0~2 ;
-; Maximum fan-out                             ; 2      ;
-; Total fan-out                               ; 37     ;
-; Average fan-out                             ; 1.00   ;
-+---------------------------------------------+--------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 8                ;
+;                                             ;                  ;
+; Total combinational functions               ; 8                ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 0                ;
+;     -- 3 input functions                    ; 6                ;
+;     -- <=2 input functions                  ; 2                ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 4                ;
+;     -- arithmetic mode                      ; 4                ;
+;                                             ;                  ;
+; Total registers                             ; 0                ;
+;     -- Dedicated logic registers            ; 0                ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 15               ;
+;                                             ;                  ;
+; Embedded Multiplier 9-bit elements          ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; addn:ADD3|Add0~8 ;
+; Maximum fan-out                             ; 3                ;
+; Total fan-out                               ; 41               ;
+; Average fan-out                             ; 1.08             ;
++---------------------------------------------+------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -210,7 +215,9 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |add4                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 15   ; 0            ; 0          ; |add4               ; add4        ; work         ;
+; |add4                      ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 15   ; 0            ; 0          ; |add4               ; add4        ; work         ;
+;    |addn:ADD1|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |add4|addn:ADD1     ; addn        ; work         ;
+;    |addn:ADD3|             ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |add4|addn:ADD3     ; addn        ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -230,22 +237,60 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: addn:ADD3 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; n_bits         ; 3     ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: addn:ADD1 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; n_bits         ; 1     ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "addn:ADD1"                                                                           ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; ovr_o ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "addn:ADD3"                                                                           ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; ovr_o ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 15                          ;
-; cycloneiii_lcell_comb ; 7                           ;
-;     arith             ; 5                           ;
+; cycloneiii_lcell_comb ; 8                           ;
+;     arith             ; 4                           ;
 ;         2 data inputs ; 1                           ;
-;         3 data inputs ; 4                           ;
-;     normal            ; 2                           ;
+;         3 data inputs ; 3                           ;
+;     normal            ; 4                           ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
+;         3 data inputs ; 3                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.50                        ;
-; Average LUT depth     ; 2.15                        ;
+; Max LUT depth         ; 2.40                        ;
+; Average LUT depth     ; 2.02                        ;
 +-----------------------+-----------------------------+
 
 
@@ -264,25 +309,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
-    Info: Processing started: Thu Oct 17 17:56:12 2019
+    Info: Processing started: Tue Oct 22 10:02:29 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off add4_full -c add4_full
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/src/addn.vhd
+    Info (12022): Found design unit 1: addn-flot_don File: /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/src/addn.vhd Line: 35
+    Info (12023): Found entity 1: addn File: /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/src/addn.vhd Line: 25
 Info (12021): Found 2 design units, including 1 entities, in source file /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/src/add4_full.vhd
     Info (12022): Found design unit 1: add4-flot_don File: /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/src/add4_full.vhd Line: 34
     Info (12023): Found entity 1: add4 File: /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/src/add4_full.vhd Line: 25
 Info (12127): Elaborating entity "add4" for the top level hierarchy
+Info (12129): Elaborating entity "addn" using architecture "A:flot_don" for hierarchy "addn:ADD3" File: /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/src/add4_full.vhd Line: 57
+Warning (10541): VHDL Signal Declaration warning at addn.vhd(32): used implicit default value for signal "ovr_o" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/src/addn.vhd Line: 32
+Info (12129): Elaborating entity "addn" using architecture "A:flot_don" for hierarchy "addn:ADD1" File: /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/src/add4_full.vhd Line: 67
+Warning (10541): VHDL Signal Declaration warning at addn.vhd(32): used implicit default value for signal "ovr_o" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /cours_REDS/CSN/SpinelliIsaia/Labo_3_additionneurs/add4/src/addn.vhd Line: 32
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 7 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 984 megabytes
-    Info: Processing ended: Thu Oct 17 17:56:21 2019
-    Info: Elapsed time: 00:00:09
+    Info (21061): Implemented 8 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 991 megabytes
+    Info: Processing ended: Tue Oct 22 10:02:37 2019
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:23
 
 

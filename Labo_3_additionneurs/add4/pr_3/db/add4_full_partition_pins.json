@@ -56,11 +56,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "nbr_b_i[3]",
+					"name" : "nbr_a_i[3]",
 					"strict" : false
 				},
 				{
-					"name" : "nbr_a_i[3]",
+					"name" : "nbr_b_i[3]",
 					"strict" : false
 				}
 			]

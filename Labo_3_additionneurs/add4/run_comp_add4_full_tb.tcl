@@ -16,6 +16,7 @@
 # Ver  Aut.  Date        Description
 # 1.1  EMI   11.02.2016  adaptation pour mes fichiers
 # 1.2  EMI   06.03.2017  version pour add4 full (carry + overflow)
+# 1.3  ISS   22.10.2018  Modification pour addn_full
 #                      
 ############################################################################
 
@@ -26,7 +27,8 @@ vmap work work
 
 # add4 with C and Ovr files compilation
 #vcom -reportprogress 300 -work work   ../src/ autre fichier ....
-vcom -reportprogress 300 -work work   ../src/add4.vhd
+vcom -reportprogress 300 -work work   ../src/addn.vhd
+vcom -reportprogress 300 -work work   ../src/add4_full.vhd
 
 # test-bench compilation
 vcom -reportprogress 300 -work work   ../src_tb/add4_full_tb.vhd

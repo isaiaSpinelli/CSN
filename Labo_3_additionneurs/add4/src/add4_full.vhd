@@ -15,7 +15,7 @@
 --| Modifications |-----------------------------------------------------------
 -- Ver   Auteur Date         Description
 -- 2.0    EMI   03-03-2016   Version additionneur avec c_in, c_out et ovr_out
--- 2-1 	  ISS   17.10.2019   Modification Ex3 Labo 3
+-- 2-1 	  ISS   17.10.2019   Modification Ex3 Labo 3 (add full 4 bits)
 ------------------------------------------------------------------------------
 
 library ieee;
@@ -33,35 +33,51 @@ end add4;
 
 architecture flot_don of add4 is
 
-  -- signaux internes
-	signal nbr_a_s, nbr_b_s : unsigned(4 downto 0);
-	signal cin_s			: unsigned(4 downto 0);
-	signal somme_s			: unsigned(4 downto 0);
-	signal cout_s			: std_logic;
+	--component declaration
+	component addn
+	generic (N_BITS : Positive range 1 to 31 := 10);
+	port (nbr_a_i   : in  std_logic_Vector(N_BITS-1 downto 0);
+		nbr_b_i   : in  std_logic_Vector(N_BITS-1 downto 0);
+		cin_i      : in  std_logic;
+		somme_o    : out std_logic_Vector(N_BITS-1 downto 0);
+		cout_o     : out std_Logic;
+		ovr_o      : out std_logic  );
+	end component;
+
+	for all : addn use entity work.addn(flot_don);
   
-  
-  --component declaration
+	-- signaux internes
+	signal sommeLSB      	: std_logic_Vector(0 downto 0);
+	signal sommeMSB      	: std_logic_Vector(2 downto 0);
+	signal cn_1_s,cn_s 		: std_logic;
 
 begin
 
--- Etape 1: operation d'addition de base a decrire en VHDL
+	-- port mapping des components
+	ADD3 : addn
+	generic map (N_BITS => 3)
+	port map (
+		nbr_a_i  => nbr_a_i(2 downto 0),
+		nbr_b_i  => nbr_b_i(2 downto 0),
+		cin_i    => cin_i,
+		somme_o  => sommeMSB,
+		cout_o   => cn_1_s
+	);
+
+	ADD1 : addn
+	generic map (N_BITS => 1)
+	port map (
+		nbr_a_i(0)  => nbr_a_i(3),
+		nbr_b_i(0)  => nbr_b_i(3),
+		cin_i    => cn_1_s,
+		somme_o  => sommeLSB,
+		cout_o   => cn_s
+	);
 	
-	cin_s <= "0000" & cin_i;
-	
-	-- converssion en unsigned
-	nbr_a_s <= '0' & unsigned(nbr_a_i);
-	nbr_b_s <= '0' & unsigned(nbr_b_i);
-	
-	-- addition avec des unsigned
-	somme_s <= (nbr_a_s + nbr_b_s + cin_s);
-	
-	-- the carry out bit
-	cout_s <= somme_s(4);  
-	cout_o <= somme_s(4);    
-	
-	somme_o <= std_logic_Vector(somme_s(3 downto 0));
-	
-	ovr_o <= cin_i xor cout_s;
+	-- assignement des sorties
+	somme_o <= std_logic_vector( sommeLSB & sommeMSB  );
+	cout_o <= cn_s;
+	ovr_o <= cn_1_s xor cn_s;
 	      
 
 end flot_don;
