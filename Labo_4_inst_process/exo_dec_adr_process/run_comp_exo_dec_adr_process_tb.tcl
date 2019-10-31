@@ -30,7 +30,7 @@ vcom -reportprogress 300 -work work   ../src/exo_dec_adr_process.vhd
 vcom -reportprogress 300 -work work   ../src/exo_dec_adr_process_tb.vhd
 
 #Chargement fichier pour la simulation
-vsim -voptargs="+acc" work.add4_tb 
+vsim -voptargs="+acc" work.exo_dec_adr_process_tb 
 
 #ajout signaux composant simuler dans la fenetre wave
 add wave UUT/*
