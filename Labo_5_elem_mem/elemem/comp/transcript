@@ -1,0 +1,1311 @@
+# //  Questa Sim-64
+# //  Version 10.5c_2 linux_x86_64 Oct 17 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vlib work
+vmap work work
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Copying /opt/EDA/questasim/linux_x86_64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_ar.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:22:08 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_ar.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_ar
+# -- Compiling architecture comport of dff_ar
+# End time: 15:22:08 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:22:14 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_en
+# -- Compiling architecture comport of dff_en
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd(45): (vcom-1136) Unknown identifier "reset_s".
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd(45): Expression is not a signal.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd(53): near ".": syntax error
+# End time: 15:22:14 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_jk.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:22:20 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_jk.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_jk
+# -- Compiling architecture comport of flipflop_jk
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_jk.vhd(51): (vcom-1136) Unknown identifier "reset_s".
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_jk.vhd(51): Expression is not a signal.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_jk.vhd(59): VHDL Compiler exiting
+# End time: 15:22:20 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_rs.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:22:24 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_rs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_rs
+# -- Compiling architecture comport of flipflop_rs
+# End time: 15:22:24 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:22:28 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd(48): near ".": syntax error
+# End time: 15:22:28 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/latch_en.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:22:31 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/latch_en.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity latch_en
+# -- Compiling architecture comport of latch_en
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/latch_en.vhd(37): near ".": (vcom-1576) expecting STRING or IDENTIFIER or ALL or <<.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/latch_en.vhd(45): VHDL Compiler exiting
+# End time: 15:22:31 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:15:47 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 16:15:47 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_flipflop_t_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:16:00 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 16:16:00 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:16:00 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/flipflop_t_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t_tb
+# -- Compiling architecture test_bench of flipflop_t_tb
+# -- Loading entity flipflop_t
+# ** Warning: ../src_tb/flipflop_t_tb.vhd(58): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:16:00 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.flipflop_t_tb 
+# Start time: 16:16:00 on Nov 07,2019
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.flipflop_t_tb(test_bench)#1
+# Loading work.flipflop_t(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 548 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Nombre d'erreur détectée = 1
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:17:15 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd(50): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd(64): VHDL Compiler exiting
+# End time: 16:17:15 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:17:26 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd(50): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd(64): VHDL Compiler exiting
+# End time: 16:17:26 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:17:45 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 16:17:45 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run -all
+do ../run_comp_flipflop_t_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:18:14 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 16:18:14 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:18:14 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/flipflop_t_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t_tb
+# -- Compiling architecture test_bench of flipflop_t_tb
+# -- Loading entity flipflop_t
+# ** Warning: ../src_tb/flipflop_t_tb.vhd(58): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:18:14 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 16:18:14 on Nov 07,2019, Elapsed time: 0:02:14
+# Errors: 5, Warnings: 1
+# vsim -voptargs=""+acc"" work.flipflop_t_tb 
+# Start time: 16:18:14 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.flipflop_t_tb(test_bench)#1
+# Loading work.flipflop_t(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 548 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Nombre d'erreur détectée = 1
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:20:47 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 16:20:47 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_flipflop_t_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:20:53 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 16:20:53 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:20:53 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/flipflop_t_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t_tb
+# -- Compiling architecture test_bench of flipflop_t_tb
+# -- Loading entity flipflop_t
+# ** Warning: ../src_tb/flipflop_t_tb.vhd(58): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:20:53 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 16:20:53 on Nov 07,2019, Elapsed time: 0:02:39
+# Errors: 1, Warnings: 1
+# vsim -voptargs=""+acc"" work.flipflop_t_tb 
+# Start time: 16:20:53 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.flipflop_t_tb(test_bench)#1
+# Loading work.flipflop_t(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 98 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 248 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 348 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 448 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Nombre d'erreur détectée = 4
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:21:11 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 16:21:11 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_flipflop_t_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:21:13 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 16:21:13 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:21:13 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/flipflop_t_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t_tb
+# -- Compiling architecture test_bench of flipflop_t_tb
+# -- Loading entity flipflop_t
+# ** Warning: ../src_tb/flipflop_t_tb.vhd(58): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:21:13 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 16:21:14 on Nov 07,2019, Elapsed time: 0:00:21
+# Errors: 4, Warnings: 1
+# vsim -voptargs=""+acc"" work.flipflop_t_tb 
+# Start time: 16:21:14 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.flipflop_t_tb(test_bench)#1
+# Loading work.flipflop_t(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 548 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Nombre d'erreur détectée = 1
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_ar.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:32:28 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_ar.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_ar
+# -- Compiling architecture comport of dff_ar
+# End time: 16:32:29 on Nov 07,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+do ../run_comp_dff_ar_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:32:39 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/dff_ar.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_ar
+# -- Compiling architecture comport of dff_ar
+# End time: 16:32:39 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:32:39 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/dff_ar_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_ar_tb
+# -- Compiling architecture test_bench of dff_ar_tb
+# -- Loading entity dff_ar
+# ** Warning: ../src_tb/dff_ar_tb.vhd(51): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:32:39 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 16:32:40 on Nov 07,2019, Elapsed time: 0:11:26
+# Errors: 1, Warnings: 1
+# vsim -voptargs=""+acc"" work.dff_ar_tb 
+# Start time: 16:32:40 on Nov 07,2019
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.dff_ar_tb(test_bench)#1
+# Loading work.dff_ar(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Note: >>Nombre d'erreur détectée = 0
+#    Time: 552 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Note: >>Fin de la simulation
+#    Time: 552 ns  Iteration: 0  Instance: /dff_ar_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:38:27 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_en
+# -- Compiling architecture comport of dff_en
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd(54): Cannot read output "Q_o".
+# 	VHDL 2008 allows reading outputs.
+# 	This facility is enabled by compiling with -2008.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd(68): near ".": syntax error
+# End time: 16:38:27 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:38:46 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_en
+# -- Compiling architecture comport of dff_en
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd(65): near ".": syntax error
+# End time: 16:38:46 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:39:20 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_en
+# -- Compiling architecture comport of dff_en
+# End time: 16:39:20 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_dff_en_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:39:29 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/dff_en.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_en
+# -- Compiling architecture comport of dff_en
+# End time: 16:39:29 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:39:29 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/dff_en_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_en_tb
+# -- Compiling architecture test_bench of dff_en_tb
+# -- Loading entity dff_en
+# ** Warning: ../src_tb/dff_en_tb.vhd(57): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:39:29 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 16:39:29 on Nov 07,2019, Elapsed time: 0:06:49
+# Errors: 3, Warnings: 1
+# vsim -voptargs=""+acc"" work.dff_en_tb 
+# Start time: 16:39:29 on Nov 07,2019
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.dff_en_tb(test_bench)#1
+# Loading work.dff_en(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /dff_en_tb
+# ** Note: >>Nombre d'erreur détectée = 0
+#    Time: 652 ns  Iteration: 0  Instance: /dff_en_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /dff_en_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_ar.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:41:44 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_ar.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_ar
+# -- Compiling architecture comport of dff_ar
+# End time: 16:41:44 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_dff_ar_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:41:54 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/dff_ar.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_ar
+# -- Compiling architecture comport of dff_ar
+# End time: 16:41:54 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:41:54 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/dff_ar_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_ar_tb
+# -- Compiling architecture test_bench of dff_ar_tb
+# -- Loading entity dff_ar
+# ** Warning: ../src_tb/dff_ar_tb.vhd(51): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:41:54 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 16:41:55 on Nov 07,2019, Elapsed time: 0:02:26
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.dff_ar_tb 
+# Start time: 16:41:55 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.dff_ar_tb(test_bench)#1
+# Loading work.dff_ar(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Error: Erreur sur Q_L lors verif Sortie, asynch
+#    Time: 98 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Error: Erreur sur Q_L lors verif Sortie, synch
+#    Time: 148 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Error: Erreur sur Q_L lors verif Sortie, asynch
+#    Time: 198 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Error: Erreur sur Q_L lors verif Sortie, asynch
+#    Time: 298 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Error: Erreur sur Q_L lors verif Sortie, asynch
+#    Time: 398 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Error: Erreur sur Q_L lors verif Sortie, asynch
+#    Time: 498 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Error: Erreur sur Q_L lors verif Sortie, synch
+#    Time: 548 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Note: >>Nombre d'erreur détectée = 7
+#    Time: 552 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Note: >>Fin de la simulation
+#    Time: 552 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Error: Erreur sur Q_L lors verif Sortie, asynch
+#    Time: 598 ns  Iteration: 0  Instance: /dff_ar_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_ar.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:42:28 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_ar.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_ar
+# -- Compiling architecture comport of dff_ar
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_ar.vhd(60): Cannot read output "Q_o".
+# 	VHDL 2008 allows reading outputs.
+# 	This facility is enabled by compiling with -2008.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_ar.vhd(63): VHDL Compiler exiting
+# End time: 16:42:28 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_ar.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:43:15 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_ar.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_ar
+# -- Compiling architecture comport of dff_ar
+# End time: 16:43:15 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_dff_ar_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:43:24 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/dff_ar.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_ar
+# -- Compiling architecture comport of dff_ar
+# End time: 16:43:24 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:43:24 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/dff_ar_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_ar_tb
+# -- Compiling architecture test_bench of dff_ar_tb
+# -- Loading entity dff_ar
+# ** Warning: ../src_tb/dff_ar_tb.vhd(51): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:43:24 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 16:43:24 on Nov 07,2019, Elapsed time: 0:01:29
+# Errors: 10, Warnings: 1
+# vsim -voptargs=""+acc"" work.dff_ar_tb 
+# Start time: 16:43:24 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.dff_ar_tb(test_bench)#1
+# Loading work.dff_ar(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Note: >>Nombre d'erreur détectée = 0
+#    Time: 552 ns  Iteration: 0  Instance: /dff_ar_tb
+# ** Note: >>Fin de la simulation
+#    Time: 552 ns  Iteration: 0  Instance: /dff_ar_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:44:06 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_en
+# -- Compiling architecture comport of dff_en
+# End time: 16:44:06 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_dff_en_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:44:14 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/dff_en.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_en
+# -- Compiling architecture comport of dff_en
+# End time: 16:44:14 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:44:14 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/dff_en_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_en_tb
+# -- Compiling architecture test_bench of dff_en_tb
+# -- Loading entity dff_en
+# ** Warning: ../src_tb/dff_en_tb.vhd(57): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:44:14 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 16:44:14 on Nov 07,2019, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.dff_en_tb 
+# Start time: 16:44:14 on Nov 07,2019
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.dff_en_tb(test_bench)#1
+# Loading work.dff_en(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /dff_en_tb
+# ** Note: >>Nombre d'erreur détectée = 0
+#    Time: 652 ns  Iteration: 0  Instance: /dff_en_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /dff_en_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:59:44 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/dff_en.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_en
+# -- Compiling architecture comport of dff_en
+# End time: 16:59:44 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_dff_en_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:59:54 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/dff_en.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_en
+# -- Compiling architecture comport of dff_en
+# End time: 16:59:54 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:59:54 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/dff_en_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dff_en_tb
+# -- Compiling architecture test_bench of dff_en_tb
+# -- Loading entity dff_en
+# ** Warning: ../src_tb/dff_en_tb.vhd(57): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:59:54 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 16:59:54 on Nov 07,2019, Elapsed time: 0:15:40
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.dff_en_tb 
+# Start time: 16:59:54 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.dff_en_tb(test_bench)#1
+# Loading work.dff_en(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /dff_en_tb
+# ** Note: >>Nombre d'erreur détectée = 0
+#    Time: 652 ns  Iteration: 0  Instance: /dff_en_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /dff_en_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:16:19 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd(47): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd(52): (vcom-1581) No feasible entries for prefix operator 'and'.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd(52): ** Error: (vcom-1590) Bad expression in left operand of infix expression '='.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd(52): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd(55): near "if": (vcom-1576) expecting PROCESS.
+# End time: 17:16:19 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:17:19 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:17:19 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_flipflop_t_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:17:28 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:17:28 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:17:28 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/flipflop_t_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t_tb
+# -- Compiling architecture test_bench of flipflop_t_tb
+# -- Loading entity flipflop_t
+# ** Warning: ../src_tb/flipflop_t_tb.vhd(58): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:17:28 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 17:17:28 on Nov 07,2019, Elapsed time: 0:17:34
+# Errors: 5, Warnings: 1
+# vsim -voptargs=""+acc"" work.flipflop_t_tb 
+# Start time: 17:17:28 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.flipflop_t_tb(test_bench)#1
+# Loading work.flipflop_t(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 98 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 148 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 198 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 248 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 398 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 448 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 498 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 548 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 598 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 648 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Nombre d'erreur détectée = 10
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 698 ns  Iteration: 0  Instance: /flipflop_t_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:28:03 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:28:03 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_flipflop_t_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:28:18 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:28:18 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:28:18 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/flipflop_t_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t_tb
+# -- Compiling architecture test_bench of flipflop_t_tb
+# -- Loading entity flipflop_t
+# ** Warning: ../src_tb/flipflop_t_tb.vhd(58): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:28:18 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 17:28:18 on Nov 07,2019, Elapsed time: 0:10:50
+# Errors: 11, Warnings: 1
+# vsim -voptargs=""+acc"" work.flipflop_t_tb 
+# Start time: 17:28:18 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.flipflop_t_tb(test_bench)#1
+# Loading work.flipflop_t(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 298 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 348 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 498 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 548 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Nombre d'erreur détectée = 4
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:31:43 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:31:43 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:35:54 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:35:54 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_flipflop_t_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:36:04 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:36:04 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:36:04 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/flipflop_t_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t_tb
+# -- Compiling architecture test_bench of flipflop_t_tb
+# -- Loading entity flipflop_t
+# ** Warning: ../src_tb/flipflop_t_tb.vhd(58): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:36:04 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 17:36:05 on Nov 07,2019, Elapsed time: 0:07:47
+# Errors: 4, Warnings: 1
+# vsim -voptargs=""+acc"" work.flipflop_t_tb 
+# Start time: 17:36:05 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.flipflop_t_tb(test_bench)#1
+# Loading work.flipflop_t(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 98 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 148 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 198 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 348 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 398 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 498 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 548 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 598 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 648 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Nombre d'erreur détectée = 9
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 698 ns  Iteration: 0  Instance: /flipflop_t_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:41:27 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:41:27 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_flipflop_t_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:41:32 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:41:32 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:41:32 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/flipflop_t_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t_tb
+# -- Compiling architecture test_bench of flipflop_t_tb
+# -- Loading entity flipflop_t
+# ** Warning: ../src_tb/flipflop_t_tb.vhd(58): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:41:32 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 17:41:32 on Nov 07,2019, Elapsed time: 0:05:27
+# Errors: 10, Warnings: 1
+# vsim -voptargs=""+acc"" work.flipflop_t_tb 
+# Start time: 17:41:32 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.flipflop_t_tb(test_bench)#1
+# Loading work.flipflop_t(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 98 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 148 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 198 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 348 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 398 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 548 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 598 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 648 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Nombre d'erreur détectée = 8
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 698 ns  Iteration: 0  Instance: /flipflop_t_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:42:43 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:42:43 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_flipflop_t_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:42:48 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:42:48 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:42:48 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/flipflop_t_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t_tb
+# -- Compiling architecture test_bench of flipflop_t_tb
+# -- Loading entity flipflop_t
+# ** Warning: ../src_tb/flipflop_t_tb.vhd(58): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:42:48 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 17:42:48 on Nov 07,2019, Elapsed time: 0:01:16
+# Errors: 9, Warnings: 1
+# vsim -voptargs=""+acc"" work.flipflop_t_tb 
+# Start time: 17:42:48 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.flipflop_t_tb(test_bench)#1
+# Loading work.flipflop_t(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 198 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 348 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 398 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 548 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Nombre d'erreur détectée = 4
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:44:09 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:44:09 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_flipflop_t_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:44:13 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:44:13 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:44:13 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/flipflop_t_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t_tb
+# -- Compiling architecture test_bench of flipflop_t_tb
+# -- Loading entity flipflop_t
+# ** Warning: ../src_tb/flipflop_t_tb.vhd(58): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:44:14 on Nov 07,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# End time: 17:44:14 on Nov 07,2019, Elapsed time: 0:01:26
+# Errors: 4, Warnings: 1
+# vsim -voptargs=""+acc"" work.flipflop_t_tb 
+# Start time: 17:44:14 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.flipflop_t_tb(test_bench)#1
+# Loading work.flipflop_t(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 198 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 248 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 398 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 448 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Nombre d'erreur détectée = 4
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:46:44 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:46:44 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_flipflop_t_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:46:50 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:46:50 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:46:50 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/flipflop_t_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t_tb
+# -- Compiling architecture test_bench of flipflop_t_tb
+# -- Loading entity flipflop_t
+# ** Warning: ../src_tb/flipflop_t_tb.vhd(58): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:46:50 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 17:46:50 on Nov 07,2019, Elapsed time: 0:02:36
+# Errors: 4, Warnings: 1
+# vsim -voptargs=""+acc"" work.flipflop_t_tb 
+# Start time: 17:46:50 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.flipflop_t_tb(test_bench)#1
+# Loading work.flipflop_t(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 198 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 248 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 298 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 348 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 398 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 448 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, asynch
+#    Time: 498 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Error: Lors verif Sortie, synch
+#    Time: 548 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Nombre d'erreur détectée = 8
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:52:43 on Nov 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:52:43 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_comp_flipflop_t_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:52:47 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_t.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t
+# -- Compiling architecture comport of flipflop_t
+# End time: 17:52:47 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:52:47 on Nov 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/flipflop_t_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_t_tb
+# -- Compiling architecture test_bench of flipflop_t_tb
+# -- Loading entity flipflop_t
+# ** Warning: ../src_tb/flipflop_t_tb.vhd(58): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:52:47 on Nov 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 17:52:47 on Nov 07,2019, Elapsed time: 0:05:57
+# Errors: 8, Warnings: 1
+# vsim -voptargs=""+acc"" work.flipflop_t_tb 
+# Start time: 17:52:47 on Nov 07,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.flipflop_t_tb(test_bench)#1
+# Loading work.flipflop_t(comport)#1
+run -all
+# ** Note: >> Debut de la simulation
+#    Time: 0 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Nombre d'erreur détectée = 0
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# ** Note: >>Fin de la simulation
+#    Time: 652 ns  Iteration: 0  Instance: /flipflop_t_tb
+# End time: 17:55:21 on Nov 07,2019, Elapsed time: 0:02:34
+# Errors: 0, Warnings: 0

@@ -1,0 +1,496 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/comp
+T_opt
+!s110 1573140074
+VYS2;l>:HJeB5^UJG8CUeU2
+04 13 10 work flipflop_t_tb test_bench 1
+=1-000ae431a4f1-5dc4366a-3b223-17eb
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.5c_2;63
+R0
+T_opt1
+Z4 !s110 1573141404
+Vid5NDF:1IEfOGFA31SE7Y1
+04 9 10 work dff_ar_tb test_bench 1
+=1-000ae431a4f1-5dc43b9c-6f955-18aa
+R1
+R2
+n@_opt1
+R3
+R0
+T_opt2
+Z5 !s110 1573142394
+VckYS3S64dMzWU0BnEm<@Q2
+04 9 10 work dff_en_tb test_bench 1
+=1-000ae431a4f1-5dc43f7a-e76b9-1b3f
+R1
+R2
+n@_opt2
+R3
+Edff_ar
+Z6 w1573141389
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z9 8../src/dff_ar.vhd
+Z10 F../src/dff_ar.vhd
+l0
+L24
+V46^76ffRU?<GjU0T]MlAg1
+!s100 ;fja=fVSl@znCWl4`YBPf3
+Z11 OL;C;10.5c_2;63
+32
+R4
+!i10b 1
+Z12 !s108 1573141404.000000
+Z13 !s90 -reportprogress|300|-work|work|../src/dff_ar.vhd|
+Z14 !s107 ../src/dff_ar.vhd|
+!i113 0
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Acomport
+R7
+R8
+Z17 DEx4 work 6 dff_ar 0 22 46^76ffRU?<GjU0T]MlAg1
+l37
+L34
+V^`hNN]@U:PRFPeCH<?WId3
+!s100 LTl1z^6>j3odGhNY1UXH>0
+R11
+32
+R4
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Edff_ar_tb
+Z18 w1554379901
+R7
+R8
+R0
+Z19 8../src_tb/dff_ar_tb.vhd
+Z20 F../src_tb/dff_ar_tb.vhd
+l0
+L27
+V3ie^0QGFC[F]bVZB9fnXJ2
+!s100 KSHmf3Bz>I7;5O@aZjPUh2
+R11
+32
+R4
+!i10b 1
+R12
+Z21 !s90 -reportprogress|300|-work|work|../src_tb/dff_ar_tb.vhd|
+Z22 !s107 ../src_tb/dff_ar_tb.vhd|
+!i113 0
+R15
+R16
+Atest_bench
+R17
+R7
+R8
+DEx4 work 9 dff_ar_tb 0 22 3ie^0QGFC[F]bVZB9fnXJ2
+l79
+L35
+Vg?7I>9YLU3;af[hWN;TM52
+!s100 k5K3L<TQKRRlAP;@TP[gb2
+R11
+32
+R4
+!i10b 1
+R12
+R21
+R22
+!i113 0
+R15
+R16
+Edff_en
+Z23 w1573142284
+R7
+R8
+R0
+Z24 8../src/dff_en.vhd
+Z25 F../src/dff_en.vhd
+l0
+L25
+VKT1l_n@b6HLJa@PHTQDk_1
+!s100 YAgi6`8lOV?:6al26Ab=T1
+R11
+32
+R5
+!i10b 1
+Z26 !s108 1573142394.000000
+Z27 !s90 -reportprogress|300|-work|work|../src/dff_en.vhd|
+Z28 !s107 ../src/dff_en.vhd|
+!i113 0
+R15
+R16
+Acomport
+R7
+R8
+Z29 DEx4 work 6 dff_en 0 22 KT1l_n@b6HLJa@PHTQDk_1
+l39
+L36
+VjOcI>no4fDD=e^<b<47fc2
+!s100 >5eDUh>Rm?Zad39>mgaS22
+R11
+32
+R5
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R15
+R16
+Edff_en_tb
+R18
+R7
+R8
+R0
+Z30 8../src_tb/dff_en_tb.vhd
+Z31 F../src_tb/dff_en_tb.vhd
+l0
+L27
+V^eIaBU_Tb?64Y<e88Z^zS1
+!s100 2BK35?C7mZc3DGleSaReC1
+R11
+32
+R5
+!i10b 1
+R26
+Z32 !s90 -reportprogress|300|-work|work|../src_tb/dff_en_tb.vhd|
+Z33 !s107 ../src_tb/dff_en_tb.vhd|
+!i113 0
+R15
+R16
+Atest_bench
+R29
+R7
+R8
+DEx4 work 9 dff_en_tb 0 22 ^eIaBU_Tb?64Y<e88Z^zS1
+l78
+L35
+VIQi<Z0Od[b>DADELBK;Z60
+!s100 ;6k@KQ_m<WYE@Q4Wha77V1
+R11
+32
+R5
+!i10b 1
+R26
+R32
+R33
+!i113 0
+R15
+R16
+Eflipflop_jk
+R18
+R7
+R8
+R0
+8/cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_jk.vhd
+F/cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_jk.vhd
+l0
+L32
+VlEHz5cBfCZ`Hl2Ll4mZO>3
+!s100 9_POo[^NPGf=A@06CL^_Q1
+R11
+32
+!s110 1573136540
+!i10b 1
+!s108 1573136540.000000
+!s90 -reportprogress|300|-work|work|/cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_jk.vhd|
+!s107 /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_jk.vhd|
+!i113 0
+R15
+R16
+Eflipflop_rs
+R18
+R7
+R8
+R0
+Z34 8/cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_rs.vhd
+Z35 F/cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_rs.vhd
+l0
+L32
+V@DKnk5ZPL[e`;g8F4[XMO1
+!s100 0W?n=CRf?K9Ho[5KA`Kh01
+R11
+32
+Z36 !s110 1573136544
+!i10b 1
+Z37 !s108 1573136544.000000
+Z38 !s90 -reportprogress|300|-work|work|/cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_rs.vhd|
+Z39 !s107 /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_rs.vhd|
+!i113 0
+R15
+R16
+Acomport
+R7
+R8
+DEx4 work 11 flipflop_rs 0 22 @DKnk5ZPL[e`;g8F4[XMO1
+l44
+L42
+VSA]k_DDHlY@DFKN;XJVAd3
+!s100 aQMLaF6;]K9zkV<Wga9E60
+R11
+32
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 0
+R15
+R16
+Eflipflop_t
+Z40 w1573140065
+R7
+R8
+R0
+Z41 8../src/flipflop_t.vhd
+Z42 F../src/flipflop_t.vhd
+l0
+L21
+VFFAOlzNCNcLF878^oYQdC2
+!s100 WM=o2d7`YDhh31fF5kT?I1
+R11
+32
+Z43 !s110 1573140073
+!i10b 1
+Z44 !s108 1573140073.000000
+Z45 !s90 -reportprogress|300|-work|work|../src/flipflop_t.vhd|
+Z46 !s107 ../src/flipflop_t.vhd|
+!i113 0
+R15
+R16
+Acomport
+R7
+R8
+Z47 DEx4 work 10 flipflop_t 0 22 FFAOlzNCNcLF878^oYQdC2
+l34
+L30
+V4]T:J<oUcE`z0`1@WkAMz3
+!s100 4C9Zzjaa4M>ihN=Yb19PE3
+R11
+32
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 0
+R15
+R16
+Eflipflop_t_tb
+R18
+R7
+R8
+R0
+Z48 8../src_tb/flipflop_t_tb.vhd
+Z49 F../src_tb/flipflop_t_tb.vhd
+l0
+L29
+V8R[GBHmAX1B5_V=^X4_jR0
+!s100 j8fz=2C<WnMi]P<^n<]<Y0
+R11
+32
+R43
+!i10b 1
+R44
+Z50 !s90 -reportprogress|300|-work|work|../src_tb/flipflop_t_tb.vhd|
+Z51 !s107 ../src_tb/flipflop_t_tb.vhd|
+!i113 0
+R15
+R16
+Atest_bench
+R47
+R7
+R8
+DEx4 work 13 flipflop_t_tb 0 22 8R[GBHmAX1B5_V=^X4_jR0
+l79
+L37
+Vn^Vg;>3agkSZPRhCRPbb43
+!s100 0BR`PWH_ASIQL0QUOZL`E0
+R11
+32
+R43
+!i10b 1
+R44
+R50
+R51
+!i113 0
+R15
+R16
+Elatch_en
+R18
+R7
+R8
+R0
+8/cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/latch_en.vhd
+F/cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/latch_en.vhd
+l0
+L24
+V[Ka0V8:YbOe_1;ogiGK@80
+!s100 ]hCig:>;M9dolURMEn6]L1
+R11
+32
+!s110 1573136551
+!i10b 1
+!s108 1573136551.000000
+!s90 -reportprogress|300|-work|work|/cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/latch_en.vhd|
+!s107 /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/latch_en.vhd|
+!i113 0
+R15
+R16
+hd|
+!i113 1
+R102
+R15
+Bbody
+DPx4 work 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+R22
+R21
+31
+R90
+!i10b 1
+R4
+R5
+8vhdl_src/vital2000/timing_b_2000.vhd
+Fvhdl_src/vital2000/timing_b_2000.vhd
+l0
+L49
+VKEim8d[eJ5dE^:mEG0P3S0
+!s100 KEim8d[eJ5dE^:mEG0P3S0
+R10
+R101
+!s90 -debug|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/timing_b_2000.vhd|
+!s107 vhdl_src/vital2000/timing_b_2000.vhd|
+!i113 1
+R102
+R15
+m255
+K4
+z2
+!s8c locked
+!s95 MTI
+cModel Technology Builtin Library
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+d/u/qa/buildsites/10.5p/builds/linux/modeltech
+Penv
+32
+b1
+Z0 !s110 1476764254
+!i10b 1
+Z1 OL;C;10.5c_2;63
+Z2 OP;C;10.5c_2;63
+Z3 w1476762175
+Z4 d$MODEL_TECH/..
+Z5 8vhdl_src/std/env.vhd
+Z6 Fvhdl_src/std/env.vhd
+l0
+L1
+Vd?`1ck@NdeD@H3RZG7FgZ2
+!s100 d?`1ck@NdeD@H3RZG7FgZ2
+Z7 OE;C;10.5c_2;63
+Z8 !s108 1476764254.000000
+Z9 !s90 -debug|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/env.vhd|
+Z10 !s107 vhdl_src/std/env.vhd|
+!i113 1
+Z11 o-debug -work std -dirpath {$MODEL_TECH/..}
+Z12 tExplicit 1 CvgOpt 0
+Bbody
+DPx4 work 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+32
+R0
+!i10b 1
+R1
+R2
+l0
+L15
+VGO=IeNa]6JLe2BRN4G<kA2
+!s100 GO=IeNa]6JLe2BRN4G<kA2
+R7
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Pstandard
+33
+R0
+!i10b 1
+R1
+R2
+R3
+R4
+8vhdl_src/std/standard.vhd
+Fvhdl_src/std/standard.vhd
+l0
+L8
+VofRa6alAEoSE^5WcJ^O]C2
+!s100 ofRa6alAEoSE^5WcJ^O]C2
+R7
+!s108 1476764253.000000
+!s90 -debug|-s|-2008|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/standard.vhd|
+!s107 vhdl_src/std/standard.vhd|
+!i113 1
+o-debug -s -2008 -work std -dirpath {$MODEL_TECH/..}
+R12
+Ptextio
+33
+b1
+R0
+!i10b 1
+R1
+R2
+Z13 w1454098643
+R4
+Z14 8vhdl_src/std/textio.vhd
+Z15 Fvhdl_src/std/textio.vhd
+l0
+L1
+VzE1`LPoLg^DX3Oz^4Fj1K3
+!s100 zE1`LPoLg^DX3Oz^4Fj1K3
+R7
+R8
+Z16 !s90 -debug|-2008|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/textio.vhd|
+Z17 !s107 vhdl_src/std/textio.vhd|
+!i113 1
+Z18 o-debug -2008 -work std -dirpath {$MODEL_TECH/..}
+R12
+Bbody
+DPx4 work 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+33
+R0
+!i10b 1
+R1
+R2
+l0
+L186
+VOBFf4Pj<FG4ZXfzD:k]VN1
+!s100 OBFf4Pj<FG4ZXfzD:k]VN1
+R7
+R8
+R16
+R17
+!i113 1
+R18
+R12

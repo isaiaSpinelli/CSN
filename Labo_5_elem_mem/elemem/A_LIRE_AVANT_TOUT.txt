@@ -1,0 +1,72 @@
+------------------------------------------------------------------------------------------
+-- HEIG-VD, Haute Ecole d'Ingenerie et de Gestion du Canton de Vaud
+-- REDS Institute, Reconfigurable Embedded Digital Systems
+------------------------------------------------------------------------------------------
+-- File        : A_LIRE_AVANT_TOUT.txt
+-- Author      : Etienne Messerli
+-- Date        : 17.02.2015
+--
+-- Context     : projet Intro Bin-Lin
+--               Introduction flow VHDL et outils EDA
+--
+------------------------------------------------------------------------------------------
+-- Description :
+--   Quelques explications pour le projet
+------------------------------------------------------------------------------------------
+-- Modifications :
+-- Ver   Date        Engineer     Comments
+-- 1.0  16.09.2015   EMI          Adaptation pour utiliser console_sim.vhd
+--                                simulation ave cla console REDS
+-- 1.1  24.02.2016   EMI          Adaptation noms repertoires
+-- 1.2  20.02.2017   EMI          Adaptation contenu repertoire src_cpld
+-- 1.3  21.03.2017   GAA          Adaptation pour elements memoires 2017
+-- 1.4  03.04.2019   EMI          Supprimer bascule RS asynchrone
+--
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+--| A. Liste des fichiers/dossiers |------------------------------------------------------
+.
+|- A_LIRE_AVANT_TOUT.txt                 Ce fichier: À lire avant l'utilisation du projet
+|                                        elemem_sol. Il décrit l'utilisation des
+|                                        différents fichiers script (*.tcl)
+|
+|
+|  // Fichiers script TCL pour QuestaSim /////////////////////////////////////////////////
+|  ---------------------------------------------------------------------------------------
+|- run_comp_dff_ar_tb.tcl                Script de compilation pour la simulation 
+|                                        de dff_ar.vhd avec un banc de test (-tb)
+|- run_comp_dff_en_tb.tcl                Script de compilation pour la simulation 
+|                                        de dff_en.vhd avec un banc de test (-tb)
+|- run_comp_latch_en_tb.tcl              Script de compilation pour la simulation 
+|                                        de latch_en.vhd avec un banc de test (-tb)
+|- run_comp_tff_ar_tb.tcl                Script de compilation pour la simulation 
+|                                        de tff_ar.vhd avec un banc de test (-tb)
+|
+|  // Description des répertoires du projet //////////////////////////////////////////////
+|  ---------------------------------------------------------------------------------------
+|-- comp                                 Dossier de travail pour la simulation
+|-- src                                  Fichiers sources des descriptions des differents elements memoire
+   |- dff_ar.vhd                         Fichier source de la D Flip-flop
+   |- dff_en.vhd                         Fichier source de la D Flip-flop avec enable
+   |- latch_en.vhd                       Fichier source de la bascule Latch avec enable
+   \- tff_ar.vhd                         Fichier source la la T Flip-flop
+|-- src_tb
+   |- dff_ar_tb.vhd                      Banc de test automatique pour la simulation de la D Flip-flop
+   |- dff_en_tb.vhd                      Banc de test automatique pour la simulation de la D Flip-flop avec enable
+   |- latch_en_tb.vhd                    Banc de test automatique pour la simulation de la bascule Latch avec enable
+   \- tff_ar_tb.vhd                      Banc de test automatique pour la simulation de la T Flip-flop
+
+
+------------------------------------------------------------------------------------------
+--| B. Simulations automatique avec le banc de test |-------------------------------------
+La marche à suivre pour la simulation automatique est
+la suivante:
+  1.  Ouvrir QuestaSim
+  2.  Se placer dans le dossier .../comp (File -> Change Directory)
+  3.  Lancer le script de compilation et de chargement (ex, pour la bascule RS)
+        do ../run_comp_bascule_rs_tb.tcl
+  4. Lancer la simulation: run -all
+
+
