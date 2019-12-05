@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M08DAF484C8G
-set_global_assignment -name TOP_LEVEL_ENTITY flipflop_t
+set_global_assignment -name TOP_LEVEL_ENTITY flipflop_rs
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:51:44  NOVEMBER 07, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Standard Edition"
@@ -52,6 +52,7 @@ set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE ../src/flipflop_rs.vhd
 set_global_assignment -name VHDL_FILE ../src/flipflop_t.vhd
 set_global_assignment -name VHDL_FILE ../src/dff_en.vhd
 set_global_assignment -name VHDL_FILE ../src/dff_ar.vhd

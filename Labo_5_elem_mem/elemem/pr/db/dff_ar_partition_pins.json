@@ -8,7 +8,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "T_i",
+					"name" : "S_i",
+					"strict" : false
+				},
+				{
+					"name" : "R_i",
 					"strict" : false
 				},
 				{
