@@ -1,0 +1,131 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/comp
+Ecompteur_position
+Z1 w1575564412
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8/cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd
+Z6 F/cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd
+l0
+L18
+VAh=Afd=Z`MEm]9`n8][Y53
+!s100 a]9odP7[GHa:Y@5JFDlU=0
+Z7 OL;C;10.5c_2;63
+32
+Z8 !s110 1575564415
+!i10b 1
+Z9 !s108 1575564415.000000
+Z10 !s90 -reportprogress|300|-work|work|/cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd|
+Z11 !s107 /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Astruct
+R2
+R3
+R4
+DEx4 work 17 compteur_position 0 22 Ah=Afd=Z`MEm]9`n8][Y53
+l37
+L28
+Vk7cjk5:zZ7lBC`dA<@a@e0
+!s100 YKTVF<jQG3NcRl:cVRe[S1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Eflipflop_rs
+Z14 w1575563364
+R3
+R4
+R0
+Z15 8/cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/flipflop_rs.vhd
+Z16 F/cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/flipflop_rs.vhd
+l0
+L28
+VZoSYF96hK8De1;60nOPd]2
+!s100 oB`D@^aa=o8F]Bf6QcJUD2
+R7
+32
+Z17 !s110 1575564127
+!i10b 1
+Z18 !s108 1575564127.000000
+Z19 !s90 -reportprogress|300|-work|work|/cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/flipflop_rs.vhd|
+Z20 !s107 /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/flipflop_rs.vhd|
+!i113 0
+R12
+R13
+Acomport
+R3
+R4
+DEx4 work 11 flipflop_rs 0 22 ZoSYF96hK8De1;60nOPd]2
+l42
+L38
+VBD_@_moibLP8E6o;<SR731
+!s100 4C2`=;9g;]<]UVP7LiA??1
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 0
+R12
+R13
+Emss
+Z21 w1575562550
+R2
+R3
+R4
+R0
+Z22 8/cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+Z23 F/cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+l0
+L19
+V8zGE]B9n?Wa37dO;=F_;S2
+!s100 mSAA6Sn<=io_f;PAFETPh2
+R7
+32
+Z24 !s110 1575562560
+!i10b 1
+Z25 !s108 1575562560.000000
+Z26 !s90 -reportprogress|300|-work|work|/cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd|
+Z27 !s107 /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd|
+!i113 0
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 3 mss 0 22 8zGE]B9n?Wa37dO;=F_;S2
+l69
+L30
+VXF;5k63c<@i1eO29E6VjF1
+!s100 G=i0UzX=Y[N5ZGB[42EQ10
+R7
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 0
+R12
+R13

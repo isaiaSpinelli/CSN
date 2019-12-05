@@ -1,0 +1,234 @@
+# //  Questa Sim-64
+# //  Version 10.5c_2 linux_x86_64 Oct 17 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vlib work
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:20:32 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(40): near "E00_": Identifier may not end with an underline.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(40): near "+": (vcom-1576) expecting ':'.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(41): near "E00_": Identifier may not end with an underline.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(41): near "+": (vcom-1576) expecting ':'.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(56): VHDL Compiler exiting
+# End time: 16:20:33 on Dec 05,2019, Elapsed time: 0:00:01
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:21:10 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# End time: 16:21:11 on Dec 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:25:59 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(40): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(42): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(43): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(45): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(46): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(48): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(49): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(51): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(52): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(54): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(55): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(57): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(58): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(60): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(61): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(63): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(64): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(66): (vcom-1272) Length of expected is 4; length of actual is 5.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(81): VHDL Compiler exiting
+# End time: 16:25:59 on Dec 05,2019, Elapsed time: 0:00:00
+# Errors: 19, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:26:37 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# End time: 16:26:37 on Dec 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:46:52 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(122): near "struct": (vcom-1576) expecting CASE.
+# End time: 16:46:52 on Dec 05,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:47:22 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(122): near "struct": (vcom-1576) expecting PROCESS.
+# End time: 16:47:22 on Dec 05,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:47:45 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(79): (vcom-1339) Case statement choices cover only 3 out of 59049 cases.
+# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(123): VHDL Compiler exiting
+# End time: 16:47:45 on Dec 05,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 16:48:37 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# End time: 16:48:37 on Dec 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:05:05 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# End time: 17:05:05 on Dec 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:10:15 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# End time: 17:10:15 on Dec 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:12:46 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# End time: 17:12:46 on Dec 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:16:00 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# End time: 17:16:00 on Dec 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/flipflop_rs.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:42:07 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/flipflop_rs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_rs
+# -- Compiling architecture comport of flipflop_rs
+# End time: 17:42:07 on Dec 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:42:09 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity compteur_position
+# -- Compiling architecture struct of compteur_position
+# End time: 17:42:10 on Dec 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:46:01 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity compteur_position
+# -- Compiling architecture struct of compteur_position
+# End time: 17:46:01 on Dec 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:46:55 on Dec 05,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity compteur_position
+# -- Compiling architecture struct of compteur_position
+# End time: 17:46:55 on Dec 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
