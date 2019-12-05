@@ -24,7 +24,7 @@ vmap work work
 
 # bin-lin file compilation
 #decommenter la ligne de la description souhaitee
-vcom -reportprogress 300 -work work   ../src/bascule_rs.vhd
+vcom -reportprogress 300 -work work   ../src/flipflop_rs.vhd
 
 # test-bench compilation
 vcom -reportprogress 300 -work work   ../src_tb/bascule_rs_tb.vhd

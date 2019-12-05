@@ -1,7 +1,10 @@
-|flipflop_t
+|flipflop_rs
 clk_i => Q_pres.CLK
 reset_i => Q_pres.ACLR
-T_i => Q_pres.ENA
+R_i => Q_fut.IN0
+R_i => Q_fut.IN0
+S_i => Q_fut.IN1
+S_i => Q_fut.IN1
 Q_o <= Q_pres.DB_MAX_OUTPUT_PORT_TYPE
 
 

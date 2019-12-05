@@ -1,5 +1,5 @@
 Fitter report for dff_ar
-Thu Nov  7 17:54:08 2019
+Sat Nov  9 16:38:01 2019
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 
 
@@ -65,10 +65,10 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Nov  7 17:54:08 2019           ;
+; Fitter Status                      ; Successful - Sat Nov  9 16:38:01 2019           ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; dff_ar                                          ;
-; Top-level Entity Name              ; flipflop_t                                      ;
+; Top-level Entity Name              ; flipflop_rs                                     ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M08DAF484C8G                                  ;
 ; Timing Models                      ; Final                                           ;
@@ -76,7 +76,7 @@ agreement for further details.
 ;     Total combinational functions  ; 2 / 8,064 ( < 1 % )                             ;
 ;     Dedicated logic registers      ; 1 / 8,064 ( < 1 % )                             ;
 ; Total registers                    ; 1                                               ;
-; Total pins                         ; 4 / 250 ( 2 % )                                 ;
+; Total pins                         ; 5 / 250 ( 2 % )                                 ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 387,072 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 48 ( 0 % )                                  ;
@@ -151,13 +151,13 @@ agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.6%      ;
-;     Processors 3-4         ;   0.6%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processors 3-4         ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -167,8 +167,8 @@ agreement for further details.
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 29 ) ; 0.00 % ( 0 / 29 )          ; 0.00 % ( 0 / 29 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 29 ) ; 0.00 % ( 0 / 29 )          ; 0.00 % ( 0 / 29 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 31 ) ; 0.00 % ( 0 / 31 )          ; 0.00 % ( 0 / 31 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 31 ) ; 0.00 % ( 0 / 31 )          ; 0.00 % ( 0 / 31 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -191,7 +191,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 13 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 15 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -214,8 +214,8 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 ;                                             ;                     ;
 ; Logic element usage by number of LUT inputs ;                     ;
 ;     -- 4 input functions                    ; 0                   ;
-;     -- 3 input functions                    ; 0                   ;
-;     -- <=2 input functions                  ; 2                   ;
+;     -- 3 input functions                    ; 1                   ;
+;     -- <=2 input functions                  ; 1                   ;
 ;     -- Register only                        ; 0                   ;
 ;                                             ;                     ;
 ; Logic elements by mode                      ;                     ;
@@ -228,8 +228,8 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 ;                                             ;                     ;
 ; Total LABs:  partially or completely used   ; 2 / 504 ( < 1 % )   ;
 ; Virtual pins                                ; 0                   ;
-; I/O pins                                    ; 4 / 250 ( 2 % )     ;
-;     -- Clock pins                           ; 0 / 4 ( 0 % )       ;
+; I/O pins                                    ; 5 / 250 ( 2 % )     ;
+;     -- Clock pins                           ; 1 / 4 ( 25 % )      ;
 ;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )     ;
 ;                                             ;                     ;
 ; M9Ks                                        ; 0 / 42 ( 0 % )      ;
@@ -249,8 +249,8 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 ; Peak interconnect usage (total/H/V)         ; 0.0% / 0.0% / 0.1%  ;
 ; Maximum fan-out                             ; 10                  ;
 ; Highest non-global fan-out                  ; 10                  ;
-; Total fan-out                               ; 20                  ;
-; Average fan-out                             ; 0.69                ;
+; Total fan-out                               ; 22                  ;
+; Average fan-out                             ; 0.71                ;
 +---------------------------------------------+---------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -270,8 +270,8 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 ;                                             ;                    ;                                ;
 ; Logic element usage by number of LUT inputs ;                    ;                                ;
 ;     -- 4 input functions                    ; 0                  ; 0                              ;
-;     -- 3 input functions                    ; 0                  ; 0                              ;
-;     -- <=2 input functions                  ; 2                  ; 0                              ;
+;     -- 3 input functions                    ; 1                  ; 0                              ;
+;     -- <=2 input functions                  ; 1                  ; 0                              ;
 ;     -- Register only                        ; 0                  ; 0                              ;
 ;                                             ;                    ;                                ;
 ; Logic elements by mode                      ;                    ;                                ;
@@ -285,7 +285,7 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 ; Total LABs:  partially or completely used   ; 2 / 504 ( < 1 % )  ; 0 / 504 ( 0 % )                ;
 ;                                             ;                    ;                                ;
 ; Virtual pins                                ; 0                  ; 0                              ;
-; I/O pins                                    ; 4                  ; 0                              ;
+; I/O pins                                    ; 5                  ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 48 ( 0 % )     ; 0 / 48 ( 0 % )                 ;
 ; Total memory bits                           ; 0                  ; 0                              ;
 ; Total RAM block bits                        ; 0                  ; 0                              ;
@@ -299,7 +299,7 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 ;     -- Registered Output Connections        ; 0                  ; 0                              ;
 ;                                             ;                    ;                                ;
 ; Internal Connections                        ;                    ;                                ;
-;     -- Total Connections                    ; 20                 ; 8                              ;
+;     -- Total Connections                    ; 22                 ; 8                              ;
 ;     -- Registered Connections               ; 2                  ; 0                              ;
 ;                                             ;                    ;                                ;
 ; External Connections                        ;                    ;                                ;
@@ -307,7 +307,7 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 ;     -- hard_block:auto_generated_inst       ; 0                  ; 0                              ;
 ;                                             ;                    ;                                ;
 ; Partition Interface                         ;                    ;                                ;
-;     -- Input Ports                          ; 3                  ; 0                              ;
+;     -- Input Ports                          ; 4                  ; 0                              ;
 ;     -- Output Ports                         ; 1                  ; 0                              ;
 ;     -- Bidir Ports                          ; 0                  ; 0                              ;
 ;                                             ;                    ;                                ;
@@ -332,9 +332,10 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; T_i     ; R4    ; 2        ; 0            ; 4            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
-; clk_i   ; T2    ; 2        ; 0            ; 4            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
-; reset_i ; R5    ; 2        ; 0            ; 4            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; R_i     ; R3    ; 2        ; 0            ; 5            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; S_i     ; M9    ; 2        ; 0            ; 6            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; clk_i   ; M8    ; 2        ; 0            ; 6            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; reset_i ; N2    ; 2        ; 0            ; 6            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -343,7 +344,7 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; Q_o  ; T1    ; 2        ; 0            ; 4            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Q_o  ; N3    ; 2        ; 0            ; 6            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -370,7 +371,7 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 +----------+-----------------+---------------+--------------+
 ; 1A       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ;
 ; 1B       ; 4 / 20 ( 20 % ) ; 2.5V          ; --           ;
-; 2        ; 4 / 24 ( 17 % ) ; 2.5V          ; --           ;
+; 2        ; 5 / 24 ( 21 % ) ; 2.5V          ; --           ;
 ; 3        ; 0 / 36 ( 0 % )  ; 2.5V          ; --           ;
 ; 4        ; 0 / 24 ( 0 % )  ; 2.5V          ; --           ;
 ; 5        ; 0 / 28 ( 0 % )  ; 2.5V          ; --           ;
@@ -678,8 +679,8 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 ; M5       ; 26         ; 1B       ; ~ALTERA_TDO~                                   ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M6       ;            ; 1B       ; VCCIO1B                                        ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; M7       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; M8       ; 40         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
-; M9       ; 42         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+; M8       ; 40         ; 2        ; clk_i                                          ; input  ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M9       ; 42         ; 2        ; S_i                                            ; input  ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M10      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; M11      ;            ; --       ; VCC                                            ; power  ;                       ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; M12      ;            ; --       ; VCC                                            ; power  ;                       ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -694,8 +695,8 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 ; M21      ; 144        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M22      ; 147        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N1       ; 55         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
-; N2       ; 43         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
-; N3       ; 41         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+; N2       ; 43         ; 2        ; reset_i                                        ; input  ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N3       ; 41         ; 2        ; Q_o                                            ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; N4       ; 36         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N5       ; 38         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N6       ;            ; 2        ; VCCIO2                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -739,9 +740,9 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 ; P22      ; 135        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; --       ; --           ;
 ; R1       ; 57         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R2       ; 59         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
-; R3       ; 46         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
-; R4       ; 48         ; 2        ; T_i                                            ; input  ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
-; R5       ; 50         ; 2        ; reset_i                                        ; input  ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R3       ; 46         ; 2        ; R_i                                            ; input  ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R4       ; 48         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+; R5       ; 50         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R6       ;            ; 2        ; VCCIO2                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; R7       ;            ;          ; NC                                             ;        ;                       ;         ; --         ;                 ; --       ; --           ;
 ; R8       ;            ; --       ; VCCA1                                          ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -759,8 +760,8 @@ The pin-out file can be found in /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/e
 ; R20      ; 131        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R21      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; R22      ; 133        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
-; T1       ; 49         ; 2        ; Q_o                                            ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
-; T2       ; 51         ; 2        ; clk_i                                          ; input  ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T1       ; 49         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+; T2       ; 51         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T3       ;            ;          ; NC                                             ;        ;                       ;         ; --         ;                 ; --       ; --           ;
 ; T4       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; T5       ; 56         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -879,11 +880,13 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Pin Name ; Reason                        ;
 +----------+-------------------------------+
 ; Q_o      ; Incomplete set of assignments ;
-; T_i      ; Incomplete set of assignments ;
+; S_i      ; Incomplete set of assignments ;
+; R_i      ; Incomplete set of assignments ;
 ; clk_i    ; Incomplete set of assignments ;
 ; reset_i  ; Incomplete set of assignments ;
 ; Q_o      ; Missing location assignment   ;
-; T_i      ; Missing location assignment   ;
+; S_i      ; Missing location assignment   ;
+; R_i      ; Missing location assignment   ;
 ; clk_i    ; Missing location assignment   ;
 ; reset_i  ; Missing location assignment   ;
 +----------+-------------------------------+
@@ -894,7 +897,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------+-------------+--------------+
-; |flipflop_t                ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 4    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |flipflop_t         ; flipflop_t  ; work         ;
+; |flipflop_rs               ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 5    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |flipflop_rs        ; flipflop_rs ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -905,8 +908,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name    ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
 +---------+----------+---------------+---------------+-----------------------+-----+------+
 ; Q_o     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; T_i     ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
-; clk_i   ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
+; S_i     ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
+; R_i     ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
+; clk_i   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; reset_i ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
 +---------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -916,10 +920,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; T_i                 ;                   ;         ;
+; S_i                 ;                   ;         ;
+;      - Q_pres~0     ; 1                 ; 0       ;
+; R_i                 ;                   ;         ;
 ;      - Q_pres~0     ; 0                 ; 6       ;
 ; clk_i               ;                   ;         ;
-;      - Q_pres       ; 1                 ; 0       ;
 ; reset_i             ;                   ;         ;
 ;      - Q_pres       ; 0                 ; 6       ;
 +---------------------+-------------------+---------+
@@ -930,8 +935,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------+----------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name    ; Location ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------+----------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clk_i   ; PIN_T2   ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; reset_i ; PIN_R5   ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; clk_i   ; PIN_M8   ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; reset_i ; PIN_N2   ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
 +---------+----------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -940,10 +945,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+----------------------+
 ; Routing Resource Type ; Usage                ;
 +-----------------------+----------------------+
-; Block interconnects   ; 7 / 27,275 ( < 1 % ) ;
+; Block interconnects   ; 8 / 27,275 ( < 1 % ) ;
 ; C16 interconnects     ; 0 / 1,240 ( 0 % )    ;
-; C4 interconnects      ; 5 / 20,832 ( < 1 % ) ;
-; Direct links          ; 1 / 27,275 ( < 1 % ) ;
+; C4 interconnects      ; 7 / 20,832 ( < 1 % ) ;
+; Direct links          ; 2 / 27,275 ( < 1 % ) ;
 ; Global clocks         ; 0 / 10 ( 0 % )       ;
 ; Local interconnects   ; 0 / 8,064 ( 0 % )    ;
 ; R24 interconnects     ; 0 / 1,320 ( 0 % )    ;
@@ -1009,12 +1014,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 1.50) ; Number of LABs  (Total = 2) ;
+; Number of Distinct Inputs  (Average = 2.00) ; Number of LABs  (Total = 2) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
-; 3                                           ; 1                           ;
+; 3                                           ; 0                           ;
+; 4                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1075,12 +1081,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000002    ; IO_000003    ; IO_000001    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000022    ; IO_000021    ; IO_000046    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000047    ; IO_000020    ; IO_000019    ; IO_000018    ; IO_000015    ; IO_000014    ; IO_000013    ; IO_000012    ; IO_000011    ; IO_000010 ; IO_000009 ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
-; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 4         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 3            ; 1            ; 0            ; 3            ; 0            ; 0            ; 1            ; 0            ; 4         ; 4         ; 4         ; 0            ; 0            ;
+; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 5         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 4            ; 1            ; 0            ; 4            ; 0            ; 0            ; 1            ; 0            ; 5         ; 5         ; 5         ; 0            ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 4            ; 4            ; 4            ; 4            ; 4            ; 0         ; 4            ; 4            ; 4            ; 4            ; 4            ; 4            ; 3            ; 4            ; 4            ; 4            ; 4            ; 1            ; 3            ; 4            ; 1            ; 4            ; 4            ; 3            ; 4            ; 0         ; 0         ; 0         ; 4            ; 4            ;
+; Total Inapplicable ; 5            ; 5            ; 5            ; 5            ; 5            ; 0         ; 5            ; 5            ; 5            ; 5            ; 5            ; 5            ; 4            ; 5            ; 5            ; 5            ; 5            ; 1            ; 4            ; 5            ; 1            ; 5            ; 5            ; 4            ; 5            ; 0         ; 0         ; 0         ; 5            ; 5            ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0         ; 0            ; 0            ;
 ; Q_o                ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; T_i                ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; S_i                ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; R_i                ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk_i              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; reset_i            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
@@ -1153,7 +1160,7 @@ Info (12825): Data[1]/ASDO dual-purpose pin not reserved
 Info (12825): nCSO dual-purpose pin not reserved
 Info (12825): DCLK dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 4 pins of 4 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Critical Warning (169085): No exact pin location assignment(s) for 5 pins of 5 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'dff_ar.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
@@ -1163,7 +1170,7 @@ Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 4 (unused VREF, 2.5V VCCIO, 3 input, 1 output, 0 bidirectional)
+    Info (176211): Number of I/O pins in group: 5 (unused VREF, 2.5V VCCIO, 4 input, 1 output, 0 bidirectional)
         Info (176212): I/O standards used: 2.5 V.
 Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
@@ -1176,7 +1183,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  42 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  24 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  32 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1190,17 +1197,17 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.09 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.03 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/pr/output_files/dff_ar.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 1280 megabytes
-    Info: Processing ended: Thu Nov  7 17:54:08 2019
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 1271 megabytes
+    Info: Processing ended: Sat Nov  9 16:38:01 2019
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:04
 
 

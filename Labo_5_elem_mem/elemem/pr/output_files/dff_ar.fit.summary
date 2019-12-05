@@ -1,7 +1,7 @@
-Fitter Status : Successful - Thu Nov  7 17:54:08 2019
+Fitter Status : Successful - Sat Nov  9 16:38:01 2019
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 Revision Name : dff_ar
-Top-level Entity Name : flipflop_t
+Top-level Entity Name : flipflop_rs
 Family : MAX 10
 Device : 10M08DAF484C8G
 Timing Models : Final
@@ -9,7 +9,7 @@ Total logic elements : 2 / 8,064 ( < 1 % )
     Total combinational functions : 2 / 8,064 ( < 1 % )
     Dedicated logic registers : 1 / 8,064 ( < 1 % )
 Total registers : 1
-Total pins : 4 / 250 ( 2 % )
+Total pins : 5 / 250 ( 2 % )
 Total virtual pins : 0
 Total memory bits : 0 / 387,072 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )

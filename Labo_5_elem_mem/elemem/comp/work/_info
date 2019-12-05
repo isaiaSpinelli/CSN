@@ -17,6 +17,7 @@ Z2 o-quiet -auto_acc_if_foreign -work work +acc
 Z3 tCvgOpt 0
 n@_opt
 Z4 OL;O;10.5c_2;63
+R0
 T_opt1
 Z5 !s110 1573141404
 Vid5NDF:1IEfOGFA31SE7Y1
@@ -217,51 +218,51 @@ R12
 R16
 R17
 Eflipflop_rs
-R19
+Z35 w1573313671
 R8
 R9
 R0
-Z35 8/cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_rs.vhd
-Z36 F/cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_rs.vhd
+Z36 8../src/flipflop_rs.vhd
+Z37 F../src/flipflop_rs.vhd
 l0
 L32
 V@DKnk5ZPL[e`;g8F4[XMO1
 !s100 0W?n=CRf?K9Ho[5KA`Kh01
 R12
 32
-Z37 !s110 1573136544
+Z38 !s110 1573313898
 !i10b 1
-Z38 !s108 1573136544.000000
-Z39 !s90 -reportprogress|300|-work|work|/cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_rs.vhd|
-Z40 !s107 /cours_REDS/CSN/SpinelliIsaia/Labo_5_elem_mem/elemem/src/flipflop_rs.vhd|
+Z39 !s108 1573313898.000000
+Z40 !s90 -reportprogress|300|-work|work|../src/flipflop_rs.vhd|
+Z41 !s107 ../src/flipflop_rs.vhd|
 !i113 0
 R16
 R17
 Acomport
 R8
 R9
-DEx4 work 11 flipflop_rs 0 22 @DKnk5ZPL[e`;g8F4[XMO1
-l44
+Z42 DEx4 work 11 flipflop_rs 0 22 @DKnk5ZPL[e`;g8F4[XMO1
+l46
 L42
-VSA]k_DDHlY@DFKN;XJVAd3
-!s100 aQMLaF6;]K9zkV<Wga9E60
+Z43 V^j093_[eTZORjc^jfOl<A2
+Z44 !s100 `17YmnK7C85]EQ2WSm<VK3
 R12
 32
-R37
-!i10b 1
 R38
+!i10b 1
 R39
 R40
+R41
 !i113 0
 R16
 R17
 Eflipflop_t
-Z41 w1573145558
+Z45 w1573145558
 R8
 R9
 R0
-Z42 8../src/flipflop_t.vhd
-Z43 F../src/flipflop_t.vhd
+Z46 8../src/flipflop_t.vhd
+Z47 F../src/flipflop_t.vhd
 l0
 L21
 VFFAOlzNCNcLF878^oYQdC2
@@ -270,16 +271,16 @@ R12
 32
 R1
 !i10b 1
-Z44 !s108 1573145567.000000
-Z45 !s90 -reportprogress|300|-work|work|../src/flipflop_t.vhd|
-Z46 !s107 ../src/flipflop_t.vhd|
+Z48 !s108 1573145567.000000
+Z49 !s90 -reportprogress|300|-work|work|../src/flipflop_t.vhd|
+Z50 !s107 ../src/flipflop_t.vhd|
 !i113 0
 R16
 R17
 Acomport
 R8
 R9
-Z47 DEx4 work 10 flipflop_t 0 22 FFAOlzNCNcLF878^oYQdC2
+Z51 DEx4 work 10 flipflop_t 0 22 FFAOlzNCNcLF878^oYQdC2
 l35
 L30
 VDUdcYm4khF;8UURoVXTD30
@@ -288,9 +289,9 @@ R12
 32
 R1
 !i10b 1
-R44
-R45
-R46
+R48
+R49
+R50
 !i113 0
 R16
 R17
@@ -299,8 +300,8 @@ R19
 R8
 R9
 R0
-Z48 8../src_tb/flipflop_t_tb.vhd
-Z49 F../src_tb/flipflop_t_tb.vhd
+Z52 8../src_tb/flipflop_t_tb.vhd
+Z53 F../src_tb/flipflop_t_tb.vhd
 l0
 L29
 V8R[GBHmAX1B5_V=^X4_jR0
@@ -309,14 +310,14 @@ R12
 32
 R1
 !i10b 1
-R44
-Z50 !s90 -reportprogress|300|-work|work|../src_tb/flipflop_t_tb.vhd|
-Z51 !s107 ../src_tb/flipflop_t_tb.vhd|
+R48
+Z54 !s90 -reportprogress|300|-work|work|../src_tb/flipflop_t_tb.vhd|
+Z55 !s107 ../src_tb/flipflop_t_tb.vhd|
 !i113 0
 R16
 R17
 Atest_bench
-R47
+R51
 R8
 R9
 DEx4 work 13 flipflop_t_tb 0 22 8R[GBHmAX1B5_V=^X4_jR0
@@ -328,9 +329,9 @@ R12
 32
 R1
 !i10b 1
-R44
-R50
-R51
+R48
+R54
+R55
 !i113 0
 R16
 R17

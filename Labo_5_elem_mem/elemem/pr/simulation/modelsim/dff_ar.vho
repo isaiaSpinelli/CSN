@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition"
 
--- DATE "11/07/2019 17:54:14"
+-- DATE "11/09/2019 16:38:08"
 
 -- 
 -- Device: Altera 10M08DAF484C8G Package FBGA484
@@ -88,23 +88,25 @@ USE ALTERA.ALTERA_PRIMITIVES_COMPONENTS.ALL;
 USE FIFTYFIVENM.FIFTYFIVENM_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY 	flipflop_t IS
+ENTITY 	flipflop_rs IS
     PORT (
 	clk_i : IN std_logic;
 	reset_i : IN std_logic;
-	T_i : IN std_logic;
+	R_i : IN std_logic;
+	S_i : IN std_logic;
 	Q_o : OUT std_logic
 	);
-END flipflop_t;
+END flipflop_rs;
 
 -- Design Ports Information
--- Q_o	=>  Location: PIN_T1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- T_i	=>  Location: PIN_R4,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- clk_i	=>  Location: PIN_T2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- reset_i	=>  Location: PIN_R5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q_o	=>  Location: PIN_N3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- S_i	=>  Location: PIN_M9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- R_i	=>  Location: PIN_R3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- clk_i	=>  Location: PIN_M8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- reset_i	=>  Location: PIN_N2,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
-ARCHITECTURE structure OF flipflop_t IS
+ARCHITECTURE structure OF flipflop_rs IS
 SIGNAL gnd : std_logic := '0';
 SIGNAL vcc : std_logic := '1';
 SIGNAL unknown : std_logic := 'X';
@@ -116,7 +118,8 @@ SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
 SIGNAL ww_clk_i : std_logic;
 SIGNAL ww_reset_i : std_logic;
-SIGNAL ww_T_i : std_logic;
+SIGNAL ww_R_i : std_logic;
+SIGNAL ww_S_i : std_logic;
 SIGNAL ww_Q_o : std_logic;
 SIGNAL \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
@@ -124,7 +127,8 @@ SIGNAL \~QUARTUS_CREATED_UNVM~~busy\ : std_logic;
 SIGNAL \~QUARTUS_CREATED_ADC1~~eoc\ : std_logic;
 SIGNAL \Q_o~output_o\ : std_logic;
 SIGNAL \clk_i~input_o\ : std_logic;
-SIGNAL \T_i~input_o\ : std_logic;
+SIGNAL \R_i~input_o\ : std_logic;
+SIGNAL \S_i~input_o\ : std_logic;
 SIGNAL \Q_pres~0_combout\ : std_logic;
 SIGNAL \reset_i~input_o\ : std_logic;
 SIGNAL \Q_pres~q\ : std_logic;
@@ -141,7 +145,8 @@ BEGIN
 
 ww_clk_i <= clk_i;
 ww_reset_i <= reset_i;
-ww_T_i <= T_i;
+ww_R_i <= R_i;
+ww_S_i <= S_i;
 Q_o <= ww_Q_o;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
@@ -155,7 +160,7 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor);
 
--- Location: LCCOMB_X11_Y15_N20
+-- Location: LCCOMB_X11_Y12_N16
 \~QUARTUS_CREATED_GND~I\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \~QUARTUS_CREATED_GND~I_combout\ = GND
@@ -168,7 +173,7 @@ GENERIC MAP (
 PORT MAP (
 	combout => \~QUARTUS_CREATED_GND~I_combout\);
 
--- Location: IOOBUF_X0_Y4_N2
+-- Location: IOOBUF_X0_Y6_N2
 \Q_o~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -180,7 +185,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \Q_o~output_o\);
 
--- Location: IOIBUF_X0_Y4_N8
+-- Location: IOIBUF_X0_Y6_N15
 \clk_i~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -192,8 +197,8 @@ PORT MAP (
 	i => ww_clk_i,
 	o => \clk_i~input_o\);
 
--- Location: IOIBUF_X0_Y4_N15
-\T_i~input\ : fiftyfivenm_io_ibuf
+-- Location: IOIBUF_X0_Y5_N22
+\R_i~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -201,25 +206,38 @@ GENERIC MAP (
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_T_i,
-	o => \T_i~input_o\);
+	i => ww_R_i,
+	o => \R_i~input_o\);
 
--- Location: LCCOMB_X1_Y4_N0
+-- Location: IOIBUF_X0_Y6_N22
+\S_i~input\ : fiftyfivenm_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	listen_to_nsleep_signal => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_S_i,
+	o => \S_i~input_o\);
+
+-- Location: LCCOMB_X1_Y6_N0
 \Q_pres~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \Q_pres~0_combout\ = \Q_pres~q\ $ (\T_i~input_o\)
+-- \Q_pres~0_combout\ = (!\R_i~input_o\ & ((\Q_pres~q\) # (\S_i~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000111111110000",
+	lut_mask => "0011001100110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
+	datab => \R_i~input_o\,
 	datac => \Q_pres~q\,
-	datad => \T_i~input_o\,
+	datad => \S_i~input_o\,
 	combout => \Q_pres~0_combout\);
 
--- Location: IOIBUF_X0_Y4_N22
+-- Location: IOIBUF_X0_Y6_N8
 \reset_i~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -231,7 +249,7 @@ PORT MAP (
 	i => ww_reset_i,
 	o => \reset_i~input_o\);
 
--- Location: FF_X1_Y4_N1
+-- Location: FF_X1_Y6_N1
 Q_pres : dffeas
 -- pragma translate_off
 GENERIC MAP (
