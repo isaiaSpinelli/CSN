@@ -12,223 +12,1700 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-vlib work
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+vcom -reportprogress 300 -work work /cours_REDS/CSN/IsaiaSpinelli/CSN/Labo_7_acqui_pos/acqu_pos/src/acqu_pos_top.vhd
 # QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 16:20:32 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# Start time: 17:09:06 on Dec 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/IsaiaSpinelli/CSN/Labo_7_acqui_pos/acqu_pos/src/acqu_pos_top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
+# -- Compiling entity acqu_pos_top
+# -- Compiling architecture struct of acqu_pos_top
 # -- Loading package NUMERIC_STD
-# -- Compiling entity mss
-# -- Compiling architecture struct of mss
-# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(40): near "E00_": Identifier may not end with an underline.
-# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(40): near "+": (vcom-1576) expecting ':'.
-# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(41): near "E00_": Identifier may not end with an underline.
-# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(41): near "+": (vcom-1576) expecting ':'.
-# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(56): VHDL Compiler exiting
-# End time: 16:20:33 on Dec 05,2019, Elapsed time: 0:00:01
-# Errors: 5, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
-# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 16:21:10 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mss
-# -- Compiling architecture struct of mss
-# End time: 16:21:11 on Dec 05,2019, Elapsed time: 0:00:01
+# -- Loading entity mss
+# -- Loading entity compteur_position
+# -- Loading entity flipflop_rs
+# End time: 17:09:06 on Dec 07,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+vcom -reportprogress 300 -work work /cours_REDS/CSN/IsaiaSpinelli/CSN/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd
 # QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 16:25:59 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# Start time: 17:09:06 on Dec 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/IsaiaSpinelli/CSN/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity mss
-# -- Compiling architecture struct of mss
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(40): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(42): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(43): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(45): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(46): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(48): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(49): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(51): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(52): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(54): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(55): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(57): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(58): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(60): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(61): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(63): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(64): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error (suppressible): /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(66): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(81): VHDL Compiler exiting
-# End time: 16:25:59 on Dec 05,2019, Elapsed time: 0:00:00
-# Errors: 19, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
-# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 16:26:37 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mss
-# -- Compiling architecture struct of mss
-# End time: 16:26:37 on Dec 05,2019, Elapsed time: 0:00:00
+# -- Compiling entity compteur_position
+# -- Compiling architecture struct of compteur_position
+# End time: 17:09:07 on Dec 07,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
+vcom -reportprogress 300 -work work /cours_REDS/CSN/IsaiaSpinelli/CSN/Labo_7_acqui_pos/acqu_pos/src/flipflop_rs.vhd
 # QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 16:46:52 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mss
-# -- Compiling architecture struct of mss
-# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(122): near "struct": (vcom-1576) expecting CASE.
-# End time: 16:46:52 on Dec 05,2019, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
-# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 16:47:22 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mss
-# -- Compiling architecture struct of mss
-# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(122): near "struct": (vcom-1576) expecting PROCESS.
-# End time: 16:47:22 on Dec 05,2019, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
-# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 16:47:45 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mss
-# -- Compiling architecture struct of mss
-# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(79): (vcom-1339) Case statement choices cover only 3 out of 59049 cases.
-# ** Error: /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd(123): VHDL Compiler exiting
-# End time: 16:47:45 on Dec 05,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
-# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 16:48:37 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mss
-# -- Compiling architecture struct of mss
-# End time: 16:48:37 on Dec 05,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
-# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 17:05:05 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mss
-# -- Compiling architecture struct of mss
-# End time: 17:05:05 on Dec 05,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
-# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 17:10:15 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mss
-# -- Compiling architecture struct of mss
-# End time: 17:10:15 on Dec 05,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
-# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 17:12:46 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mss
-# -- Compiling architecture struct of mss
-# End time: 17:12:46 on Dec 05,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
-# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 17:16:00 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mss
-# -- Compiling architecture struct of mss
-# End time: 17:16:00 on Dec 05,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/flipflop_rs.vhd
-# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 17:42:07 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/flipflop_rs.vhd 
+# Start time: 17:09:07 on Dec 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/IsaiaSpinelli/CSN/Labo_7_acqui_pos/acqu_pos/src/flipflop_rs.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity flipflop_rs
 # -- Compiling architecture comport of flipflop_rs
-# End time: 17:42:07 on Dec 05,2019, Elapsed time: 0:00:00
+# End time: 17:09:07 on Dec 07,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd
+vcom -reportprogress 300 -work work /cours_REDS/CSN/IsaiaSpinelli/CSN/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd
 # QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 17:42:09 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd 
+# Start time: 17:09:07 on Dec 07,2019
+# vcom -reportprogress 300 -work work /cours_REDS/CSN/IsaiaSpinelli/CSN/Labo_7_acqui_pos/acqu_pos/src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# End time: 17:09:07 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../run_acqu_pos_sim.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:09:42 on Dec 07,2019
+# vcom -reportprogress 300 -work work ../src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# End time: 17:09:42 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:09:42 on Dec 07,2019
+# vcom -reportprogress 300 -work work ../src/compteur_position.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity compteur_position
 # -- Compiling architecture struct of compteur_position
-# End time: 17:42:10 on Dec 05,2019, Elapsed time: 0:00:01
+# End time: 17:09:42 on Dec 07,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd
 # QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 17:46:01 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd 
+# Start time: 17:09:42 on Dec 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_rs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_rs
+# -- Compiling architecture comport of flipflop_rs
+# End time: 17:09:42 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:09:42 on Dec 07,2019
+# vcom -reportprogress 300 -work work ../src/acqu_pos_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity acqu_pos_top
+# -- Compiling architecture struct of acqu_pos_top
+# -- Loading package NUMERIC_STD
+# -- Loading entity mss
+# -- Loading entity compteur_position
+# -- Loading entity flipflop_rs
+# End time: 17:09:43 on Dec 07,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:09:43 on Dec 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/console_sim.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity console_sim
+# -- Compiling architecture struct of console_sim
+# -- Loading entity acqu_pos_top
+# End time: 17:09:43 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:09:43 on Dec 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/acqu_pos_top_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity acqu_pos_top_tb
+# -- Compiling architecture testbench of acqu_pos_top_tb
+# ** Warning: ../src_tb/acqu_pos_top_tb.vhd(73): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: ../src_tb/acqu_pos_top_tb.vhd(74): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: ../src_tb/acqu_pos_top_tb.vhd(75): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: ../src_tb/acqu_pos_top_tb.vhd(76): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:09:43 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vsim work.console_sim 
+# Start time: 17:09:43 on Dec 07,2019
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.console_sim(struct)#1
+# Loading ieee.numeric_std(body)
+# Loading work.acqu_pos_top(struct)#1
+# Loading work.mss(struct)#1
+# Loading work.compteur_position(struct)#1
+# Loading work.flipflop_rs(comport)#1
+# 8.5.13
+# 4.0.2
+# REDS Console
+# REDS_console
+# /opt/tools_reds
+# linux
+# FALSE
+# ./REDS_console_sigImg.gif
+# 16
+# 16
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+do ../run_acqu_pos_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 10.5c_2 Lib Mapping Utility 2016.10 Oct 17 2016
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:11:15 on Dec 07,2019
+# vcom -reportprogress 300 -work work ../src/MSS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mss
+# -- Compiling architecture struct of mss
+# End time: 17:11:15 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:11:15 on Dec 07,2019
+# vcom -reportprogress 300 -work work ../src/compteur_position.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity compteur_position
 # -- Compiling architecture struct of compteur_position
-# End time: 17:46:01 on Dec 05,2019, Elapsed time: 0:00:00
+# End time: 17:11:15 on Dec 07,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd
 # QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 17:46:55 on Dec 05,2019
-# vcom -reportprogress 300 -work work /cours_REDS/CSN/SpinelliIsaia/Labo_7_acqui_pos/acqu_pos/src/compteur_position.vhd 
+# Start time: 17:11:15 on Dec 07,2019
+# vcom -reportprogress 300 -work work ../src/flipflop_rs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop_rs
+# -- Compiling architecture comport of flipflop_rs
+# End time: 17:11:15 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:11:16 on Dec 07,2019
+# vcom -reportprogress 300 -work work ../src/acqu_pos_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity acqu_pos_top
+# -- Compiling architecture struct of acqu_pos_top
+# -- Loading package NUMERIC_STD
+# -- Loading entity mss
+# -- Loading entity compteur_position
+# -- Loading entity flipflop_rs
+# End time: 17:11:16 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:11:16 on Dec 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/console_sim.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity console_sim
+# -- Compiling architecture struct of console_sim
+# -- Loading entity acqu_pos_top
+# End time: 17:11:16 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 17:11:16 on Dec 07,2019
+# vcom -reportprogress 300 -work work ../src_tb/acqu_pos_top_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity compteur_position
-# -- Compiling architecture struct of compteur_position
-# End time: 17:46:55 on Dec 05,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# -- Loading package MATH_REAL
+# -- Compiling entity acqu_pos_top_tb
+# -- Compiling architecture testbench of acqu_pos_top_tb
+# ** Warning: ../src_tb/acqu_pos_top_tb.vhd(73): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: ../src_tb/acqu_pos_top_tb.vhd(74): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: ../src_tb/acqu_pos_top_tb.vhd(75): (vcom-1236) Shared variables must be of a protected type.
+# ** Warning: ../src_tb/acqu_pos_top_tb.vhd(76): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:11:16 on Dec 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# End time: 17:11:16 on Dec 07,2019, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 4
+# vsim -novopt work.acqu_pos_top_tb 
+# Start time: 17:11:16 on Dec 07,2019
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing /cours_REDS/CSN/IsaiaSpinelli/CSN/Labo_7_acqui_pos/acqu_pos/comp/work.acqu_pos_top_tb(testbench)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.acqu_pos_top_tb(testbench)
+# Refreshing /cours_REDS/CSN/IsaiaSpinelli/CSN/Labo_7_acqui_pos/acqu_pos/comp/work.acqu_pos_top(struct)
+# Loading work.acqu_pos_top(struct)
+# Refreshing /cours_REDS/CSN/IsaiaSpinelli/CSN/Labo_7_acqui_pos/acqu_pos/comp/work.mss(struct)
+# Loading work.mss(struct)
+# Refreshing /cours_REDS/CSN/IsaiaSpinelli/CSN/Labo_7_acqui_pos/acqu_pos/comp/work.compteur_position(struct)
+# Loading work.compteur_position(struct)
+# Refreshing /cours_REDS/CSN/IsaiaSpinelli/CSN/Labo_7_acqui_pos/acqu_pos/comp/work.flipflop_rs(comport)
+# Loading work.flipflop_rs(comport)
+# ************************************************************
+# 0 ns: START: SIMULATION
+# ************************************************************
+# 0
+# ************************************************************
+# 300 ns: Determine le nombre de cycles de latence
+# ************************************************************
+# 4304 ns: Determine le nombre de cycles de latence dir_cw_obs  1 -> 0
+# 4396 ns: Nb de cycle de latence du systeme sur dir_cw_obs: 1
+# 4404 ns: Determine le nombre de cycles de latence dir_cw_obs  0 -> 1
+# 4596 ns: Nb de cycle de latence du systeme sur dir_cw_obs: 2
+# 4900 ns: Nb de cycle de latence de position_obs lors de l'incrementation : 3
+# 5200 ns: Nb de cycle de latence de position_obs lors de la decrementation : 2
+# ************************************************************
+# 5200 ns: START: Verification des compteurs de position et d'index lors d'un déplacement horaire 
+# ************************************************************
+# 5296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 5346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 6005200 ns: RESULTAT: Verification des compteurs de position et d'index lors d'un déplacement horaire >> Nombre total d'erreurs detectees = 2 <<
+# ************************************************************
+# 6005200 ns: START: Verification des compteurs de position et d'index lors d'un déplacement antihoraire
+# ************************************************************
+# 12005200 ns: RESULTAT: Verification des compteurs de position et d'index lors d'un déplacement antihoraire >> Nombre total d'erreurs detectees = 2 <<
+# ************************************************************
+# 12005200 ns: START: Verification Detection des Erreurs
+# ************************************************************
+# 12012500 ns: ERREUR lors de la verification de nbr_err_obs: val. observee :0, val. attendue:1
+# 12012500 ns: ERREUR lors de la verification de err_obs : val. observee :'0', val. attendue:'1'
+# 12021600 ns: ERREUR lors de la verification de nbr_err_obs: val. observee :0, val. attendue:2
+# 12021600 ns: ERREUR lors de la verification de err_obs : val. observee :'0', val. attendue:'1'
+# 12030700 ns: ERREUR lors de la verification de nbr_err_obs: val. observee :0, val. attendue:3
+# 12030700 ns: ERREUR lors de la verification de err_obs : val. observee :'0', val. attendue:'1'
+# 12039800 ns: ERREUR lors de la verification de nbr_err_obs: val. observee :0, val. attendue:4
+# 12039800 ns: ERREUR lors de la verification de err_obs : val. observee :'0', val. attendue:'1'
+# 12039800 ns: RESULTAT: Verification Detection des Erreurs >> Nombre total d'erreurs detectees = 6 <<
+# ************************************************************
+# 12039800 ns: START: Verification des compteurs de position lors d'oscillations autour de l'index
+# ************************************************************
+# ** Note: Valeur position_obs =2032, attendu:2032
+#    Time: 14073800 ns  Iteration: 0  Instance: /acqu_pos_top_tb
+# 14073800 ns: TEST avec Temps par position = 100 ns <<
+# 14073996 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14074000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2032
+# 14074046 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14075096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14075146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14075200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2032
+# 14075296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14075346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14076496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14076546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14076600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2032
+# 14076696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14076746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14076796 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14076800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2034
+# 14076846 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14076900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2034
+# 14077000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14078096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14078100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14078146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14078296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14078300 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14078346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14078400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14078500 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2035
+# 14078600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2035
+# 14078700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2034
+# 14078796 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14078800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14078846 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14078896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14078946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14078996 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079046 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079196 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079246 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079396 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079446 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079596 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079646 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079796 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079846 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14079900 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14079946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14080096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14080100 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14080146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14080200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14080300 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2035
+# 14080396 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14080400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2036
+# 14080446 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14080500 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2036
+# 14080596 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14080600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14080646 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14080700 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2034
+# 14080800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14081896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14081900 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14081946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14082096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14082100 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14082146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14082200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14082300 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2035
+# 14082400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2036
+# 14082496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14082500 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2037
+# 14082546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14082600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2037
+# 14082700 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2036
+# 14082800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2035
+# 14082896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14082900 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14082946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14083000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14084096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14084100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14084146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14084296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14084300 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14084346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14084400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14084500 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2035
+# 14084600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2036
+# 14084696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14084700 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2037
+# 14084746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14084796 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14084800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2038
+# 14084846 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14084900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2038
+# 14085000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2037
+# 14085100 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2036
+# 14085196 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14085200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2035
+# 14085246 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14085300 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14085400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14086496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14086500 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14086546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14086600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14086696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14086700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14086746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14086800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2034
+# 14086900 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2035
+# 14087000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2036
+# 14087096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14087100 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2037
+# 14087146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14087200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2038
+# 14087300 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2039
+# 14087400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2039
+# 14087500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2038
+# 14087596 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14087600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2037
+# 14087646 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14087700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2036
+# 14087800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2035
+# 14087900 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2034
+# 14087996 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088000 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2033
+# 14088046 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088196 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088246 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088396 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088446 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088596 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088646 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088796 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088846 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14088996 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14089046 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14089096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14089100 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14089146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14089200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14089296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14089300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14089346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14089400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2034
+# 14089500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2035
+# 14089600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2036
+# 14089696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14089700 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2037
+# 14089746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14089800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2038
+# 14089900 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2039
+# 14089996 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14090000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2040
+# 14090046 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14090100 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2040
+# 14090196 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14090200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2039
+# 14090246 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14090300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2038
+# 14090400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2037
+# 14090500 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2036
+# 14090596 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14090600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2035
+# 14090646 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14090700 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14090800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14091896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14091900 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14091946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14092000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14092096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14092100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14092146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14092200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2034
+# 14092300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2035
+# 14092400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2036
+# 14092496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14092500 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2037
+# 14092546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'0', val. attendue:'1'
+# 14092600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2038
+# 14092700 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2039
+# 14092800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2040
+# 14092896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14092900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2041
+# 14092946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14093000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2041
+# 14093100 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2040
+# 14093200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2039
+# 14093296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14093300 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2038
+# 14093346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14093400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2037
+# 14093500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2036
+# 14093600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2035
+# 14093696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14093700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2034
+# 14093746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14093800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14094800 ns: TEST avec Temps par position = 200 ns <<
+# 14094896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14094946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14095000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14095200 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14096296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14096346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14096400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14096600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14096800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14097000 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14098096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14098146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14098200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14098400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14098600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2034
+# 14098800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14099000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14099200 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14100296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14100346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14100400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14100600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14100800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2034
+# 14101000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2035
+# 14101200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14101400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14101600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14101800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14102896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14102946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14103000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14103200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14103400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2034
+# 14103600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2035
+# 14103800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2036
+# 14104000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14104200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14104400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14104600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14104800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14105896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14105946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14106000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14106200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14106400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2034
+# 14106600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2035
+# 14106800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2036
+# 14107000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2037
+# 14107200 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14107400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14107600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14107800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14108000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14108200 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14109296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14109346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14109400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14109600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14109800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2034
+# 14110000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2035
+# 14110200 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2036
+# 14110400 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2037
+# 14110600 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2038
+# 14110800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14111000 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14111200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14111400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14111600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14111800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14112000 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14113096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14113146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14113200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14113400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14113600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2034
+# 14113800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2035
+# 14114000 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2036
+# 14114200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2037
+# 14114400 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2038
+# 14114600 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2039
+# 14114800 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14115000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14115200 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14115400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14115600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14115800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14116000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14116200 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14117296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14117346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14117400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14117600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14117800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2034
+# 14118000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2035
+# 14118200 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2036
+# 14118400 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2037
+# 14118600 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2038
+# 14118800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2039
+# 14119000 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2040
+# 14119200 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14119400 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14119600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14119800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14120000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14120200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14120400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14120600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14120800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14121896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14121946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14122000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2032
+# 14122200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2033
+# 14122400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2034
+# 14122600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2035
+# 14122800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2036
+# 14123000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2037
+# 14123200 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2038
+# 14123400 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2039
+# 14123600 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2040
+# 14123800 ns: ERREUR lors de la verification de position_obs: val. observee :2040, val. attendue:2041
+# 14124000 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14124200 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14124400 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14124600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14124800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14125000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14125200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14125400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14125600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14125800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14126800 ns: TEST avec Temps par position = 300 ns <<
+# 14126896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14126946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14127100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14127400 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14128496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14128546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14128700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14129000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14129300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14129600 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14130696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14130746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14130900 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14131200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14131500 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14131800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14132100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14132400 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14133496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14133546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14133700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14134000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14134300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14134600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14134900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14135200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14135500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14135800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14136896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14136946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14137100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14137400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14137700 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14138000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14138300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14138600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14138900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14139200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14139500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14139800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14140896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14140946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14141100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14141400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14141700 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14142000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14142300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14142600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14142900 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14143200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14143500 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14143800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14144100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14144400 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14145496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14145546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14145700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14146000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14146300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14146600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14146900 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14147200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14147500 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14147800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14148100 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14148400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14148700 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14149000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14149300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14149600 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14150696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14150746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14150900 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14151200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14151500 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14151800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14152100 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14152400 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14152700 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14153000 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14153300 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14153600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14153900 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14154200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14154500 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14154800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14155100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14155400 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14156496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14156546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14156700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14157000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14157300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14157600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14157900 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14158200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14158500 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14158800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14159100 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14159400 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14159700 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14160000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14160300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14160600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14160900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14161200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14161500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14161800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14162896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14162946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14163100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14163400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14163700 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14164000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14164300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14164600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14164900 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14165200 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14165500 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14165800 ns: ERREUR lors de la verification de position_obs: val. observee :2040, val. attendue:2042
+# 14166100 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14166400 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14166700 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14167000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14167300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14167600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14167900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14168200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14168500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14168800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14169800 ns: TEST avec Temps par position = 400 ns <<
+# 14169896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14169946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14170200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14170600 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14171696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14171746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14172000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14172400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14172800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14173200 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14174296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14174346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14174600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14175000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14175400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14175800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14176200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14176600 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14177696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14177746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14178000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14178400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14178800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14179200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14179600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14180000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14180400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14180800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14181896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14181946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14182200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14182600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14183000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14183400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14183800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14184200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14184600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14185000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14185400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14185800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14186896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14186946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14187200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14187600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14188000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14188400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14188800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14189200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14189600 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14190000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14190400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14190800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14191200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14191600 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14192696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14192746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14193000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14193400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14193800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14194200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14194600 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14195000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14195400 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14195800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14196200 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14196600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14197000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14197400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14197800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14198200 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14199296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14199346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14199600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14200000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14200400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14200800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14201200 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14201600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14202000 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14202400 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14202800 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14203200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14203600 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14204000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14204400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14204800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14205200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14205600 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14206696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14206746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14207000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14207400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14207800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14208200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14208600 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14209000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14209400 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14209800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14210200 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14210600 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14211000 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14211400 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14211800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14212200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14212600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14213000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14213400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14213800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14214896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14214946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14215200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14215600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14216000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14216400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14216800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14217200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14217600 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14218000 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14218400 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14218800 ns: ERREUR lors de la verification de position_obs: val. observee :2040, val. attendue:2042
+# 14219200 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14219600 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14220000 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14220400 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14220800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14221200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14221600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14222000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14222400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14222800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14223800 ns: TEST avec Temps par position = 500 ns <<
+# 14223896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14223946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14224300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14224800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14225896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14225946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14226300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14226800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14227300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14227800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14228896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14228946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14229300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14229800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14230300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14230800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14231300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14231800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14232896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14232946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14233300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14233800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14234300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14234800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14235300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14235800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14236300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14236800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14237896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14237946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14238300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14238800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14239300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14239800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14240300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14240800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14241300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14241800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14242300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14242800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14243896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14243946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14244300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14244800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14245300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14245800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14246300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14246800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14247300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14247800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14248300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14248800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14249300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14249800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14250896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14250946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14251300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14251800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14252300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14252800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14253300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14253800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14254300 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14254800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14255300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14255800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14256300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14256800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14257300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14257800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14258896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14258946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14259300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14259800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14260300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14260800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14261300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14261800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14262300 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14262800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14263300 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14263800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14264300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14264800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14265300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14265800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14266300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14266800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14267896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14267946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14268300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14268800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14269300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14269800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14270300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14270800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14271300 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14271800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14272300 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14272800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14273300 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14273800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14274300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14274800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14275300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14275800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14276300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14276800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14277896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14277946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14278300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14278800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14279300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14279800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14280300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14280800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14281300 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14281800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14282300 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14282800 ns: ERREUR lors de la verification de position_obs: val. observee :2040, val. attendue:2042
+# 14283300 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14283800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14284300 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14284800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14285300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14285800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14286300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14286800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14287300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14287800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14288800 ns: TEST avec Temps par position = 600 ns <<
+# 14288896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14288946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14289400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14290000 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14291096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14291146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14291600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14292200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14292800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14293400 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14294496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14294546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14295000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14295600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14296200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14296800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14297400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14298000 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14299096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14299146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14299600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14300200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14300800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14301400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14302000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14302600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14303200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14303800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14304896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14304946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14305400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14306000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14306600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14307200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14307800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14308400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14309000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14309600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14310200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14310800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14311896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14311946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14312400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14313000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14313600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14314200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14314800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14315400 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14316000 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14316600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14317200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14317800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14318400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14319000 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14320096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14320146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14320600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14321200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14321800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14322400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14323000 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14323600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14324200 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14324800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14325400 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14326000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14326600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14327200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14327800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14328400 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14329496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14329546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14330000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14330600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14331200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14331800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14332400 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14333000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14333600 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14334200 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14334800 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14335400 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14336000 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14336600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14337200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14337800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14338400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14339000 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14340096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14340146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14340600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14341200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14341800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14342400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14343000 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14343600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14344200 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14344800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14345400 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14346000 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14346600 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14347200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14347800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14348400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14349000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14349600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14350200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14350800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14351896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14351946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14352400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14353000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14353600 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14354200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14354800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14355400 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14356000 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14356600 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14357200 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14357800 ns: ERREUR lors de la verification de position_obs: val. observee :2040, val. attendue:2042
+# 14358400 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14359000 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14359600 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14360200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14360800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14361400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14362000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14362600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14363200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14363800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14364800 ns: TEST avec Temps par position = 700 ns <<
+# 14364896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14364946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14365500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14366200 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14367296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14367346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14367900 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14368600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14369300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14370000 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14371096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14371146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14371700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14372400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14373100 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14373800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14374500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14375200 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14376296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14376346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14376900 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14377600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14378300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14379000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14379700 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14380400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14381100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14381800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14382896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14382946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14383500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14384200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14384900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14385600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14386300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14387000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14387700 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14388400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14389100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14389800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14390896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14390946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14391500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14392200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14392900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14393600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14394300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14395000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14395700 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14396400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14397100 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14397800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14398500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14399200 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14400296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14400346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14400900 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14401600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14402300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14403000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14403700 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14404400 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14405100 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14405800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14406500 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14407200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14407900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14408600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14409300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14410000 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14411096 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14411146 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14411700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14412400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14413100 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14413800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14414500 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14415200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14415900 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14416600 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14417300 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14418000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14418700 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14419400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14420100 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14420800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14421500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14422200 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14423296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14423346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14423900 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14424600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14425300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14426000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14426700 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14427400 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14428100 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14428800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14429500 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14430200 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14430900 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14431600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14432300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14433000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14433700 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14434400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14435100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14435800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14436896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14436946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14437500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14438200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14438900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14439600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14440300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14441000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14441700 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14442400 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14443100 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14443800 ns: ERREUR lors de la verification de position_obs: val. observee :2040, val. attendue:2042
+# 14444500 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14445200 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14445900 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14446600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14447300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14448000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14448700 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14449400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14450100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14450800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14451800 ns: TEST avec Temps par position = 800 ns <<
+# 14451896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14451946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14452600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14453400 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14454496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14454546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14455200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14456000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14456800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14457600 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14458696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14458746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14459400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14460200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14461000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14461800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14462600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14463400 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14464496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14464546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14465200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14466000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14466800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14467600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14468400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14469200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14470000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14470800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14471896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14471946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14472600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14473400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14474200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14475000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14475800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14476600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14477400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14478200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14479000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14479800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14480896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14480946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14481600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14482400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14483200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14484000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14484800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14485600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14486400 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14487200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14488000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14488800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14489600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14490400 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14491496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14491546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14492200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14493000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14493800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14494600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14495400 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14496200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14497000 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14497800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14498600 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14499400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14500200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14501000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14501800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14502600 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14503696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14503746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14504400 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14505200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14506000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14506800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14507600 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14508400 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14509200 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14510000 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14510800 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14511600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14512400 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14513200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14514000 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14514800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14515600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14516400 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14517496 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14517546 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14518200 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14519000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14519800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14520600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14521400 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14522200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14523000 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14523800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14524600 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14525400 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14526200 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14527000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14527800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14528600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14529400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14530200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14531000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14531800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14532896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14532946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14533600 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14534400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14535200 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14536000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14536800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14537600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14538400 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14539200 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14540000 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14540800 ns: ERREUR lors de la verification de position_obs: val. observee :2040, val. attendue:2042
+# 14541600 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14542400 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14543200 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14544000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14544800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14545600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14546400 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14547200 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14548000 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14548800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14549800 ns: TEST avec Temps par position = 900 ns <<
+# 14549896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14549946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14550700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14551600 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14552696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14552746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14553500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14554400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14555300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14556200 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14557296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14557346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14558100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14559000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14559900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14560800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14561700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14562600 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14563696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14563746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14564500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14565400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14566300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14567200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14568100 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14569000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14569900 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14570800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14571896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14571946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14572700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14573600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14574500 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14575400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14576300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14577200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14578100 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14579000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14579900 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14580800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14581896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14581946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14582700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14583600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14584500 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14585400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14586300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14587200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14588100 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14589000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14589900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14590800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14591700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14592600 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14593696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14593746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14594500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14595400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14596300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14597200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14598100 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14599000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14599900 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14600800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14601700 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14602600 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14603500 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14604400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14605300 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14606200 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14607296 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14607346 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14608100 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14609000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14609900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14610800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14611700 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14612600 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14613500 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14614400 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14615300 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14616200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14617100 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14618000 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14618900 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14619800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14620700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14621600 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14622696 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14622746 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14623500 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14624400 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14625300 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14626200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14627100 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14628000 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14628900 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14629800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14630700 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14631600 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14632500 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14633400 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14634300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14635200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14636100 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14637000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14637900 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14638800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14639896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14639946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14640700 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14641600 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14642500 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14643400 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14644300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14645200 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14646100 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14647000 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14647900 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14648800 ns: ERREUR lors de la verification de position_obs: val. observee :2040, val. attendue:2042
+# 14649700 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14650600 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14651500 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14652400 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14653300 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14654200 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14655100 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14656000 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14656900 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14657800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14658800 ns: TEST avec Temps par position = 1000 ns <<
+# 14658896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14658946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14659800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14660800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14661896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14661946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14662800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14663800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14664800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14665800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14666896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14666946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14667800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14668800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14669800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14670800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14671800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14672800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14673896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14673946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14674800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14675800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14676800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14677800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14678800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14679800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14680800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14681800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14682896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14682946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14683800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14684800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14685800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14686800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14687800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14688800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14689800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14690800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14691800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14692800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14693896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14693946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14694800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14695800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14696800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14697800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14698800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14699800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14700800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14701800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14702800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14703800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14704800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14705800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14706896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14706946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14707800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14708800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14709800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14710800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14711800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14712800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14713800 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14714800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14715800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14716800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14717800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14718800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14719800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14720800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14721896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14721946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14722800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14723800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14724800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14725800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14726800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14727800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14728800 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14729800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14730800 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14731800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14732800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14733800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14734800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14735800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14736800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14737800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14738896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14738946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14739800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14740800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14741800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14742800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14743800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14744800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14745800 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14746800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14747800 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14748800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14749800 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14750800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14751800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14752800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14753800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14754800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14755800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14756800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14757896 ns: ERREUR lors de la verification synchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14757946 ns: ERREUR lors de la verification asynchrone de dir_cw_obs : val. observee :'1', val. attendue:'0'
+# 14758800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14759800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14760800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14761800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14762800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14763800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14764800 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14765800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14766800 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14767800 ns: ERREUR lors de la verification de position_obs: val. observee :2040, val. attendue:2042
+# 14768800 ns: ERREUR lors de la verification de position_obs: val. observee :2039, val. attendue:2041
+# 14769800 ns: ERREUR lors de la verification de position_obs: val. observee :2038, val. attendue:2040
+# 14770800 ns: ERREUR lors de la verification de position_obs: val. observee :2037, val. attendue:2039
+# 14771800 ns: ERREUR lors de la verification de position_obs: val. observee :2036, val. attendue:2038
+# 14772800 ns: ERREUR lors de la verification de position_obs: val. observee :2035, val. attendue:2037
+# 14773800 ns: ERREUR lors de la verification de position_obs: val. observee :2034, val. attendue:2036
+# 14774800 ns: ERREUR lors de la verification de position_obs: val. observee :2033, val. attendue:2035
+# 14775800 ns: ERREUR lors de la verification de position_obs: val. observee :2032, val. attendue:2034
+# 14776800 ns: ERREUR lors de la verification de position_obs: val. observee :2031, val. attendue:2033
+# 14777800 ns: ERREUR lors de la verification de position_obs: val. observee :2030, val. attendue:2032
+# 14778800 ns: RESULTAT: Verification des compteurs de position et d'index lors d'oscillations autour de l'index >> Nombre total d'erreurs detectees = 1394 <<
+# ************************************************************
+# 14778800 ns: DONE: SIMULATION
+# ************************************************************
+# ** Note: >> Nombre total d'erreurs detectees = 1394 <<
+#    Time: 14778800 ns  Iteration: 1  Instance: /acqu_pos_top_tb
+# 0 ns
+# 15517845 ns
+# End time: 17:17:02 on Dec 07,2019, Elapsed time: 0:05:46
+# Errors: 0, Warnings: 1

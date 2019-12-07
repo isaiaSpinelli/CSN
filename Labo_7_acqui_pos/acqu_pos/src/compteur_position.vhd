@@ -20,7 +20,7 @@ entity compteur_position is
         clk_i       : in  std_logic;
         en_i    	: in  std_logic;
         init_pos_i  : in  std_logic;
-        dir_cw_o    : in std_logic;
+        dir_cw_i    : in std_logic;
         position_o  : out  std_logic_vector(15 downto 0)
        );
 end compteur_position;
@@ -36,10 +36,10 @@ architecture struct of compteur_position is
   
 begin
 -- Définit la position futur
-	position_next_s <=  (others =>  '0') when init_pos_i = '0' else
-						(position_s + 1) when dir_cw_o = '0' AND en_i = '1' else
-						(position_s - 1) when dir_cw_o = '1' AND en_i = '1' else
-						position_next_s;
+	position_next_s <=  (others =>  '0') when init_pos_i = '1' else
+						position_s when en_i = '0' else 
+						(position_s + 1) when dir_cw_i = '1' else
+						(position_s - 1) ;
 						
 -- Reseet ou met à jour la position						
 	process(clk_i, reset_i)
