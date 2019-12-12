@@ -1,0 +1,123 @@
+Flow report for acqu_pos_top
+Thu Dec 12 17:46:02 2019
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Flow Summary                                                            ;
++-----------------------+-------------------------------------------------+
+; Flow Status           ; Successful - Thu Dec 12 17:46:02 2019           ;
+; Quartus Prime Version ; 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
+; Revision Name         ; acqu_pos_top                                    ;
+; Top-level Entity Name ; maxv_top                                        ;
+; Family                ; MAX V                                           ;
+; Device                ; 5M570ZF256C5                                    ;
+; Timing Models         ; Final                                           ;
+; Total logic elements  ; 113 / 570 ( 20 % )                              ;
+; Total pins            ; 159 / 159 ( 100 % )                             ;
+; Total virtual pins    ; 0                                               ;
+; UFM blocks            ; 0 / 1 ( 0 % )                                   ;
++-----------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 12/12/2019 17:45:49 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; acqu_pos_top        ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                           ;
++-------------------------------+-----------------------------+---------------+-------------+----------------+
+; Assignment Name               ; Value                       ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------+-----------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID         ; 11599297950.157616914908066 ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT        ; Vhdl                        ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL           ; QuestaSim (VHDL)            ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                ; 1 ps                        ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP        ; 85                          ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP        ; 0                           ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION ; No Heat Sink With Still Air ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY      ; output_files                ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY              ; maxv_top                    ; acqu_pos_top  ; --          ; --             ;
++-------------------------------+-----------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 943 MB              ; 00:00:23                           ;
+; Fitter                    ; 00:00:01     ; 1.0                     ; 1108 MB             ; 00:00:02                           ;
+; Assembler                 ; 00:00:00     ; 1.0                     ; 797 MB              ; 00:00:00                           ;
+; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 738 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 1031 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:26                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++---------------------------+------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++---------------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; a09pc09          ; Ubuntu 14.04.6 ; 14         ; x86_64         ;
+; Fitter                    ; a09pc09          ; Ubuntu 14.04.6 ; 14         ; x86_64         ;
+; Assembler                 ; a09pc09          ; Ubuntu 14.04.6 ; 14         ; x86_64         ;
+; TimeQuest Timing Analyzer ; a09pc09          ; Ubuntu 14.04.6 ; 14         ; x86_64         ;
+; EDA Netlist Writer        ; a09pc09          ; Ubuntu 14.04.6 ; 14         ; x86_64         ;
++---------------------------+------------------+----------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off acqu_pos_top -c acqu_pos_top
+quartus_fit --read_settings_files=off --write_settings_files=off acqu_pos_top -c acqu_pos_top
+quartus_asm --read_settings_files=off --write_settings_files=off acqu_pos_top -c acqu_pos_top
+quartus_sta acqu_pos_top -c acqu_pos_top
+quartus_eda --read_settings_files=off --write_settings_files=off acqu_pos_top -c acqu_pos_top
+
+
+

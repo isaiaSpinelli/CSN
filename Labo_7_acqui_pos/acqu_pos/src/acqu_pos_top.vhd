@@ -51,6 +51,8 @@ architecture struct of acqu_pos_top is
 	signal det_err_s : std_logic;
 	signal enable_s : std_logic;
 	signal dir_cw_s : std_logic;
+	signal capt_a_i_s : std_logic;
+	signal capt_b_i_s : std_logic;
    
    
 
@@ -103,8 +105,8 @@ begin
 	MSS1 : mss port map (
 		reset_i		=> reset_i,
 		clk_i      	=> clock_i,
-		capt_a_i    => capt_a_i,
-		capt_b_i  	=> capt_b_i,
+		capt_a_i    => capt_a_i_s,
+		capt_b_i  	=> capt_b_i_s,
 		det_err_o 	=> det_err_s,
 		dir_cw_o   	=> dir_cw_s,
 		en_o		=> enable_s
@@ -135,5 +137,19 @@ begin
   dir_cw_o <= dir_cw_s;
   err_o <= '0';
   nbr_err_o <= "00000";
+  
+  
+  -- Synchronise les entrées (capteurs)					
+	process(clock_i, reset_i)
+		begin
+			if(reset_i = '1') then
+				capt_a_i_s <= '0';
+				capt_b_i_s <= '0';
+			elsif (rising_edge(clock_i)) then
+				capt_a_i_s <= capt_a_i;
+				capt_b_i_s <= capt_b_i;
+			end if;
+	end process;
+  
   
 end struct;
