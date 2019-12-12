@@ -1,0 +1,551 @@
+TimeQuest Timing Analyzer report for acqu_pos_top
+Thu Dec 12 17:46:01 2019
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'Clk_Main_i'
+ 12. Hold: 'Clk_Main_i'
+ 13. Setup Transfers
+ 14. Hold Transfers
+ 15. Report TCCS
+ 16. Report RSKM
+ 17. Unconstrained Paths Summary
+ 18. Clock Status Summary
+ 19. Unconstrained Input Ports
+ 20. Unconstrained Output Ports
+ 21. Unconstrained Input Ports
+ 22. Unconstrained Output Ports
+ 23. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                               ;
++-----------------------+---------------------------------------------------------+
+; Quartus Prime Version ; Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
+; Timing Analyzer       ; TimeQuest                                               ;
+; Revision Name         ; acqu_pos_top                                            ;
+; Device Family         ; MAX V                                                   ;
+; Device Name           ; 5M570ZF256C5                                            ;
+; Timing Models         ; Final                                                   ;
+; Delay Model           ; Slow Model                                              ;
+; Rise/Fall Delays      ; Unavailable                                             ;
++-----------------------+---------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                 ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets        ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+; Clk_Main_i ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Clk_Main_i } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+
+
++-------------------------------------------------+
+; Fmax Summary                                    ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 48.66 MHz ; 48.66 MHz       ; Clk_Main_i ;      ;
++-----------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------+
+; Setup Summary                        ;
++------------+---------+---------------+
+; Clock      ; Slack   ; End Point TNS ;
++------------+---------+---------------+
+; Clk_Main_i ; -19.551 ; -576.578      ;
++------------+---------+---------------+
+
+
++------------------------------------+
+; Hold Summary                       ;
++------------+-------+---------------+
+; Clock      ; Slack ; End Point TNS ;
++------------+-------+---------------+
+; Clk_Main_i ; 3.375 ; 0.000         ;
++------------+-------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++-------------------------------------+
+; Minimum Pulse Width Summary         ;
++------------+--------+---------------+
+; Clock      ; Slack  ; End Point TNS ;
++------------+--------+---------------+
+; Clk_Main_i ; -2.289 ; -2.289        ;
++------------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'Clk_Main_i'                                                                                                                                                                                          ;
++---------+--------------------------------------------------------------+---------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node                                                    ; To Node                                                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+--------------------------------------------------------------+---------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -19.551 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|mss:MSS1|Etat_Present[0]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 20.230     ;
+; -19.230 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|mss:MSS1|Etat_Present[3]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 19.909     ;
+; -18.934 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[3]                     ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 19.613     ;
+; -18.925 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 19.604     ;
+; -18.565 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[13] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 19.244     ;
+; -18.564 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[11] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 19.243     ;
+; -18.306 ; acqu_pos_top:U1|capt_b_i_s                                   ; acqu_pos_top:U1|mss:MSS1|Etat_Present[0]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 18.985     ;
+; -17.786 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[12] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 18.465     ;
+; -17.785 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[10] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 18.464     ;
+; -17.784 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[4]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 18.463     ;
+; -17.782 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[6]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 18.461     ;
+; -17.780 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[9]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 18.459     ;
+; -17.773 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 18.452     ;
+; -17.770 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[7]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 18.449     ;
+; -17.766 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[5]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 18.445     ;
+; -17.443 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 18.122     ;
+; -17.432 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[15] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 18.111     ;
+; -17.431 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[14] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 18.110     ;
+; -17.419 ; acqu_pos_top:U1|capt_a_i_s                                   ; acqu_pos_top:U1|mss:MSS1|Etat_Present[3]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 18.098     ;
+; -17.092 ; acqu_pos_top:U1|capt_a_i_s                                   ; acqu_pos_top:U1|mss:MSS1|Etat_Present[0]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 17.771     ;
+; -17.078 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 17.757     ;
+; -17.048 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[2]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 17.727     ;
+; -17.048 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[3]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 17.727     ;
+; -16.769 ; acqu_pos_top:U1|capt_b_i_s                                   ; acqu_pos_top:U1|mss:MSS1|Etat_Present[3]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 17.448     ;
+; -16.683 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|mss:MSS1|Etat_Present[0]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 17.362     ;
+; -16.532 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[13] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 17.211     ;
+; -16.531 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[11] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 17.210     ;
+; -16.431 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[3] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 17.110     ;
+; -16.338 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[3] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[12] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 17.017     ;
+; -16.255 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[13] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.934     ;
+; -16.254 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[11] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.933     ;
+; -16.239 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[7] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.918     ;
+; -16.193 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[2] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[4]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.872     ;
+; -16.146 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[7] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[12] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.825     ;
+; -15.962 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[3]                     ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.641     ;
+; -15.946 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[3] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[4]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.625     ;
+; -15.939 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[2] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.618     ;
+; -15.925 ; acqu_pos_top:U1|capt_a_i_s                                   ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.604     ;
+; -15.864 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[3] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[11] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.543     ;
+; -15.846 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[2] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[12] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.525     ;
+; -15.753 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[12] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.432     ;
+; -15.752 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[10] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.431     ;
+; -15.751 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[4]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.430     ;
+; -15.749 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[6]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.428     ;
+; -15.747 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[9]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.426     ;
+; -15.740 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.419     ;
+; -15.737 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[7]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.416     ;
+; -15.733 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[5]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.412     ;
+; -15.695 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[3] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[13] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.374     ;
+; -15.672 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[7] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[11] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.351     ;
+; -15.669 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[4] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.348     ;
+; -15.576 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[4] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[12] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.255     ;
+; -15.555 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[3]                     ; acqu_pos_top:U1|mss:MSS1|Etat_Present[0]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.234     ;
+; -15.552 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[1] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[9]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.231     ;
+; -15.540 ; acqu_pos_top:U1|capt_b_i_s                                   ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.219     ;
+; -15.530 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[0]                     ; acqu_pos_top:U1|mss:MSS1|Etat_Present[0]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.209     ;
+; -15.525 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[0] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[9]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.204     ;
+; -15.510 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[0]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[13] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.189     ;
+; -15.509 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[0]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[11] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.188     ;
+; -15.503 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[7] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[13] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.182     ;
+; -15.483 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[5] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.162     ;
+; -15.476 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[12] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.155     ;
+; -15.475 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[10] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.154     ;
+; -15.474 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[4]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.153     ;
+; -15.472 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[6]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.151     ;
+; -15.470 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[9]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.149     ;
+; -15.463 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.142     ;
+; -15.460 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[7]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.139     ;
+; -15.456 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[5]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.135     ;
+; -15.415 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[1] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[12] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.094     ;
+; -15.399 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[15] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.078     ;
+; -15.398 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[14] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.077     ;
+; -15.390 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[5] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[12] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.069     ;
+; -15.388 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[0] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[12] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.067     ;
+; -15.372 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[2] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[11] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.051     ;
+; -15.369 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[1] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.048     ;
+; -15.342 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[0] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.021     ;
+; -15.341 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[6] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 16.020     ;
+; -15.304 ; acqu_pos_top:U1|capt_b_i_s                                   ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.983     ;
+; -15.248 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[6] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[12] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.927     ;
+; -15.232 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[3] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[6]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.911     ;
+; -15.203 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[2] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[13] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.882     ;
+; -15.203 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[3]                     ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.882     ;
+; -15.189 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[1] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[10] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.868     ;
+; -15.162 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[0] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[10] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.841     ;
+; -15.159 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[2] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[6]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.838     ;
+; -15.145 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|mss:MSS1|Etat_Present[3]                      ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.824     ;
+; -15.139 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[12] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.818     ;
+; -15.136 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[2] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[5]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.815     ;
+; -15.122 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[15] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.801     ;
+; -15.121 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[14] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.800     ;
+; -15.105 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[14] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.784     ;
+; -15.102 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[8] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[15] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.781     ;
+; -15.102 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[4] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[11] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.781     ;
+; -15.093 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[2]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.772     ;
+; -15.093 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[3]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.772     ;
+; -15.049 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[3] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[5]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.728     ;
+; -15.033 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[1]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.712     ;
+; -15.032 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                     ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[0]  ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.711     ;
+; -14.936 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[1] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[14] ; Clk_Main_i   ; Clk_Main_i  ; 1.000        ; 0.000      ; 15.615     ;
++---------+--------------------------------------------------------------+---------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'Clk_Main_i'                                                                                                                                                                                          ;
++-------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                     ; To Node                                                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 3.375 ; Cpt_s[19]                                                     ; Cpt_s[19]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 3.414      ;
+; 3.752 ; Cpt_s[0]                                                      ; Cpt_s[0]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 3.791      ;
+; 5.228 ; Cpt_s[10]                                                     ; Cpt_s[10]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.267      ;
+; 5.229 ; Cpt_s[17]                                                     ; Cpt_s[17]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.268      ;
+; 5.229 ; Cpt_s[7]                                                      ; Cpt_s[7]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.268      ;
+; 5.241 ; Cpt_s[1]                                                      ; Cpt_s[1]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.280      ;
+; 5.242 ; Cpt_s[9]                                                      ; Cpt_s[9]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.281      ;
+; 5.242 ; Cpt_s[2]                                                      ; Cpt_s[2]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.281      ;
+; 5.243 ; Cpt_s[12]                                                     ; Cpt_s[12]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.282      ;
+; 5.243 ; Cpt_s[11]                                                     ; Cpt_s[11]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.282      ;
+; 5.253 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[3]                      ; acqu_pos_top:U1|mss:MSS1|Etat_Present[3]                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.292      ;
+; 5.428 ; Cpt_s[18]                                                     ; Cpt_s[18]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.467      ;
+; 5.428 ; Cpt_s[13]                                                     ; Cpt_s[13]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.467      ;
+; 5.428 ; Cpt_s[8]                                                      ; Cpt_s[8]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.467      ;
+; 5.428 ; Cpt_s[3]                                                      ; Cpt_s[3]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.467      ;
+; 5.440 ; Cpt_s[15]                                                     ; Cpt_s[15]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.479      ;
+; 5.440 ; Cpt_s[5]                                                      ; Cpt_s[5]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.479      ;
+; 5.441 ; Cpt_s[16]                                                     ; Cpt_s[16]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.480      ;
+; 5.441 ; Cpt_s[14]                                                     ; Cpt_s[14]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.480      ;
+; 5.441 ; Cpt_s[6]                                                      ; Cpt_s[6]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.480      ;
+; 5.441 ; Cpt_s[4]                                                      ; Cpt_s[4]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.480      ;
+; 5.446 ; acqu_pos_top:U1|capt_a_i_s                                    ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.485      ;
+; 5.474 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[1]                      ; acqu_pos_top:U1|mss:MSS1|Etat_Present[4]                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.513      ;
+; 5.805 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                      ; acqu_pos_top:U1|mss:MSS1|Etat_Present[2]                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 5.844      ;
+; 5.963 ; Cpt_s[10]                                                     ; Cpt_s[11]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.002      ;
+; 5.964 ; Cpt_s[17]                                                     ; Cpt_s[18]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.003      ;
+; 5.964 ; Cpt_s[7]                                                      ; Cpt_s[8]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.003      ;
+; 5.976 ; Cpt_s[1]                                                      ; Cpt_s[2]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.015      ;
+; 5.977 ; Cpt_s[2]                                                      ; Cpt_s[3]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.016      ;
+; 5.978 ; Cpt_s[12]                                                     ; Cpt_s[13]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.017      ;
+; 5.978 ; Cpt_s[11]                                                     ; Cpt_s[12]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.017      ;
+; 6.098 ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[15] ; acqu_pos_top:U1|compteur_position:COMPTEUR_POS|position_s[15] ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.137      ;
+; 6.107 ; Cpt_s[10]                                                     ; Cpt_s[12]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.146      ;
+; 6.108 ; Cpt_s[17]                                                     ; Cpt_s[19]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.147      ;
+; 6.108 ; Cpt_s[7]                                                      ; Cpt_s[9]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.147      ;
+; 6.120 ; Cpt_s[1]                                                      ; Cpt_s[3]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.159      ;
+; 6.121 ; Cpt_s[2]                                                      ; Cpt_s[4]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.160      ;
+; 6.122 ; Cpt_s[12]                                                     ; Cpt_s[14]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.161      ;
+; 6.122 ; Cpt_s[11]                                                     ; Cpt_s[13]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.161      ;
+; 6.251 ; Cpt_s[10]                                                     ; Cpt_s[13]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.290      ;
+; 6.264 ; Cpt_s[1]                                                      ; Cpt_s[4]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.303      ;
+; 6.266 ; Cpt_s[11]                                                     ; Cpt_s[14]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.305      ;
+; 6.395 ; Cpt_s[10]                                                     ; Cpt_s[14]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.434      ;
+; 6.430 ; Cpt_s[18]                                                     ; Cpt_s[19]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.469      ;
+; 6.430 ; Cpt_s[8]                                                      ; Cpt_s[9]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.469      ;
+; 6.430 ; Cpt_s[3]                                                      ; Cpt_s[4]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.469      ;
+; 6.430 ; Cpt_s[13]                                                     ; Cpt_s[14]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.469      ;
+; 6.442 ; Cpt_s[15]                                                     ; Cpt_s[16]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.481      ;
+; 6.442 ; Cpt_s[5]                                                      ; Cpt_s[6]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.481      ;
+; 6.443 ; Cpt_s[16]                                                     ; Cpt_s[17]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.482      ;
+; 6.443 ; Cpt_s[6]                                                      ; Cpt_s[7]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.482      ;
+; 6.479 ; acqu_pos_top:U1|mss:MSS1|Etat_Present[0]                      ; acqu_pos_top:U1|mss:MSS1|Etat_Present[0]                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.518      ;
+; 6.557 ; acqu_pos_top:U1|flipflop_rs:FLIPFLOP_RS_ERR|Q_pres            ; acqu_pos_top:U1|flipflop_rs:FLIPFLOP_RS_ERR|Q_pres            ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.596      ;
+; 6.586 ; Cpt_s[15]                                                     ; Cpt_s[17]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.625      ;
+; 6.586 ; Cpt_s[5]                                                      ; Cpt_s[7]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.625      ;
+; 6.587 ; Cpt_s[16]                                                     ; Cpt_s[18]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.626      ;
+; 6.587 ; Cpt_s[6]                                                      ; Cpt_s[8]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.626      ;
+; 6.730 ; Cpt_s[15]                                                     ; Cpt_s[18]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.769      ;
+; 6.730 ; Cpt_s[5]                                                      ; Cpt_s[8]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.769      ;
+; 6.731 ; Cpt_s[16]                                                     ; Cpt_s[19]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.770      ;
+; 6.731 ; Cpt_s[6]                                                      ; Cpt_s[9]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.770      ;
+; 6.757 ; Cpt_s[2]                                                      ; Cpt_s[9]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.796      ;
+; 6.757 ; Cpt_s[2]                                                      ; Cpt_s[8]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.796      ;
+; 6.757 ; Cpt_s[2]                                                      ; Cpt_s[7]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.796      ;
+; 6.757 ; Cpt_s[2]                                                      ; Cpt_s[6]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.796      ;
+; 6.757 ; Cpt_s[2]                                                      ; Cpt_s[5]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.796      ;
+; 6.758 ; Cpt_s[12]                                                     ; Cpt_s[19]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.797      ;
+; 6.758 ; Cpt_s[12]                                                     ; Cpt_s[18]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.797      ;
+; 6.758 ; Cpt_s[12]                                                     ; Cpt_s[17]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.797      ;
+; 6.758 ; Cpt_s[12]                                                     ; Cpt_s[16]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.797      ;
+; 6.758 ; Cpt_s[12]                                                     ; Cpt_s[15]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.797      ;
+; 6.874 ; Cpt_s[15]                                                     ; Cpt_s[19]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.913      ;
+; 6.874 ; Cpt_s[5]                                                      ; Cpt_s[9]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.913      ;
+; 6.900 ; Cpt_s[1]                                                      ; Cpt_s[9]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.939      ;
+; 6.900 ; Cpt_s[1]                                                      ; Cpt_s[8]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.939      ;
+; 6.900 ; Cpt_s[1]                                                      ; Cpt_s[7]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.939      ;
+; 6.900 ; Cpt_s[1]                                                      ; Cpt_s[6]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.939      ;
+; 6.900 ; Cpt_s[1]                                                      ; Cpt_s[5]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.939      ;
+; 6.902 ; Cpt_s[11]                                                     ; Cpt_s[19]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.941      ;
+; 6.902 ; Cpt_s[11]                                                     ; Cpt_s[18]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.941      ;
+; 6.902 ; Cpt_s[11]                                                     ; Cpt_s[17]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.941      ;
+; 6.902 ; Cpt_s[11]                                                     ; Cpt_s[16]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.941      ;
+; 6.902 ; Cpt_s[11]                                                     ; Cpt_s[15]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 6.941      ;
+; 6.998 ; Cpt_s[4]                                                      ; Cpt_s[9]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.037      ;
+; 6.998 ; Cpt_s[4]                                                      ; Cpt_s[8]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.037      ;
+; 6.998 ; Cpt_s[4]                                                      ; Cpt_s[7]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.037      ;
+; 6.998 ; Cpt_s[4]                                                      ; Cpt_s[6]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.037      ;
+; 6.998 ; Cpt_s[4]                                                      ; Cpt_s[5]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.037      ;
+; 6.998 ; Cpt_s[14]                                                     ; Cpt_s[19]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.037      ;
+; 6.998 ; Cpt_s[14]                                                     ; Cpt_s[18]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.037      ;
+; 6.998 ; Cpt_s[14]                                                     ; Cpt_s[17]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.037      ;
+; 6.998 ; Cpt_s[14]                                                     ; Cpt_s[16]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.037      ;
+; 6.998 ; Cpt_s[14]                                                     ; Cpt_s[15]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.037      ;
+; 7.031 ; Cpt_s[10]                                                     ; Cpt_s[19]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.070      ;
+; 7.031 ; Cpt_s[10]                                                     ; Cpt_s[18]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.070      ;
+; 7.031 ; Cpt_s[10]                                                     ; Cpt_s[17]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.070      ;
+; 7.031 ; Cpt_s[10]                                                     ; Cpt_s[16]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.070      ;
+; 7.031 ; Cpt_s[10]                                                     ; Cpt_s[15]                                                     ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.070      ;
+; 7.066 ; Cpt_s[3]                                                      ; Cpt_s[9]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.105      ;
+; 7.066 ; Cpt_s[3]                                                      ; Cpt_s[8]                                                      ; Clk_Main_i   ; Clk_Main_i  ; 0.000        ; 0.000      ; 7.105      ;
++-------+---------------------------------------------------------------+---------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------+
+; Setup Transfers                                                     ;
++------------+------------+----------+----------+----------+----------+
+; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+------------+----------+----------+----------+----------+
+; Clk_Main_i ; Clk_Main_i ; 1072     ; 0        ; 0        ; 0        ;
++------------+------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------+
+; Hold Transfers                                                      ;
++------------+------------+----------+----------+----------+----------+
+; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+------------+----------+----------+----------+----------+
+; Clk_Main_i ; Clk_Main_i ; 1072     ; 0        ; 0        ; 0        ;
++------------+------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 6     ; 6    ;
+; Unconstrained Input Port Paths  ; 67    ; 67   ;
+; Unconstrained Output Ports      ; 24    ; 24   ;
+; Unconstrained Output Port Paths ; 32    ; 32   ;
++---------------------------------+-------+------+
+
+
++----------------------------------------------+
+; Clock Status Summary                         ;
++------------+------------+------+-------------+
+; Target     ; Clock      ; Type ; Status      ;
++------------+------------+------+-------------+
+; Clk_Main_i ; Clk_Main_i ; Base ; Constrained ;
++------------+------------+------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                             ;
++----------------+--------------------------------------------------------------------------------------+
+; Input Port     ; Comment                                                                              ;
++----------------+--------------------------------------------------------------------------------------+
+; Con_80p_io[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[39] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[40] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Switch_i[2]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nButton_i[8]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nReset_i       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++----------------+--------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                               ;
++------------------+---------------------------------------------------------------------------------------+
+; Output Port      ; Comment                                                                               ;
++------------------+---------------------------------------------------------------------------------------+
+; Con_80p_io[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[8]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[9]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[10]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[11]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[12]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[13]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[14]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[15]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[16]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[17]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[18]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[19]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[79]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Mezzanine_io[20] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nLed_o[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nLed_o[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nLed_o[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nLed_o[7]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nSeven_Seg_o[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------------+---------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                             ;
++----------------+--------------------------------------------------------------------------------------+
+; Input Port     ; Comment                                                                              ;
++----------------+--------------------------------------------------------------------------------------+
+; Con_80p_io[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[39] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[40] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Switch_i[2]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nButton_i[8]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nReset_i       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++----------------+--------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                               ;
++------------------+---------------------------------------------------------------------------------------+
+; Output Port      ; Comment                                                                               ;
++------------------+---------------------------------------------------------------------------------------+
+; Con_80p_io[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[8]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[9]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[10]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[11]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[12]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[13]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[14]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[15]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[16]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[17]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[18]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[19]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Con_80p_io[79]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Mezzanine_io[20] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nLed_o[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nLed_o[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nLed_o[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nLed_o[7]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nSeven_Seg_o[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime TimeQuest Timing Analyzer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+    Info: Processing started: Thu Dec 12 17:46:01 2019
+Info: Command: quartus_sta acqu_pos_top -c acqu_pos_top
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'acqu_pos_top.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name Clk_Main_i Clk_Main_i
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -19.551
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -19.551            -576.578 Clk_Main_i 
+Info (332146): Worst-case hold slack is 3.375
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     3.375               0.000 Clk_Main_i 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 Clk_Main_i 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 738 megabytes
+    Info: Processing ended: Thu Dec 12 17:46:01 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

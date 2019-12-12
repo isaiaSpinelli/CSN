@@ -68,15 +68,7 @@ architecture struct of mss is
   
 begin
 
--- Reset ou met à jour l'état présent
-	Mem: process (clk_i, reset_i)
-	begin
-		if (reset_i = '1') then
-			Etat_Present <= Start;
-		elsif rising_edge(clk_i) then
-			Etat_Present <= Etat_Futur;
-		end if;
-	end process;
+-- ~14071268 ns
 
 -- Gestion des sorties en fonction de l'état présent
 -- Gestion des états futurs en fonction des entrées
@@ -91,7 +83,7 @@ begin
 		case Etat_Present is
 			when Start =>
 				det_err_o <= '0';
-				dir_cw_o <= '0';
+				dir_cw_o <= '-';
 				en_o <= '0';
 				if (capt_a_i = '0' AND capt_b_i = '0') then 
 					Etat_Futur <= E00_H_w;
@@ -105,14 +97,22 @@ begin
 				
 			when E00_H =>
 				det_err_o <= '0';
-				dir_cw_o <= '0';
+				dir_cw_o <= '1';
 				en_o <= '1';
 				Etat_Futur <= E00_H_w;
+				
+				if (capt_a_i = '0' AND capt_b_i = '1') then 
+					Etat_Futur <= E01_AH;
+				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '1' AND capt_b_i = '0') then 
+					Etat_Futur <= E10_H;
+				end if;
 				
 				
 			when E00_H_w =>
 				det_err_o <= '0';
-				dir_cw_o <= '0';
+				dir_cw_o <= '1';
 				en_o <= '0';
 					
 				if (capt_a_i = '0' AND capt_b_i = '1') then 
@@ -127,13 +127,21 @@ begin
 				
 			when E10_H =>
 				det_err_o <= '0';
-				dir_cw_o <= '0';
+				dir_cw_o <= '1';
 				en_o <= '1';
 				Etat_Futur <= E10_H_w;
 				
+				if (capt_a_i = '0' AND capt_b_i = '0') then 
+					Etat_Futur <= E00_AH;
+				elsif (capt_a_i = '0' AND capt_b_i = '1') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
+					Etat_Futur <= E11_H;
+				end if;
+				
 			when E10_H_w =>
 				det_err_o <= '0';
-				dir_cw_o <= '0';
+				dir_cw_o <= '1';
 				en_o <= '0';
 					
 				if (capt_a_i = '0' AND capt_b_i = '0') then 
@@ -148,14 +156,22 @@ begin
 				
 			when E11_H =>
 				det_err_o <= '0';
-				dir_cw_o <= '0';
+				dir_cw_o <= '1';
 				en_o <= '1';
 				Etat_Futur <= E11_H_w;
+				
+				if (capt_a_i = '0' AND capt_b_i = '0') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '0' AND capt_b_i = '1') then 
+					Etat_Futur <= E01_H;
+				elsif (capt_a_i = '1' AND capt_b_i = '0') then 
+					Etat_Futur <= E10_AH;
+				end if;
 				
 				
 			when E11_H_w =>
 				det_err_o <= '0';
-				dir_cw_o <= '0';
+				dir_cw_o <= '1';
 				en_o <= '0';
 					
 				if (capt_a_i = '0' AND capt_b_i = '0') then 
@@ -170,14 +186,22 @@ begin
 
 			when E01_H =>
 				det_err_o <= '0';
-				dir_cw_o <= '0';
+				dir_cw_o <= '1';
 				en_o <= '1';
 				Etat_Futur <= E01_H_w;
+				
+				if (capt_a_i = '0' AND capt_b_i = '0') then 
+					Etat_Futur <= E00_H;
+				elsif (capt_a_i = '1' AND capt_b_i = '0') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
+					Etat_Futur <= E11_AH;
+				end if;
 				
 				
 			when E01_H_w =>
 				det_err_o <= '0';
-				dir_cw_o <= '0';
+				dir_cw_o <= '1';
 				en_o <= '0';
 					
 				if (capt_a_i = '0' AND capt_b_i = '0') then 
@@ -187,19 +211,27 @@ begin
 				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
 					Etat_Futur <= E11_AH;
 				else
-					Etat_Futur <= E11_H_w;
+					Etat_Futur <= E01_H_w;
 				end if;
 				
 				
 			when E00_AH =>
 				det_err_o <= '0';
-				dir_cw_o <= '1';
+				dir_cw_o <= '0';
 				en_o <= '1';
 				Etat_Futur <= E00_AH_w;
 				
+				if (capt_a_i = '0' AND capt_b_i = '1') then 
+					Etat_Futur <= E01_AH;
+				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '1' AND capt_b_i = '0') then 
+					Etat_Futur <= E10_H;
+				end if;
+				
 			when E00_AH_w =>
 				det_err_o <= '0';
-				dir_cw_o <= '1';
+				dir_cw_o <= '0';
 				en_o <= '0';
 					
 				if (capt_a_i = '0' AND capt_b_i = '1') then 
@@ -215,13 +247,21 @@ begin
 				
 			when E01_AH =>
 				det_err_o <= '0';
-				dir_cw_o <= '1';
+				dir_cw_o <= '0';
 				en_o <= '1';
 				Etat_Futur <= E01_AH_w;
 				
+				if (capt_a_i = '0' AND capt_b_i = '0') then 
+					Etat_Futur <= E00_H;
+				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
+					Etat_Futur <= E11_AH;
+				elsif (capt_a_i = '1' AND capt_b_i = '0') then 
+					Etat_Futur <= Err;
+				end if;
+				
 			when E01_AH_w =>
 				det_err_o <= '0';
-				dir_cw_o <= '1';
+				dir_cw_o <= '0';
 				en_o <= '0';
 					
 				if (capt_a_i = '0' AND capt_b_i = '0') then 
@@ -236,13 +276,21 @@ begin
 				
 			when E11_AH =>
 				det_err_o <= '0';
-				dir_cw_o <= '1';
+				dir_cw_o <= '0';
 				en_o <= '1';
 				Etat_Futur <= E11_AH_w;
 				
+				if (capt_a_i = '0' AND capt_b_i = '0') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '0' AND capt_b_i = '1') then 
+					Etat_Futur <= E01_H;
+				elsif (capt_a_i = '1' AND capt_b_i = '0') then 
+					Etat_Futur <= E10_AH;
+				end if;
+				
 			when E11_AH_w =>
 				det_err_o <= '0';
-				dir_cw_o <= '1';
+				dir_cw_o <= '0';
 				en_o <= '0';
 					
 				if (capt_a_i = '0' AND capt_b_i = '0') then 
@@ -257,13 +305,21 @@ begin
 				
 			when E10_AH =>
 				det_err_o <= '0';
-				dir_cw_o <= '1';
+				dir_cw_o <= '0';
 				en_o <= '1';
 				Etat_Futur <= E10_AH_w;
 				
+				if (capt_a_i = '0' AND capt_b_i = '0') then 
+					Etat_Futur <= E00_AH;
+				elsif (capt_a_i = '0' AND capt_b_i = '1') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
+					Etat_Futur <= E11_H;
+				end if;
+				
 			when E10_AH_w =>
 				det_err_o <= '0';
-				dir_cw_o <= '1';
+				dir_cw_o <= '0';
 				en_o <= '0';
 					
 				if (capt_a_i = '0' AND capt_b_i = '0') then 
@@ -299,6 +355,16 @@ begin
 			en_o <= '0';
 
 		end case;
+	end process;
+	
+	-- Reset ou met à jour l'état présent
+	Mem: process (clk_i, reset_i)
+	begin
+		if (reset_i = '1') then
+			Etat_Present <= Start;
+		elsif rising_edge(clk_i) then
+			Etat_Present <= Etat_Futur;
+		end if;
 	end process;
 
 

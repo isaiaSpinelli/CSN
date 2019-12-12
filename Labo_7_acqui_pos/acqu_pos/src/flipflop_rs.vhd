@@ -36,7 +36,7 @@ end flipflop_rs ;
 
 
 architecture comport of flipflop_rs is
-	signal Q_pres :std_logic;
+	signal Q_pres :std_logic := '0';
 	signal Q_fut :std_logic;
   
 begin

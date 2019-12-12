@@ -14,7 +14,7 @@
 #
 #--| Modifications |--------------------------------------------------------
 # Ver  Aut.  Date   Description
-#                         
+#
 ############################################################################
 #------------------------------------
 proc simulation_first_steps {} {
@@ -34,34 +34,34 @@ proc simulation_first_steps {} {
   set NumericStdNoWarnings 0
 }
 
-#compile all file 
+#compile all file
 do ../comp_acqu_pos_top.tcl
 
 #Chargement fichier pour la simulation
-vsim -novopt work.acqu_pos_top_tb 
+vsim -novopt work.acqu_pos_top_tb
 
-#ajout signaux composant simuler dans la fenetre wave
-add wave -divider SIGNAUX_ERREUR
-add wave -radix unsigned erreur_s
-add wave -radix decimal nbr_err_s
-add wave -radix decimal nbr_err_dir_cw_s
+##ajout signaux composant simuler dans la fenetre wave
+#add wave -divider SIGNAUX_ERREUR
+#add wave -radix unsigned erreur_s
+#add wave -radix decimal nbr_err_s
+#add wave -radix decimal nbr_err_dir_cw_s
 
-add wave -divider SIGNAUX_REFERENCE
-add wave -radix decimal position_ref
-add wave -radix decimal position_sync_ref
-add wave -radix unsigned dir_cw_ref
-add wave -radix unsigned dir_cw_sync_ref
-add wave -radix decimal nbr_err_ref
-add wave -radix decimal err_ref
+#add wave -divider SIGNAUX_REFERENCE
+#add wave -radix decimal position_ref
+#add wave -radix decimal position_sync_ref
+#add wave -radix unsigned dir_cw_ref
+#add wave -radix unsigned dir_cw_sync_ref
+#add wave -radix decimal nbr_err_ref
+#add wave -radix decimal err_ref
 
-add wave -divider STIMULI_CAPTEUR
-add wave -radix unsigned capt_a_sti
-add wave -radix unsigned capt_b_sti
-add wave -radix unsigned P0_sti
+#add wave -divider STIMULI_CAPTEUR
+#add wave -radix unsigned capt_a_sti
+#add wave -radix unsigned capt_b_sti
+#add wave -radix unsigned P0_sti
 
-add wave -divider UUT
-add wave -radix unsigned uut/*
-
+#add wave -divider UUT
+#add wave -radix unsigned uut/*
+ do wave_acqu_pos.do
 
 # Run simulation
 simulation_first_steps
@@ -70,6 +70,3 @@ config wave -namecolwidth 200
 config wave -valuecolwidth 50
 run -all
 wave zoom full
-
-
-

@@ -24,8 +24,10 @@ vlib work
 vmap work work
 
 #compile files
-  
-  a complete avec vos fichiers ....
+
+vcom -reportprogress 300 -work work   ../src/MSS.vhd
+vcom -reportprogress 300 -work work   ../src/compteur_position.vhd  
+vcom -reportprogress 300 -work work   ../src/flipflop_rs.vhd
   
 vcom -reportprogress 300 -work work   ../src/acqu_pos_top.vhd
 
