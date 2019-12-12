@@ -83,16 +83,16 @@ begin
 		case Etat_Present is
 			when Start =>
 				det_err_o <= '0';
-				dir_cw_o <= '0';
+				dir_cw_o <= '-';
 				en_o <= '0';
 				if (capt_a_i = '0' AND capt_b_i = '0') then 
-					Etat_Futur <= E00_H;
+					Etat_Futur <= E00_H_w;
 				elsif (capt_a_i = '0' AND capt_b_i = '1') then 
-					Etat_Futur <= E01_H;
+					Etat_Futur <= E01_H_w;
 				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
-					Etat_Futur <= E11_H;
+					Etat_Futur <= E11_H_w;
 				else -- (capt_a_i = '1' AND capt_b_i = '0') 
-					Etat_Futur <= E10_H;
+					Etat_Futur <= E10_H_w;
 				end if;
 				
 			when E00_H =>
@@ -100,6 +100,14 @@ begin
 				dir_cw_o <= '1';
 				en_o <= '1';
 				Etat_Futur <= E00_H_w;
+				
+				if (capt_a_i = '0' AND capt_b_i = '1') then 
+					Etat_Futur <= E01_AH;
+				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '1' AND capt_b_i = '0') then 
+					Etat_Futur <= E10_H;
+				end if;
 				
 				
 			when E00_H_w =>
@@ -123,6 +131,14 @@ begin
 				en_o <= '1';
 				Etat_Futur <= E10_H_w;
 				
+				if (capt_a_i = '0' AND capt_b_i = '0') then 
+					Etat_Futur <= E00_AH;
+				elsif (capt_a_i = '0' AND capt_b_i = '1') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
+					Etat_Futur <= E11_H;
+				end if;
+				
 			when E10_H_w =>
 				det_err_o <= '0';
 				dir_cw_o <= '1';
@@ -143,6 +159,14 @@ begin
 				dir_cw_o <= '1';
 				en_o <= '1';
 				Etat_Futur <= E11_H_w;
+				
+				if (capt_a_i = '0' AND capt_b_i = '0') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '0' AND capt_b_i = '1') then 
+					Etat_Futur <= E01_H;
+				elsif (capt_a_i = '1' AND capt_b_i = '0') then 
+					Etat_Futur <= E10_AH;
+				end if;
 				
 				
 			when E11_H_w =>
@@ -165,6 +189,14 @@ begin
 				dir_cw_o <= '1';
 				en_o <= '1';
 				Etat_Futur <= E01_H_w;
+				
+				if (capt_a_i = '0' AND capt_b_i = '0') then 
+					Etat_Futur <= E00_H;
+				elsif (capt_a_i = '1' AND capt_b_i = '0') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
+					Etat_Futur <= E11_AH;
+				end if;
 				
 				
 			when E01_H_w =>
@@ -189,6 +221,14 @@ begin
 				en_o <= '1';
 				Etat_Futur <= E00_AH_w;
 				
+				if (capt_a_i = '0' AND capt_b_i = '1') then 
+					Etat_Futur <= E01_AH;
+				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '1' AND capt_b_i = '0') then 
+					Etat_Futur <= E10_H;
+				end if;
+				
 			when E00_AH_w =>
 				det_err_o <= '0';
 				dir_cw_o <= '0';
@@ -211,6 +251,14 @@ begin
 				en_o <= '1';
 				Etat_Futur <= E01_AH_w;
 				
+				if (capt_a_i = '0' AND capt_b_i = '0') then 
+					Etat_Futur <= E00_H;
+				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
+					Etat_Futur <= E11_AH;
+				elsif (capt_a_i = '1' AND capt_b_i = '0') then 
+					Etat_Futur <= Err;
+				end if;
+				
 			when E01_AH_w =>
 				det_err_o <= '0';
 				dir_cw_o <= '0';
@@ -232,6 +280,14 @@ begin
 				en_o <= '1';
 				Etat_Futur <= E11_AH_w;
 				
+				if (capt_a_i = '0' AND capt_b_i = '0') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '0' AND capt_b_i = '1') then 
+					Etat_Futur <= E01_H;
+				elsif (capt_a_i = '1' AND capt_b_i = '0') then 
+					Etat_Futur <= E10_AH;
+				end if;
+				
 			when E11_AH_w =>
 				det_err_o <= '0';
 				dir_cw_o <= '0';
@@ -252,6 +308,14 @@ begin
 				dir_cw_o <= '0';
 				en_o <= '1';
 				Etat_Futur <= E10_AH_w;
+				
+				if (capt_a_i = '0' AND capt_b_i = '0') then 
+					Etat_Futur <= E00_AH;
+				elsif (capt_a_i = '0' AND capt_b_i = '1') then 
+					Etat_Futur <= Err;
+				elsif (capt_a_i = '1' AND capt_b_i = '1') then 
+					Etat_Futur <= E11_H;
+				end if;
 				
 			when E10_AH_w =>
 				det_err_o <= '0';
