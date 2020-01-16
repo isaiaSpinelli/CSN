@@ -20,7 +20,7 @@
 
 
 # Complation des paquetages
-vcom -reportprogress 300 -work work   ../../lib/ligne_serie_pkg.vhd
+vcom -reportprogress 300 -work work   ../src/ligne_serie_pkg.vhd
 
 # Complation des fichiers du mult_seq_top
 vcom -reportprogress 300 -work work   ../src/divisor.vhd

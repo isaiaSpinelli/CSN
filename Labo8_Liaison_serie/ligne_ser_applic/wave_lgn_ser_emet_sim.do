@@ -1,14 +1,13 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /console_sim/uut/clk_i
-add wave -noupdate /console_sim/uut/nReset_i
+add wave -noupdate /console_sim/uut/reset_i
 add wave -noupdate /console_sim/uut/start_i
-add wave -noupdate /console_sim/uut/val_output_i
+add wave -noupdate /console_sim/uut/data_i
 add wave -noupdate /console_sim/uut/busy_o
 add wave -noupdate /console_sim/uut/err_par_o
 add wave -noupdate /console_sim/uut/s_clk_o
 add wave -noupdate /console_sim/uut/s_data_io
-add wave -noupdate /console_sim/uut/reset_s
 add wave -noupdate /console_sim/uut/end_sh_s
 add wave -noupdate /console_sim/uut/s_clk_s
 add wave -noupdate /console_sim/uut/s_data_rx_s
