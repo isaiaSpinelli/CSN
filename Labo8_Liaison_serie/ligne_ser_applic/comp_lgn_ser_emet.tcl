@@ -27,6 +27,7 @@ vcom -reportprogress 300 -work work   ../src/divisor.vhd
 vcom -reportprogress 300 -work work   ../src/cal_parity.vhd
 vcom -reportprogress 300 -work work   ../src/srgn.vhd
 vcom -reportprogress 300 -work work   ../src/flipflop_rs.vhd
+vcom -reportprogress 300 -work work   ../src/flipflop_t.vhd
 vcom -reportprogress 300 -work work   ../src/ctrl_affichage.vhd
 vcom -reportprogress 300 -work work   ../src/emet_serie_uc.vhd
 vcom -reportprogress 300 -work work   ../src/emet_serie.vhd
