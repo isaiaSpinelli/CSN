@@ -1,0 +1,259 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/comp
+Ecal_parity
+Z1 w1579192703
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/cal_parity.vhd
+Z6 F/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/cal_parity.vhd
+l0
+L17
+Vzz2NjeUOSNlZagNM?G0jY0
+!s100 Mb^=ME3PUi>^ITS5=]nn21
+Z7 OL;C;10.5c_2;63
+32
+Z8 !s110 1579192787
+!i10b 1
+Z9 !s108 1579192787.000000
+Z10 !s90 -reportprogress|300|-work|work|/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/cal_parity.vhd|
+Z11 !s107 /cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/cal_parity.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Aflot_don
+R2
+R3
+R4
+DEx4 work 10 cal_parity 0 22 zz2NjeUOSNlZagNM?G0jY0
+l33
+L27
+VBhRUaYlM^UQ8RTXSamD?41
+!s100 N^3^XcnVN<LYc2caVDLhR2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Edivisor
+Z14 w1579192728
+Z15 DPx4 work 15 ligne_serie_pkg 0 22 UnAOAa8bI<fI<oPcOcJzT0
+R2
+R3
+R4
+R0
+Z16 8/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/divisor.vhd
+Z17 F/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/divisor.vhd
+l0
+L20
+ViDcLXIeM>H>OCcSZAX?[J0
+!s100 <[^AYc9OL@KJ9RIg:0^^K3
+R7
+32
+Z18 !s110 1579192791
+!i10b 1
+Z19 !s108 1579192791.000000
+Z20 !s90 -reportprogress|300|-work|work|/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/divisor.vhd|
+Z21 !s107 /cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/divisor.vhd|
+!i113 0
+R12
+R13
+Aflot_don
+R15
+R2
+R3
+R4
+DEx4 work 7 divisor 0 22 iDcLXIeM>H>OCcSZAX?[J0
+l37
+L31
+VI`WfZRE<7>=T;>W1mjO0j3
+!s100 RafjVz>;WBbzMeYo:hn661
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R12
+R13
+Eflipflop_rs
+Z22 w1579192774
+R2
+R3
+R4
+R0
+Z23 8/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/flipflop_rs.vhd
+Z24 F/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/flipflop_rs.vhd
+l0
+L17
+VoV[SRWWLm=23MbJE51A3b2
+!s100 TJl=ODF:G@lYVoe2zd;?J0
+R7
+32
+Z25 !s110 1579192776
+!i10b 1
+Z26 !s108 1579192776.000000
+Z27 !s90 -reportprogress|300|-work|work|/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/flipflop_rs.vhd|
+Z28 !s107 /cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/flipflop_rs.vhd|
+!i113 0
+R12
+R13
+Aflot_don
+R2
+R3
+R4
+DEx4 work 11 flipflop_rs 0 22 oV[SRWWLm=23MbJE51A3b2
+l32
+L26
+VGJd:O2Uz0JFbU2j4zcY103
+!s100 8czckk3lYgligE^2XlE8b2
+R7
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R12
+R13
+Eflipflop_t
+Z29 w1579192783
+R2
+R3
+R4
+R0
+Z30 8/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/flipflop_t.vhd
+Z31 F/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/flipflop_t.vhd
+l0
+L17
+VN6oc:3lLAn7KEFV<:IAAo0
+!s100 _WQiOc^QkERlX>neIA=[H0
+R7
+32
+Z32 !s110 1579192785
+!i10b 1
+Z33 !s108 1579192785.000000
+Z34 !s90 -reportprogress|300|-work|work|/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/flipflop_t.vhd|
+Z35 !s107 /cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/flipflop_t.vhd|
+!i113 0
+R12
+R13
+Aflot_don
+R2
+R3
+R4
+DEx4 work 10 flipflop_t 0 22 N6oc:3lLAn7KEFV<:IAAo0
+l32
+L25
+V>aoZZHQ[mZ]]1OSAV_^XE0
+!s100 b1h3@[FDbHa:0glSKB?nc3
+R7
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 0
+R12
+R13
+Pligne_serie_pkg
+R3
+R4
+Z36 w1576171756
+R0
+Z37 8/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/ligne_serie_pkg.vhd
+Z38 F/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/ligne_serie_pkg.vhd
+l0
+L21
+VUnAOAa8bI<fI<oPcOcJzT0
+!s100 QZ=m:ELX>ER?mzSn]TcGF3
+R7
+32
+b1
+Z39 !s110 1579192743
+!i10b 1
+Z40 !s108 1579192743.000000
+Z41 !s90 -reportprogress|300|-work|work|/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/ligne_serie_pkg.vhd|
+Z42 !s107 /cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/ligne_serie_pkg.vhd|
+!i113 0
+R12
+R13
+Bbody
+R15
+R3
+R4
+l0
+L37
+VoXd]Zkim4gokQPB>ahEl32
+!s100 07BA1O>Cb<;h]Uoh019WJ0
+R7
+32
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 0
+R12
+R13
+Esrgn
+Z43 w1579192914
+R15
+R2
+R3
+R4
+R0
+Z44 8/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/srgn.vhd
+Z45 F/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/srgn.vhd
+l0
+L19
+VobL0HH6G7O1EWIC<@bgng3
+!s100 fdD=IDg]c`1Q[9mL92`KW2
+R7
+32
+Z46 !s110 1579192921
+!i10b 1
+Z47 !s108 1579192921.000000
+Z48 !s90 -reportprogress|300|-work|work|/cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/srgn.vhd|
+Z49 !s107 /cours_REDS/CSN/SpinelliIsaia/Labo8_Liaison_serie/ligne_ser_applic/src/srgn.vhd|
+!i113 0
+R12
+R13
+Aflot_don
+R15
+R2
+R3
+R4
+DEx4 work 4 srgn 0 22 obL0HH6G7O1EWIC<@bgng3
+l40
+L33
+V]bj3odCaCePQ4l60eMFMN2
+!s100 LYf_34Ge[]4FjU1o_lG5e0
+R7
+32
+R46
+!i10b 1
+R47
+R48
+R49
+!i113 0
+R12
+R13

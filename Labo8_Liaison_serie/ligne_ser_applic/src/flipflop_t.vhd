@@ -57,4 +57,4 @@ begin
 	-- maj de la sortie
 	Q_o <= Q_pres;
 
-end flipflop_t;
+end flot_don;

@@ -54,4 +54,4 @@ begin
 	clk_div_o <= '1' when count_s = VAL_DIV-1 else
                '0';
 
-end divisor;
+end flot_don;

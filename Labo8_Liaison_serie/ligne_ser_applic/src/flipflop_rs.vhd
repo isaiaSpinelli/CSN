@@ -4,8 +4,7 @@
 --
 -- Fichier      : flipflop_rs.vhd
 --
--- Description  : flip flop RS afin de enregistrer la valeur de parité lue
---					et reset à 0 lors d'un nouveau load.
+-- Description  : flip flop RS sans etat interdit définie à 1
 --
 -- Auteur       : Isaia Spinelli et Gaetan Bacso
 -- Date         : 16.01.2020
@@ -18,10 +17,9 @@ use ieee.numeric_std.all;
 entity flipflop_rs is
    port(clk_i    : in     std_logic;
         reset_i  : in     std_logic;
-        read_i   : in     std_logic;
-        load_i   : in     std_logic;
-        s_data_i : in     std_logic;
-        err_par  : out    std_logic
+        R_i      : in     std_logic;
+        S_i      : in     std_logic;
+        Q_o      : out    std_logic
    );
 end flipflop_rs;
 
@@ -34,9 +32,10 @@ architecture flot_don of flipflop_rs is
 begin
 
 	--Adaptation polarite
-	Q_fut <= '0' when load_i = '1' else  
-		Q_pres when read_i = '0' else
-		s_data_i;
+  Q_fut <= Q_pres when R_i = '0' and S_i = '0' else
+		'1' when R_i = '0' and S_i = '1' else
+		'0' when R_i = '1' and S_i = '0' else 
+		'1';
 
 
 
@@ -56,6 +55,6 @@ begin
 	end process;
 
 
-	err_par <= Q_pres;
+	Q_o <= Q_pres;
 
-end flipflop_rs;
+end flot_don;

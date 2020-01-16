@@ -55,4 +55,4 @@ begin
   parite_o <= Q_pres;
 		 
 
-end cal_parity;
+end flot_don;
