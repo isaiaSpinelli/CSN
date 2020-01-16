@@ -4,7 +4,8 @@
 --
 -- Fichier      : flipflop_rs.vhd
 --
--- Description  : Comparateur pour les ton et le compteur PWM
+-- Description  : flip flop RS afin de enregistrer la valeur de parité lue
+--					et reset à 0 lors d'un nouveau load.
 --
 -- Auteur       : Isaia Spinelli et Gaetan Bacso
 -- Date         : 16.01.2020
