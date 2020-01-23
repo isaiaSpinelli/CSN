@@ -42,6 +42,8 @@ architecture struct of emet_serie is
    signal reset_s : std_logic;
    signal nReset_s : std_logic;
    signal start_s : std_logic;
+   signal start0_s : std_logic;
+   signal start1_s : std_logic;
    signal data_s : std_logic_vector(N+1 downto 0);
    signal data_load_s : std_logic_vector(N+1 downto 0);
    signal load_s : std_logic;
@@ -160,8 +162,8 @@ s_low <= s_clk and s_clk_div;
 s_high <= (not s_clk) and s_clk_div;
 s_clk_o <= s_clk when busy_s = '1' else
            '1';
-s_data_io <= s_data_send when busy_s = '1' else
-             '1';
+s_data_io <= '0' when s_data_send = '0' else -- s_data_send when busy_s = '1' else
+             'Z';
 s_data_send <= parite_s when par_s = '1' else
                data_s(data_s'high);
 err_par_pres <= s_data_io when read_s = '1' else
@@ -217,8 +219,19 @@ port map (
   D_i      => start_i,
   en_i     => '1',
   nReset_i => nReset_s,
-  Q_o      => start_s
+  Q_o      => start0_s
 );
+
+dff_en2 : dff_en
+port map (
+  clk_i    => clk_i,
+  D_i      => start0_s,
+  en_i     => '1',
+  nReset_i => nReset_s,
+  Q_o      => start1_s
+);
+
+start_s <= not start1_s and start0_s;
 
 emet_serie_uc1 : emet_serie_uc
 port map (

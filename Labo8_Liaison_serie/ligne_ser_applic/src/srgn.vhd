@@ -35,7 +35,7 @@ architecture flot_don of srgn is
   --internally signals
   signal shift_pres_s : std_logic_vector(data_i'high downto 0) := (others => '0');
   signal shift_fut_s  : std_logic_vector(data_i'high downto 0) := (others => '0');
-  signal val_comp_s   : std_logic_vector(data_i'high downto 0) := (data_i'high => '1', others => '0');
+  constant val_comp_s : std_logic_vector(data_i'high downto 0) := (data_i'high => '1', others => '0');
 
 begin
 
