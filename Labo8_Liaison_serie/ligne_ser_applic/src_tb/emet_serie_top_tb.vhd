@@ -77,6 +77,8 @@ architecture test_bench of emet_serie_top_tb is
     signal err_par_obs    : std_logic;
     signal s_clk_obs      : std_logic;
     signal s_data_obs     : std_logic;
+    signal s_data_io_s    : std_logic;
+    signal s_data_io_sti  : std_logic;
 
     -------------------
     -- Check signals --
@@ -119,9 +121,12 @@ begin  -- architecture test_bench
             busy_o    => busy_obs,
             err_par_o => err_par_obs,
             s_clk_o   => s_clk_obs,
-            s_data_io => s_data_obs
+            s_data_io => s_data_io_s
         );
 
+    s_data_obs <= to_x01(s_data_io_s);
+    s_data_io_s <= s_data_io_sti;
+    
     ------------------------------
     -- Clock generation process --
     ------------------------------
@@ -146,7 +151,7 @@ begin  -- architecture test_bench
             reset_sti       <= '1';
             start_sti       <= '0';
             data_s  <= (others => '0');
-            s_data_obs      <= 'H';
+            s_data_io_sti      <= 'H';
             cycle(2);
             reset_sti         <= '0';
         end reset_seq;
@@ -168,7 +173,7 @@ begin  -- architecture test_bench
             start_sti  <= '1';
             cycle(1);
             start_sti  <= '0';
-            wait until falling_edge(s_clk_obs) for 10us;
+            wait until falling_edge(s_clk_obs) for 10 us;
             if s_clk_obs /= '0' then
                 report "s_clk signal has never gone low" severity failure;
             end if;
@@ -177,7 +182,7 @@ begin  -- architecture test_bench
                 cycle(2*20); -- parity bit + parity error bits
             end if;
             cycle(20); -- stop bit
-            cycle(30); -- delay before new transmission
+            cycle(40); -- delay before new transmission
         end loop;
         
         -- end of simulation
@@ -195,6 +200,7 @@ begin  -- architecture test_bench
     ref : process
         variable parity_v : std_logic;
     begin
+       -- s_data_io_sti      <= 'H';
         while not sim_completed_s loop
             busy_ref_s      <= '-';
             err_par_ref_s   <= '-';
@@ -243,6 +249,7 @@ begin  -- architecture test_bench
                     wait for 3*CLOCK_PERIOD;
                 end loop;
                 if PARITY_CHECK_C = '1' then
+                    -- send parity
                     s_clk_ref_s  <= '0';
                     wait for 3*CLOCK_PERIOD;
                     s_data_ref_s <= parity_v;
@@ -251,22 +258,33 @@ begin  -- architecture test_bench
                     wait for 7*CLOCK_PERIOD;
                     s_data_ref_s <= '-';
                     wait for 3*CLOCK_PERIOD;
+                    -- send err_par
+                    -- tester si parity est correct ???? EMI
+                    s_clk_ref_s  <= '0';
+                    --s_data_io_sti <= '0';  -- pas d'erreur
+                    wait for 3*CLOCK_PERIOD;
+                    s_data_ref_s <= '1';  -- detection erreur parite EMI
+                    err_par_ref_s <= '-';
+                    wait for 7*CLOCK_PERIOD;
+                    s_clk_ref_s  <= '1';
+                    wait for 7*CLOCK_PERIOD;
+                    s_data_ref_s <= '-';
+                    --s_data_io_sti <= 'H';
+                    err_par_ref_s <= '1';
+                    wait for 3*CLOCK_PERIOD;
                 end if;
                 s_clk_ref_s  <= '0';
                 wait for 3*CLOCK_PERIOD;
-                s_data_ref_s <= '1';
-                wait for 7*CLOCK_PERIOD;
-                s_clk_ref_s  <= '1';
-                wait for 7*CLOCK_PERIOD;
-                s_data_ref_s <= '-';
-                wait for 3*CLOCK_PERIOD;
-                s_clk_ref_s  <= '0';
-                wait for 3*CLOCK_PERIOD;
-                s_data_ref_s <= '1'; -- stop bit
+                s_data_ref_s <= '1';    -- stop bit
                 wait for 7*CLOCK_PERIOD;
                 s_clk_ref_s  <= '1';
                 busy_ref_s <= '-';
+                wait for 7*CLOCK_PERIOD;
+                s_data_ref_s <= '-';
+                wait for 3*CLOCK_PERIOD;
                 wait for 10*CLOCK_PERIOD;
+                s_data_ref_s <= '0';
+                busy_ref_s <= '0';
             end loop;
         end loop;
         wait;
@@ -287,7 +305,7 @@ begin  -- architecture test_bench
             elsif busy_ref_s /= busy_obs then
                 error_pulse_s  <= '1', '0' after ERROR_PULSE_C;
                 error_counter_v := error_counter_v + 1;
-                report "Error on busy signal";
+                report "Error on busy signal" severity ERROR ;
             end if;
 
             if err_par_ref_s = '-' then
@@ -295,7 +313,7 @@ begin  -- architecture test_bench
             elsif err_par_ref_s /= err_par_obs then
                 error_pulse_s  <= '1', '0' after ERROR_PULSE_C;
                 error_counter_v := error_counter_v + 1;
-                report "Error on parity error signal";
+                report "Error on parity error signal" severity ERROR ;
             end if;
 
             if s_clk_ref_s = '-' then
@@ -303,7 +321,7 @@ begin  -- architecture test_bench
             elsif s_clk_ref_s /= s_clk_obs then
                 error_pulse_s  <= '1', '0' after ERROR_PULSE_C;
                 error_counter_v := error_counter_v + 1;
-                report "Error on s_clk signal";
+                report "Error on s_clk signal" ; --severity ERROR;
             end if;
 
             if s_data_ref_s = '-' then
@@ -311,7 +329,7 @@ begin  -- architecture test_bench
             elsif s_data_ref_s /= To_X01(s_data_obs) then
                 error_pulse_s  <= '1', '0' after ERROR_PULSE_C;
                 error_counter_v := error_counter_v + 1;
-                report "Error on s_data signal";
+                report "Error on s_data signal" severity ERROR;
             end if;
         end loop;
         wait;

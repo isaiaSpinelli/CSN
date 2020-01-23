@@ -36,7 +36,9 @@ architecture flot_don of divisor is
 
 begin
 	-- incrémentation du compteur
-	count_next_s <= count_s + 1;
+	count_next_s <= (others => '0') when load_i = '1' else
+					(others => '0') when count_s = ((VAL_DIV)/2)-1 else
+					 count_s + 1;
 
 
 	process(clk_i, reset_i)
@@ -51,7 +53,7 @@ begin
 	end process;
 	
 	-- maj de la sortie
-	clk_div_o <= '1' when count_s = VAL_DIV-1 else
+	clk_div_o <= '1' when count_s = ((VAL_DIV)/2)-1 else
                '0';
 
 end flot_don;
