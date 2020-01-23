@@ -5,7 +5,7 @@
 # Fichier      : comp_lgn_ser_emet.tcl
 # Description  : Script de compilation des fichiers de l'emetteur
 #                pour la ligne serie N bits
-# 
+#
 # Auteur       : Etienne Messerli
 # Date         : 22.05.2018
 # Version      : 0.0
@@ -15,7 +15,7 @@
 #--| Modifications |--------------------------------------------------------
 # Ver  Aut.  Date        Description
 #
-#                         
+#
 ############################################################################
 
 
@@ -28,9 +28,9 @@ vcom -reportprogress 300 -work work   ../src/cal_parity.vhd
 vcom -reportprogress 300 -work work   ../src/srgn.vhd
 vcom -reportprogress 300 -work work   ../src/flipflop_rs.vhd
 vcom -reportprogress 300 -work work   ../src/flipflop_t.vhd
-vcom -reportprogress 300 -work work   ../src/ctrl_affichage.vhd
+vcom -reportprogress 300 -work work   ../src/dff_en.vhd
+# vcom -reportprogress 300 -work work   ../src/ctrl_affichage.vhd
 vcom -reportprogress 300 -work work   ../src/emet_serie_uc.vhd
 vcom -reportprogress 300 -work work   ../src/emet_serie.vhd
 
-vcom -reportprogress 300 -work work   ../src/horloge_top.vhd
-
+# vcom -reportprogress 300 -work work   ../src/horloge_top.vhd

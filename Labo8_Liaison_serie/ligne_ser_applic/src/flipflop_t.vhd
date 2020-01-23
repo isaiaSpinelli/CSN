@@ -31,6 +31,8 @@ architecture flot_don of flipflop_t is
 	
 begin
 
+	reset_s <= reset_i;
+
 	--Adaptation polarite
 	Q_fut <= Q_pres when T_i = '0' else
 		not Q_pres;
