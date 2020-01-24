@@ -90,18 +90,18 @@ architecture struct of emet_serie is
  			Q_o      : out    std_logic
  		);
  	end component ;
-
+	-- Permet de calculer la parité
   component cal_parity is
     port(
  		clk_i    	: in     std_logic;
-     reset_i  	: in     std_logic;
- 		data_i    : in     std_logic;
- 		load_i    : in     std_logic;
+		reset_i  	: in     std_logic;
+ 		data_i      : in     std_logic;
+ 		load_i      : in     std_logic;
  		en_i        : in     std_logic;
-     parite_o  : out    std_logic
+		parite_o    : out    std_logic
    );
  end component ;
-
+	-- Permet de diviser la clock du système
  component divisor is
    port(
  		reset_i  	: in std_logic;
@@ -111,7 +111,7 @@ architecture struct of emet_serie is
          clk_div_o	: out std_logic
         );
 end component ;
-
+	-- registre à décalage pour l'envoie en série des données
 component srgn is
   port(
          reset_i     : in  std_logic;
@@ -125,7 +125,7 @@ component srgn is
       ); 
 end component ;
 
-
+	-- Unité de controle pour notre système 
 component emet_serie_uc is
   port(
          clock_i       : in  std_logic;  --Horloge du systeme
@@ -152,8 +152,11 @@ end component ;
    for all : emet_serie_uc use entity work.emet_serie_uc(flot_don);
 
 begin -- Struct
+
 -- polarity adaptation
 nReset_s <= not reset_i;
+
+-- Affectation des sorties 
 reset_s <= reset_i;
 data_load_s <= '0' & data_i & '1';
 data_par_s <= data_s(data_s'high) and (not loop_end_s);
@@ -256,13 +259,5 @@ port map (
     S_i      => err_par_pres,
     Q_o      => err_par_fut
 );
-
-
-
-
-
-
-
-
 
 end struct;

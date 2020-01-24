@@ -17,6 +17,7 @@ library work;
 use work.ligne_serie_pkg.all;
 
 entity srgn is
+	-- valeur générique pour le nombre de data d'entrée
    generic(N : positive range 2 to 32 := NBR_DATA);
    port(
           reset_i     : in  std_logic;
@@ -35,10 +36,11 @@ architecture flot_don of srgn is
   --internally signals
   signal shift_pres_s : std_logic_vector(data_i'high downto 0) := (others => '0');
   signal shift_fut_s  : std_logic_vector(data_i'high downto 0) := (others => '0');
+  -- valeur constantes de comparaison pour détécter le décalage de toutes les données chargées 
   constant val_comp_s : std_logic_vector(data_i'high downto 0) := (data_i'high => '1', others => '0');
 
 begin
-
+  -- load ou shift ou garde l'état présent
   shift_fut_s <= data_i when load_i = '1' else
                  shift_pres_s(shift_pres_s'high-1 downto 0) & val_shift_i when en_i = '1' else
                  shift_pres_s;
@@ -51,8 +53,9 @@ begin
     shift_pres_s <= shift_fut_s;
   end if;
   end process;
-
+  -- met à jour la sortie
   data_send_o <= shift_pres_s;
+  -- Indique quand toutes les données chargées ont été shiftées
   loop_end_o <= '1' when shift_pres_s = val_comp_s else
 		'0';
 

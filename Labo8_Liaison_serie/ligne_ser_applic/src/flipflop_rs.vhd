@@ -54,7 +54,7 @@ begin
 
 	end process;
 
-
+	-- Met à jour la sortie
 	Q_o <= Q_pres;
 
 end flot_don;

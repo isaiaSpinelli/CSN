@@ -18,6 +18,8 @@ library work;
 use work.ligne_serie_pkg.all;
 
 entity divisor is
+	-- valeur générique calculer via le fichier "ligne_serie_pkg.vhd" 
+	-- pour avoir le nombre de bit utile au compteur 
 	generic(N_BITS  : positive range 1 to 16 := ilogup(VAL_DIV) );
 	port(
 		reset_i  	: in std_logic;
@@ -35,7 +37,7 @@ architecture flot_don of divisor is
 	signal count_next_s : unsigned(N_BITS-1 downto 0) := (others => '0');
 
 begin
-	-- incrémentation du compteur
+	-- load à 0 ou remet à 0 lorsque la valeur souhaitée est atteinte ou incrémentation du compteur
 	count_next_s <= (others => '0') when load_i = '1' else
 					(others => '0') when count_s = ((VAL_DIV)/2)-1 else
 					 count_s + 1;

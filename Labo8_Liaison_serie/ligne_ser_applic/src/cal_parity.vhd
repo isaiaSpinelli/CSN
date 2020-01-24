@@ -32,7 +32,7 @@ architecture flot_don of cal_parity is
 	signal Q_fut  :std_logic;
 
 begin
-
+	-- load à 1 par défaut ou garde l'état si c'est pas activé ou fait un xor pour calculer la parité
 	Q_fut <= '1' when load_i = '1' else
 		 Q_pres when en_i = '0' else
 		 Q_pres xor data_i ;

@@ -4,7 +4,7 @@
 --
 -- Fichier      : emet_serie_uc.vhd
 --
--- Description  : Comparateur pour les ton et le compteur PWM
+-- Description  : Unité de contrôle pour notre système 
 --
 -- Auteur       : Isaia Spinelli et Gaetan Bacso
 -- Date         : 16.01.2020
@@ -83,8 +83,11 @@ architecture flot_don of emet_serie_uc is
    high_s  <= high_i;
    low_s   <= low_i;
    loop_end_s <= loop_end_i;
+   
+   -- Listes des signaux de sensibilité du process
    Fut: process (start_s, high_s, low_s, loop_end_s, etat_present)
    begin
+		-- Valeur par défaut
      etat_futur <= etat_reset;
      load_o <= '0';
      busy_o <= '0';
@@ -92,6 +95,13 @@ architecture flot_don of emet_serie_uc is
      par_o  <= '0';
      read_o <= '0';
 
+	-- État présent
+	
+	-- Affectation des signaux en fonction de l'état présent dans lequel nous sommes
+	
+	-- Condition pour le changement d'état futur
+	
+	
      case etat_present is
        when etat_reset =>
           load_o <= '0';
@@ -247,6 +257,7 @@ architecture flot_don of emet_serie_uc is
      end case;
    end process;
 
+	-- Changement d'état synchrone
    Mem: process (clock_i, reset_s)
    begin
      if (reset_s = '1') then
